@@ -1,0 +1,29 @@
+---
+/** Result page for form posts made without JavaScript (with JS, success shows inline). */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Icon from '../components/Icon.astro';
+import { getContent } from '../content/index.ts';
+
+const page = getContent().thanksPage;
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} noindex canonical={null}>
+  <Section>
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="mx-auto grid size-16 place-items-center rounded-full bg-green-100 text-green-700">
+        <Icon name="circle-check" size={36} />
+      </span>
+      <h1 class="mt-6">{page.headline}</h1>
+      <p class="lead mx-auto mt-4">{page.intro}</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/programs" class="btn btn--secondary">
+          See our programs
+        </a>
+        <a href="/" class="btn btn--primary">
+          Back to home
+        </a>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

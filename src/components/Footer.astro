@@ -1,0 +1,148 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import TodoBadge from './TodoBadge.astro';
+import { getContent } from '../content/index.ts';
+import { useStrings } from '../i18n/index.ts';
+import { primaryNav } from '../lib/nav.ts';
+import { isVisible, isTodo } from '../lib/visibility.ts';
+
+const { org, accountability } = getContent();
+const t = useStrings();
+const nav = await primaryNav();
+const year = new Date().getFullYear();
+const showRegistration = isVisible(org.registration);
+const showConcern = isVisible(accountability.safeguarding);
+---
+
+<footer class="on-dark bg-surface-dark">
+  <div class="container-site grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-12">
+    <div class="lg:col-span-4">
+      <a href="/" aria-label={t.nav.homeLink} class="inline-flex min-h-11 items-center">
+        <Logo variant="white" height={40} />
+      </a>
+      <p class="mt-4 max-w-xs text-green-100">{org.tagline}</p>
+      <p class="mt-4 flex items-start gap-2 text-sm text-green-100">
+        <Icon name="map-pin" size={18} class="mt-0.5 shrink-0 text-orange-300" />
+        <span>{org.location.full}</span>
+      </p>
+      {showRegistration && (
+        <p class="mt-2 text-sm text-green-100">
+          {t.footer.registration} {org.registration.number ?? '—'}
+          {isTodo(org.registration) && <TodoBadge note="Registration number and registering body." />}
+        </p>
+      )}
+    </div>
+
+    <nav aria-label={t.footer.explore} class="lg:col-span-2">
+      <h2 class="footer-heading">{t.footer.explore}</h2>
+      <ul class="footer-list">
+        <li>
+          <a href="/">{t.nav.home}</a>
+        </li>
+        {nav
+          .filter((n) => !['/partner', '/get-involved', '/contact'].includes(n.href))
+          .map((n) => (
+            <li>
+              <a href={n.href}>{n.label}</a>
+            </li>
+          ))}
+      </ul>
+    </nav>
+
+    <nav aria-label={t.footer.involved} class="lg:col-span-2">
+      <h2 class="footer-heading">{t.footer.involved}</h2>
+      <ul class="footer-list">
+        <li>
+          <a href="/partner">{t.nav.partner}</a>
+        </li>
+        <li>
+          <a href="/donate">{t.nav.donate}</a>
+        </li>
+        <li>
+          <a href="/get-involved">{t.nav.getInvolved}</a>
+        </li>
+        <li>
+          <a href="/contact">{t.nav.contact}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="lg:col-span-4">
+      <h2 class="footer-heading">{t.footer.contact}</h2>
+      <ul class="footer-list">
+        <li>
+          <a href={`mailto:${org.email.general}`} class="inline-flex items-center gap-2">
+            <Icon name="mail" size={18} class="text-orange-300" />
+            {org.email.general}
+          </a>
+        </li>
+        <li>
+          <a href={org.phone.href} class="inline-flex items-center gap-2">
+            <Icon name="phone" size={18} class="text-orange-300" />
+            {org.phone.display}
+          </a>
+        </li>
+      </ul>
+      <h2 class="footer-heading mt-6">{t.footer.legal}</h2>
+      <ul class="footer-list">
+        <li>
+          <a href="/privacy">{t.footer.privacy}</a>
+        </li>
+        <li>
+          <a href="/terms">{t.footer.terms}</a>
+        </li>
+        {showConcern && (
+          <li>
+            <a
+              href={
+                accountability.safeguarding.reportEmail
+                  ? `mailto:${accountability.safeguarding.reportEmail}`
+                  : '/about#accountability'
+              }
+            >
+              {t.footer.reportConcern}
+            </a>
+            {isTodo(accountability.safeguarding) && (
+              <TodoBadge note="Safeguarding policy and a reporting address that is not only the ED." />
+            )}
+          </li>
+        )}
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="container-site flex flex-col gap-2 py-6 text-xs text-green-100 sm:flex-row sm:justify-between">
+      <p>
+        © {year} {t.footer.rights}
+      </p>
+      <p>{t.footer.credit}</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer-heading {
+    font-size: var(--af-step--1);
+    font-weight: 700;
+    letter-spacing: var(--af-tracking-caps);
+    text-transform: uppercase;
+    color: var(--af-orange-300);
+    margin-bottom: 0.5rem;
+  }
+  .footer-list {
+    display: grid;
+    gap: 0;
+  }
+  .footer-list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--af-tap);
+    color: var(--af-neutral-0);
+    text-decoration: none;
+  }
+  .footer-list a:hover {
+    text-decoration: underline;
+    color: var(--af-green-200);
+  }
+</style>

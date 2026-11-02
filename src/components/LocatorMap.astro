@@ -1,0 +1,115 @@
+---
+/**
+ * Where AfyaWise works: Meru County with Karama marked, and a Kenya inset. Built from public-domain
+ * boundaries (scripts/map.mjs). Used instead of stock photography until consented field photos exist.
+ */
+import geo from '../assets/geo/locator.json';
+import { useStrings } from '../i18n/index.ts';
+import { getContent } from '../content/index.ts';
+
+interface Props {
+  class?: string;
+  /** Unique per page if the map is used more than once. */
+  id?: string;
+}
+const { class: className, id = 'map' } = Astro.props;
+const t = useStrings().map;
+const { org } = getContent();
+const [kx, ky] = geo.meru.karama as [number, number];
+const insetScale = 0.42;
+// The Meru outline leaves its top-left corner empty: the Kenya inset sits there, and the county
+// label sits inside the shape's lower middle (positions relative to the generated geometry).
+const label = { x: Math.round(geo.meru.width * 0.34), y: Math.round(geo.meru.height * 0.78) };
+---
+
+<figure class:list={['card overflow-hidden p-4 sm:p-6', className]}>
+  <svg
+    viewBox={`0 0 ${geo.meru.width} ${geo.meru.height}`}
+    role="img"
+    aria-labelledby={`${id}-title ${id}-desc`}
+    class="h-auto w-full"
+  >
+    <title id={`${id}-title`}>{t.title}</title>
+    <desc id={`${id}-desc`}>{t.description}</desc>
+    <path
+      d={geo.meru.outline}
+      fill="var(--af-green-50)"
+      stroke="var(--af-green-700)"
+      stroke-width="2"
+      stroke-linejoin="round"
+    ></path>
+    <text x={label.x} y={label.y} class="map-label">
+      {t.meru}
+    </text>
+    <g class="map-pin">
+      <circle cx={kx} cy={ky} r="22" fill="var(--af-orange-400)" opacity="0.18" class="pulse"></circle>
+      <circle cx={kx} cy={ky} r="9" fill="var(--af-orange-400)" stroke="#fff" stroke-width="3"></circle>
+    </g>
+    <text x={kx + 16} y={ky - 14} class="map-label map-label--strong">
+      {t.karama}
+    </text>
+    <g transform={`translate(8 8) scale(${insetScale})`} aria-hidden="true">
+      <rect
+        x="-10"
+        y="-10"
+        width={geo.kenya.width + 20}
+        height={geo.kenya.height + 20}
+        rx="18"
+        fill="#fff"
+        stroke="var(--af-line)"
+        stroke-width="2.5"
+      ></rect>
+      <path d={geo.kenya.outline} fill="var(--af-neutral-100)" stroke="var(--af-neutral-400)" stroke-width="2"></path>
+      <path d={geo.kenya.meru} fill="var(--af-green-600)"></path>
+      <text x={geo.kenya.width / 2} y={geo.kenya.height - 14} text-anchor="middle" class="map-label map-label--inset">
+        {t.kenya}
+      </text>
+    </g>
+  </svg>
+  <figcaption class="mt-3 flex items-start gap-2 text-sm text-ink-muted">
+    <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" class="mt-1.5 shrink-0">
+      <circle cx="6" cy="6" r="5" fill="var(--af-orange-400)"></circle>
+    </svg>
+    <span>{org.location.full}</span>
+  </figcaption>
+</figure>
+
+<style>
+  .map-label {
+    font-family: var(--af-font-body);
+    font-size: 17px;
+    font-weight: 600;
+    fill: var(--af-green-900);
+  }
+  /* Inline style attributes are blocked by the CSP, so sizes live here. */
+  .map-label--inset {
+    font-size: 30px;
+  }
+  .map-label--strong {
+    font-size: 22px;
+    font-weight: 750;
+    fill: var(--af-ink);
+    paint-order: stroke;
+    stroke: #fff;
+    stroke-width: 5px;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .pulse {
+      transform-box: fill-box;
+      transform-origin: center;
+      /* Two pulses (4.8s), then still: no motion that runs past 5 seconds (WCAG 2.2.2). */
+      animation: pin-pulse 2.4s var(--af-ease-out) 2 both;
+    }
+  }
+  @keyframes pin-pulse {
+    0% {
+      transform: scale(0.6);
+      opacity: 0.45;
+    }
+    80%,
+    100% {
+      transform: scale(1.6);
+      opacity: 0;
+    }
+  }
+</style>

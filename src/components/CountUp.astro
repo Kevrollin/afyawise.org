@@ -1,0 +1,31 @@
+---
+/** Count-up for [data-count] numbers. Rendered only alongside a visible metric band. */
+---
+
+<script>
+  // Count up once when the band scrolls into view. The real number is already in the markup.
+  const els = document.querySelectorAll<HTMLElement>('[data-count]');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (els.length && !reduce && 'IntersectionObserver' in window) {
+    const fmt = new Intl.NumberFormat('en-KE');
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          io.unobserve(entry.target);
+          const el = entry.target as HTMLElement;
+          const end = Number(el.dataset.count);
+          const start = performance.now();
+          const tick = (now: number) => {
+            const p = Math.min(1, (now - start) / 900);
+            el.textContent = fmt.format(Math.round(end * (1 - Math.pow(1 - p, 3))));
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      },
+      { threshold: 0.6 },
+    );
+    els.forEach((el) => io.observe(el));
+  }
+</script>

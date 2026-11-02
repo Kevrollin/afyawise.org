@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Section from '../../components/Section.astro';
+import Icon from '../../components/Icon.astro';
+import { getContent } from '../../content/index.ts';
+
+const { donatePage: page, org } = getContent();
+---
+
+<BaseLayout
+  title={`${page.thanks.headline} | AfyaWise CBO`}
+  description={page.thanks.intro + ' Questions? Email ' + org.email.finance + '.'}
+  noindex
+  canonical={null}
+>
+  <Section>
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="mx-auto grid size-16 place-items-center rounded-full bg-green-100 text-green-700">
+        <Icon name="circle-check" size={36} />
+      </span>
+      <h1 class="mt-6">{page.thanks.headline}</h1>
+      <p class="lead mx-auto mt-4">{page.thanks.intro}</p>
+      <p class="mt-6 text-ink-muted">
+        Questions about your gift? Email <a href={`mailto:${org.email.finance}`}>{org.email.finance}</a>.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/programs" class="btn btn--secondary">
+          See our programs
+        </a>
+        <a href="/" class="btn btn--primary">
+          Back to home
+        </a>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

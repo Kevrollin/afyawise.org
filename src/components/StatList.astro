@@ -1,0 +1,35 @@
+---
+/** Cited statistics: big number, one line of meaning, national comparison, source. */
+import type { Stat } from '../content/types.ts';
+import SourceNote from './SourceNote.astro';
+import TodoBadge from './TodoBadge.astro';
+import { visible, isTodo } from '../lib/visibility.ts';
+
+interface Props {
+  stats: Stat[];
+  /** Show the source under each stat (true) or once, below the list (false). */
+  sourceEach?: boolean;
+  columns?: 2 | 3;
+}
+const { stats, sourceEach = false, columns = 3 } = Astro.props;
+const shown = visible(stats);
+const shared =
+  !sourceEach && shown.length && shown.every((s) => s.source.url === shown[0]?.source.url) ? shown[0] : null;
+---
+
+{shown.length > 0 && (
+  <div>
+    <ul class:list={['grid gap-4 sm:grid-cols-2', columns === 3 && 'lg:grid-cols-3']}>
+      {shown.map((s) => (
+        <li class="card reveal flex flex-col p-6">
+          <p class="text-5xl font-extrabold tracking-[-0.03em] text-green-800">{s.value}</p>
+          <p class="mt-3 text-lg font-semibold leading-snug text-ink">{s.label}</p>
+          {s.comparison && <p class="mt-2 text-sm text-ink-muted">{s.comparison}</p>}
+          {(sourceEach || !shared) && <SourceNote source={s.source} year={s.year} class="mt-auto pt-4" />}
+          {isTodo(s) && <TodoBadge />}
+        </li>
+      ))}
+    </ul>
+    {shared && <SourceNote source={shared.source} year={shared.year} class="mt-4" />}
+  </div>
+)}

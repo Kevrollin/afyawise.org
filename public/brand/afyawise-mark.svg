@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AfyaWise">
+  <!-- Three people in a ring (community), around a water drop with a cross (health and WASH).
+       Redrawn from the original AfyaWise logo for crisp digital use. Ring centre: (32, 36.5). -->
+  <g fill="none" stroke-width="7" stroke-linecap="round">
+    <path d="M22.1 26.6A14 14 0 0 1 41.9 26.6" stroke="#3DB233"/>
+    <path d="M22.1 26.6A14 14 0 0 1 41.9 26.6" stroke="#F7931E" transform="rotate(120 32 36.5)"/>
+    <path d="M22.1 26.6A14 14 0 0 1 41.9 26.6" stroke="#1E88C8" transform="rotate(240 32 36.5)"/>
+  </g>
+  <circle cx="32" cy="12" r="5.5" fill="#3DB233"/>
+  <circle cx="32" cy="12" r="5.5" fill="#F7931E" transform="rotate(120 32 36.5)"/>
+  <circle cx="32" cy="12" r="5.5" fill="#1E88C8" transform="rotate(240 32 36.5)"/>
+  <path d="M32 27.1C32 27.1 39 34.7 39 39.9A7 7 0 0 1 25 39.9C25 34.7 32 27.1 32 27.1Z" fill="#1F7A2E"/>
+  <path d="M30.7 35.7h2.6v2.6h2.6v2.6h-2.6v2.6h-2.6v-2.6h-2.6v-2.6h2.6Z" fill="#fff"/>
+</svg>

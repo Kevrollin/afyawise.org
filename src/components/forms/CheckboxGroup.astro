@@ -1,0 +1,30 @@
+---
+/** Multi-choice checkboxes. `required` means "at least one" (checked by the form script and the server). */
+interface Props {
+  name: string;
+  legend: string;
+  options: readonly { value: string; label: string }[];
+  required?: boolean;
+  form: string;
+}
+const { name, legend, options, required = false, form } = Astro.props;
+const id = `${form}-${name}`;
+---
+
+<fieldset
+  class="field"
+  data-field={name}
+  data-group-required={required ? '' : undefined}
+  aria-describedby={`${id}-error`}
+>
+  <legend class="field-label">{legend}</legend>
+  <div class="grid gap-1 sm:grid-cols-2">
+    {options.map((o, i) => (
+      <label class="check">
+        <input id={`${id}-${i}`} type="checkbox" name={name} value={o.value} />
+        <span>{o.label}</span>
+      </label>
+    ))}
+  </div>
+  <p id={`${id}-error`} class="field-error" data-error-for={name} hidden></p>
+</fieldset>

@@ -1,0 +1,32 @@
+| Route | Preset | Perf | A11y | Best pr. | SEO | FCP | LCP | TBT | CLS | Speed Index | Total KB | JS KB | Img KB | Requests |
+|---|---|---:|---:|---:|---:|---|---|---|---|---|---:|---:|---:|---:|
+| `/` | mobile | 98 | 100 | 100 | 100 | 1.2 s | 1.2 s | 140 ms | 0 | 2.6 s | 50 | 0 | 0 | 4 |
+| `/` | desktop | 100 | 100 | 100 | 100 | 0.3 s | 0.3 s | 0 ms | 0 | 0.9 s | 50 | 0 | 0 | 4 |
+| `/programs` | mobile | 100 | 100 | 100 | 100 | 1.0 s | 1.0 s | 40 ms | 0 | 2.1 s | 45 | 0 | 0 | 4 |
+| `/programs` | desktop | 100 | 100 | 100 | 100 | 0.3 s | 0.3 s | 0 ms | 0 | 1.0 s | 45 | 0 | 0 | 4 |
+| `/programs/maternal-child-health` | mobile | 99 | 100 | 100 | 100 | 1.1 s | 1.1 s | 120 ms | 0 | 2.4 s | 46 | 0 | 0 | 4 |
+| `/programs/maternal-child-health` | desktop | 100 | 100 | 100 | 100 | 0.3 s | 0.3 s | 0 ms | 0 | 1.1 s | 46 | 0 | 0 | 4 |
+| `/programs/water-sanitation-hygiene` | mobile | 100 | 100 | 100 | 100 | 0.9 s | 0.9 s | 0 ms | 0 | 1.1 s | 45 | 0 | 0 | 4 |
+| `/programs/water-sanitation-hygiene` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.4 s | 45 | 0 | 0 | 4 |
+| `/programs/mental-health-disability` | mobile | 100 | 100 | 100 | 100 | 0.9 s | 0.9 s | 10 ms | 0 | 1.1 s | 46 | 0 | 0 | 4 |
+| `/programs/mental-health-disability` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.4 s | 46 | 0 | 0 | 4 |
+| `/programs/health-education` | mobile | 100 | 100 | 100 | 100 | 0.9 s | 0.9 s | 0 ms | 0 | 1.1 s | 45 | 0 | 0 | 4 |
+| `/programs/health-education` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.4 s | 45 | 0 | 0 | 4 |
+| `/programs/community-health-promoters` | mobile | 100 | 100 | 100 | 100 | 0.9 s | 0.9 s | 0 ms | 0 | 1.1 s | 46 | 0 | 0 | 4 |
+| `/programs/community-health-promoters` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.4 s | 46 | 0 | 0 | 4 |
+| `/impact` | mobile | 100 | 100 | 100 | 100 | 0.9 s | 0.9 s | 20 ms | 0 | 1.1 s | 46 | 0 | 0 | 4 |
+| `/impact` | desktop | 100 | 100 | 100 | 100 | 0.3 s | 0.3 s | 0 ms | 0 | 0.5 s | 46 | 0 | 0 | 4 |
+| `/partner` | mobile | 97 | 100 | 100 | 100 | 1.3 s | 1.3 s | 200 ms | 0 | 2.2 s | 50 | 0 | 0 | 4 |
+| `/partner` | desktop | 100 | 100 | 100 | 100 | 0.3 s | 0.3 s | 0 ms | 0 | 0.6 s | 50 | 0 | 0 | 4 |
+| `/donate` | mobile | 100 | 100 | 100 | 100 | 0.8 s | 0.8 s | 0 ms | 0 | 1.1 s | 45 | 0 | 0 | 4 |
+| `/donate` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.4 s | 45 | 0 | 0 | 4 |
+| `/get-involved` | mobile | 100 | 100 | 100 | 100 | 1.0 s | 1.0 s | 40 ms | 0 | 1.8 s | 47 | 0 | 0 | 4 |
+| `/get-involved` | desktop | 100 | 100 | 100 | 100 | 0.3 s | 0.3 s | 0 ms | 0 | 0.6 s | 47 | 0 | 0 | 4 |
+| `/contact` | mobile | 100 | 100 | 100 | 100 | 0.9 s | 0.9 s | 0 ms | 0 | 1.2 s | 48 | 0 | 0 | 4 |
+| `/contact` | desktop | 100 | 100 | 100 | 100 | 0.3 s | 0.3 s | 0 ms | 0 | 0.6 s | 48 | 0 | 0 | 4 |
+| `/about` | mobile | 100 | 100 | 100 | 100 | 0.9 s | 0.9 s | 20 ms | 0 | 1.3 s | 48 | 0 | 0 | 4 |
+| `/about` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.7 s | 48 | 0 | 0 | 4 |
+| `/privacy` | mobile | 100 | 100 | 100 | 100 | 0.8 s | 0.8 s | 0 ms | 0 | 0.9 s | 45 | 0 | 0 | 4 |
+| `/privacy` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.4 s | 45 | 0 | 0 | 4 |
+| `/terms` | mobile | 100 | 100 | 100 | 100 | 0.8 s | 0.8 s | 0 ms | 0 | 1.0 s | 44 | 0 | 0 | 4 |
+| `/terms` | desktop | 100 | 100 | 100 | 100 | 0.2 s | 0.2 s | 0 ms | 0 | 0.5 s | 44 | 0 | 0 | 4 |

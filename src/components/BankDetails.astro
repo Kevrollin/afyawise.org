@@ -1,0 +1,83 @@
+---
+/** Bank transfer details, exactly as published. Copy buttons appear only when JS can copy. */
+import Icon from './Icon.astro';
+import TodoBadge from './TodoBadge.astro';
+import { getContent } from '../content/index.ts';
+import { useStrings } from '../i18n/index.ts';
+import { isVisible } from '../lib/visibility.ts';
+
+const { bank } = getContent();
+const t = useStrings().common;
+const rows = [
+  { label: 'Bank', value: `${bank.bankFull} (${bank.bank})`, copy: false },
+  { label: 'Account name', value: bank.accountName, copy: true },
+  { label: 'Account number', value: bank.accountNumber, copy: true },
+  { label: 'Branch', value: bank.branch, copy: false },
+  ...(isVisible(bank.swift) ? [{ label: 'SWIFT code', value: bank.swift.value ?? 'TODO_CONFIRM', copy: true }] : []),
+  ...(isVisible(bank.branchCode)
+    ? [{ label: 'Branch code', value: bank.branchCode.value ?? 'TODO_CONFIRM', copy: true }]
+    : []),
+];
+---
+
+<dl class="grid gap-3">
+  {rows.map((row) => (
+    <div class="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-md bg-surface px-4 py-2">
+      <dt class="text-sm font-semibold text-ink-muted">{row.label}</dt>
+      <dd class="flex items-center gap-2 font-bold text-ink">
+        <span>{row.value}</span>
+        {row.value === 'TODO_CONFIRM' && <TodoBadge note="Finance to confirm for international transfers." />}
+        {row.copy && row.value !== 'TODO_CONFIRM' && (
+          <button
+            type="button"
+            class="copy-btn"
+            data-copy={row.value}
+            data-copied={t.copied}
+            hidden
+            aria-label={`${t.copy} ${row.label}`}
+          >
+            <Icon name="copy" size={16} />
+            <span data-copy-label>{t.copy}</span>
+          </button>
+        )}
+      </dd>
+    </div>
+  ))}
+</dl>
+
+<style>
+  .copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    min-height: var(--af-tap);
+    padding: 0 0.625rem;
+    border-radius: var(--af-radius-pill);
+    color: var(--af-green-800);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .copy-btn:hover {
+    background: var(--af-green-100);
+  }
+  .copy-btn[hidden] {
+    display: none;
+  }
+</style>
+
+<script>
+  if (navigator.clipboard) {
+    document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((btn) => {
+      btn.hidden = false;
+      btn.addEventListener('click', async () => {
+        await navigator.clipboard.writeText(btn.dataset.copy ?? '');
+        const label = btn.querySelector('[data-copy-label]');
+        if (!label) return;
+        const original = label.textContent;
+        label.textContent = btn.dataset.copied ?? '';
+        setTimeout(() => (label.textContent = original), 2000);
+      });
+    });
+  }
+</script>

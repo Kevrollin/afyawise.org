@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import LocatorMap from '../components/LocatorMap.astro';
+import MetricBand from '../components/MetricBand.astro';
+import StatList from '../components/StatList.astro';
+import ProgramCards from '../components/ProgramCards.astro';
+import Steps from '../components/Steps.astro';
+import ProjectCards from '../components/ProjectCards.astro';
+import GovernanceDiagram from '../components/GovernanceDiagram.astro';
+import AlignmentList from '../components/AlignmentList.astro';
+import LogoWall from '../components/LogoWall.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import TodoBadge from '../components/TodoBadge.astro';
+import { getContent } from '../content/index.ts';
+import { isVisible, isTodo, visible } from '../lib/visibility.ts';
+
+const c = getContent();
+const { home } = c;
+const needStats = c.homeNeed.map((id) => c.stats[id]!);
+const partners = visible(c.partners).filter((p) => p.logoPermission);
+const docs = [
+  {
+    show: isVisible(c.org.registration),
+    todo: isTodo(c.org.registration),
+    icon: 'landmark',
+    label: 'Registered CBO',
+    value: c.org.registration.number,
+    href: '/about#accountability',
+  },
+  {
+    show: isVisible(c.accountability.annualReport),
+    todo: isTodo(c.accountability.annualReport),
+    icon: 'file-text',
+    label: 'Annual report',
+    value: c.accountability.annualReport.year,
+    href: c.accountability.annualReport.url ?? '/impact#reports',
+  },
+  {
+    show: isVisible(c.accountability.safeguarding),
+    todo: isTodo(c.accountability.safeguarding),
+    icon: 'shield-check',
+    label: 'Safeguarding policy',
+    value: null,
+    href: c.accountability.safeguarding.policyUrl ?? '/about#accountability',
+  },
+] as const;
+---
+
+<BaseLayout title={home.meta.title} description={home.meta.description} og="home">
+  <!-- 1. Hero -->
+  <section class="relative overflow-hidden bg-surface" aria-labelledby="hero-title">
+    <div aria-hidden="true" class="hero-glow"></div>
+    <div class="container-site relative grid items-center gap-10 py-14 md:py-20 lg:grid-cols-12 lg:gap-12">
+      <div class="lg:col-span-7">
+        <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-green-200 bg-bg px-3 py-1 text-sm font-semibold text-green-800">
+          <Icon name="map-pin" size={16} />
+          {c.org.location.ward} · {c.org.location.county} · {c.org.location.country}
+        </p>
+        <h1 id="hero-title" class="max-w-[14ch]">
+          {home.hero.headline}
+        </h1>
+        <p class="lead mt-6 max-w-[42ch]">{home.hero.intro}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href={home.hero.primary.href}
+            class="btn btn--primary btn--lg"
+            data-event="Fund"
+            data-event-location="hero"
+          >
+            {home.hero.primary.label}
+            <Icon name="arrow-right" size={20} />
+          </a>
+          <a
+            href={home.hero.secondary.href}
+            class="btn btn--secondary btn--lg"
+            data-event="Partner"
+            data-event-location="hero"
+          >
+            {home.hero.secondary.label}
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <LocatorMap />
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Proof band (renders only with ≥3 confirmed, dated metrics) -->
+  <MetricBand metrics={c.metrics} headline={home.proof.headline} eyebrow={home.proof.eyebrow} />
+
+  <!-- 3. The need -->
+  <Section labelledby="need-title">
+    <SectionHeader id="need-title" eyebrow={home.need.eyebrow} headline={home.need.headline} intro={home.need.intro} />
+    <StatList stats={needStats} />
+  </Section>
+
+  <!-- 4. What we do -->
+  <Section tone="surface" labelledby="programs-title">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <SectionHeader
+        id="programs-title"
+        eyebrow={home.programs.eyebrow}
+        headline={home.programs.headline}
+        intro={home.programs.intro}
+        flush
+      />
+      <a href={home.programs.cta.href} class="link-arrow">
+        {home.programs.cta.label} <Icon name="arrow-right" size={18} />
+      </a>
+    </div>
+    <div class="mt-10">
+      <ProgramCards programs={c.programs} />
+    </div>
+  </Section>
+
+  <!-- 5. How we work -->
+  <Section labelledby="how-title">
+    <SectionHeader id="how-title" eyebrow={home.how.eyebrow} headline={home.how.headline} />
+    <Steps steps={home.how.steps} />
+    <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-lg bg-surface p-5">
+      <Icon name="clipboard-check" size={24} class="text-green-700" />
+      <p class="flex-1 text-ink">{home.how.meal}</p>
+      <a href={home.how.cta.href} class="link-arrow">
+        {home.how.cta.label} <Icon name="arrow-right" size={18} />
+      </a>
+    </div>
+  </Section>
+
+  <!-- 6. Fund a project -->
+  <Section tone="tint" id="fund" labelledby="projects-title">
+    <SectionHeader
+      id="projects-title"
+      eyebrow={home.projects.eyebrow}
+      headline={home.projects.headline}
+      intro={home.projects.intro}
+    />
+    <ProjectCards projects={c.projects} />
+  </Section>
+
+  <!-- 7. Accountability -->
+  <Section labelledby="accountability-title">
+    <SectionHeader
+      id="accountability-title"
+      eyebrow={home.accountability.eyebrow}
+      headline={home.accountability.headline}
+      intro={home.accountability.intro}
+    />
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-7">
+        <GovernanceDiagram />
+      </div>
+      <div class="grid content-start gap-6 lg:col-span-5">
+        <AlignmentList compact />
+        {docs.some((d) => d.show) && (
+          <ul class="grid gap-3">
+            {docs
+              .filter((d) => d.show)
+              .map((d) => (
+                <li>
+                  <a
+                    href={d.href}
+                    class="flex items-center gap-3 rounded-md border border-line p-4 no-underline hover:border-green-300"
+                  >
+                    <Icon name={d.icon} size={22} class="text-green-700" />
+                    <span class="font-semibold text-ink">
+                      {d.label}
+                      {d.value ? `: ${d.value}` : ''}
+                    </span>
+                    {d.todo && <TodoBadge />}
+                  </a>
+                </li>
+              ))}
+          </ul>
+        )}
+        <a href="/about#governance" class="link-arrow">
+          Governance and leadership <Icon name="arrow-right" size={18} />
+        </a>
+      </div>
+    </div>
+  </Section>
+
+  <!-- 8. Partners (real logos with permission only) -->
+  {partners.length > 0 && (
+    <Section tone="surface" labelledby="partners-title">
+      <SectionHeader id="partners-title" eyebrow={home.partners.eyebrow} headline={home.partners.headline} />
+      <LogoWall partners={partners} />
+    </Section>
+  )}
+
+  <!-- 9. Closing CTA -->
+  <CtaBand />
+</BaseLayout>
+
+<style>
+  .hero-glow {
+    position: absolute;
+    inset: -30% -20% auto auto;
+    width: 46rem;
+    height: 46rem;
+    background: radial-gradient(closest-side, rgb(68 189 50 / 0.16), transparent 70%);
+  }
+</style>

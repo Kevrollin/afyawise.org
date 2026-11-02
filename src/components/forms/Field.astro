@@ -1,0 +1,74 @@
+---
+/** Text-like input with label, optional hint and an error slot wired to aria-describedby. */
+import { useStrings } from '../../i18n/index.ts';
+
+interface Props {
+  name: string;
+  label: string;
+  type?: 'text' | 'email' | 'tel' | 'number' | 'url';
+  required?: boolean;
+  hint?: string;
+  autocomplete?: string;
+  maxlength?: number;
+  minlength?: number;
+  min?: number;
+  max?: number;
+  inputmode?: 'text' | 'email' | 'tel' | 'numeric' | 'decimal';
+  pattern?: string;
+  placeholder?: string;
+  value?: string;
+  form: string;
+  class?: string;
+}
+const {
+  name,
+  label,
+  type = 'text',
+  required = false,
+  hint,
+  autocomplete,
+  maxlength,
+  minlength,
+  min,
+  max,
+  inputmode,
+  pattern,
+  placeholder,
+  value,
+  form,
+  class: className,
+} = Astro.props;
+const id = `${form}-${name}`;
+const t = useStrings().forms;
+const describedBy = [hint && `${id}-hint`, `${id}-error`].filter(Boolean).join(' ');
+---
+
+<div class:list={['field', className]} data-field={name}>
+  <label for={id} class="field-label">
+    {label}
+    {!required && <span class="field-optional">({t.optional})</span>}
+  </label>
+  {hint && (
+    <p id={`${id}-hint`} class="field-hint">
+      {hint}
+    </p>
+  )}
+  <input
+    id={id}
+    name={name}
+    type={type}
+    required={required}
+    autocomplete={autocomplete}
+    maxlength={maxlength}
+    minlength={minlength}
+    min={min}
+    max={max}
+    inputmode={inputmode}
+    pattern={pattern}
+    placeholder={placeholder}
+    value={value}
+    aria-describedby={describedBy}
+    class="field-input"
+  />
+  <p id={`${id}-error`} class="field-error" data-error-for={name} hidden></p>
+</div>

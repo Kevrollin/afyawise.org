@@ -1,0 +1,7 @@
+{
+  "recurse": true,
+  "concurrency": 8,
+  "timeout": 15000,
+  "skip": ["^https?://(?!127\\.0\\.0\\.1)", "^mailto:", "^tel:"],
+  "verbosity": "error"
+}

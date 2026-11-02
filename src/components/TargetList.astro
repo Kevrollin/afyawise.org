@@ -1,0 +1,42 @@
+---
+/** Targets, always labelled as targets. Progress shows only when supplied with a date and method. */
+import type { Target } from '../content/types.ts';
+import TodoBadge from './TodoBadge.astro';
+import { visible, showUnconfirmed } from '../lib/visibility.ts';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  targets: Target[];
+  programTitles?: Record<string, string>;
+}
+const { targets, programTitles } = Astro.props;
+const shown = visible(targets);
+const t = useStrings().common;
+---
+
+<ul class="grid gap-4">
+  {shown.map((target) => (
+    <li class="card reveal grid gap-3 p-5 sm:grid-cols-[auto_1fr] sm:gap-5">
+      <span class="badge badge--target h-fit w-fit">{t.target}</span>
+      <div>
+        <p class="text-lg font-semibold leading-snug text-ink">{target.statement}</p>
+        <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-ink-muted">
+          <span>
+            {t.timeframe}: {target.timeframe}
+          </span>
+          {programTitles?.[target.program] && (
+            <a href={`/programs/${target.program}`}>{programTitles[target.program]}</a>
+          )}
+          {target.progress ? (
+            <span class="font-semibold text-green-800">
+              {target.progress.value} ({t.asOf} {target.progress.asOf})
+            </span>
+          ) : (
+            <span>{t.notReported}</span>
+          )}
+        </p>
+        {showUnconfirmed && !target.startDate && <TodoBadge note="Start date and baseline for this target." />}
+      </div>
+    </li>
+  ))}
+</ul>

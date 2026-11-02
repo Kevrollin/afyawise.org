@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import LocatorMap from '../components/LocatorMap.astro';
+import GovernanceDiagram from '../components/GovernanceDiagram.astro';
+import TeamCards from '../components/TeamCards.astro';
+import SourceNote from '../components/SourceNote.astro';
+import TodoBadge from '../components/TodoBadge.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { getContent } from '../content/index.ts';
+import { breadcrumbLd } from '../lib/seo.ts';
+import { isVisible, isTodo, showUnconfirmed } from '../lib/visibility.ts';
+
+const c = getContent();
+const page = c.aboutPage;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+];
+const showPeople = c.people.some((p) => (p.status === 'confirmed' && p.name) || showUnconfirmed);
+const reg = c.org.registration;
+const dpa = c.org.dataProtectionRegistration;
+const safeguarding = c.accountability.safeguarding;
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} og="about" jsonLd={[breadcrumbLd(crumbs)]}>
+  <PageHero headline={page.headline} intro={page.intro} breadcrumbs={crumbs} />
+
+  <Section labelledby="who-title">
+    <div class="grid items-start gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-6">
+        <h2 id="who-title">{page.who.headline}</h2>
+        <p class="mt-4 text-lg text-ink">{page.who.body}</p>
+        <h3 class="mt-8 text-2xl">{page.where.headline}</h3>
+        <p class="mt-3 text-ink-muted">{page.where.body}</p>
+        <SourceNote source={{ ...c.sources.cidp, locator: 'pp. 30–34' }} class="mt-2" />
+      </div>
+      <div class="lg:col-span-6">
+        <LocatorMap />
+      </div>
+    </div>
+  </Section>
+
+  <Section tone="surface" labelledby="statements-title">
+    <h2 id="statements-title" class="mb-8">
+      {page.statementsHeadline}
+    </h2>
+    <div class="grid gap-5 md:grid-cols-2">
+      <div class="card p-6">
+        <p class="eyebrow">Vision</p>
+        <p class="mt-3 text-xl font-semibold leading-snug text-ink">{c.org.official.vision}</p>
+      </div>
+      <div class="card p-6">
+        <p class="eyebrow">Mission</p>
+        <p class="mt-3 text-xl font-semibold leading-snug text-ink">{c.org.official.mission}</p>
+      </div>
+    </div>
+    <h3 class="mt-12 text-2xl">Values</h3>
+    <ul class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      {c.org.values.map((v) => (
+        <li class="rounded-lg border-t-4 border-green-700 bg-bg p-5 shadow-sm">
+          <p class="font-bold text-ink">{v.name}</p>
+          <p class="mt-2 text-sm text-ink-muted">{v.text}</p>
+        </li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section id="governance" labelledby="leadership">
+    <SectionHeader id="leadership" headline={page.governance.headline} intro={c.governance.intro} />
+    <GovernanceDiagram detailed />
+    {showPeople && (
+      <div class="mt-14">
+        <h3 class="mb-6 text-2xl">{page.people.headline}</h3>
+        <TeamCards people={c.people} />
+      </div>
+    )}
+  </Section>
+
+  <Section tone="surface" labelledby="how-we-work-title" id="how-we-work">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <h2 id="how-we-work-title">{page.partners.headline}</h2>
+        <p class="lead mt-4">{c.partnershipApproach.goal}</p>
+      </div>
+      <ul class="grid gap-3 lg:col-span-7">
+        {c.partnershipApproach.activities.map((a) => (
+          <li class="flex items-start gap-3 rounded-md bg-bg p-4">
+            <Icon name="handshake" size={22} class="mt-0.5 shrink-0 text-green-700" />
+            <span class="text-ink">{a}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </Section>
+
+  <Section id="accountability" labelledby="accountability-title">
+    <SectionHeader
+      id="accountability-title"
+      headline={page.accountability.headline}
+      intro={page.accountability.intro}
+    />
+    <ul class="grid gap-4 md:grid-cols-2">
+      {isVisible(reg) && (
+        <li class="card p-5">
+          <p class="font-bold text-ink">Registration</p>
+          <p class="mt-1 text-ink-muted">
+            {reg.number ?? 'Number to confirm'}
+            {reg.body ? `, ${reg.body}` : ''}
+          </p>
+          {isTodo(reg) && <TodoBadge note="Registration number, registering body and year." />}
+        </li>
+      )}
+      {isVisible(dpa) && (
+        <li class="card p-5">
+          <p class="font-bold text-ink">Data protection</p>
+          <p class="mt-1 text-ink-muted">
+            Registered with the Office of the Data Protection Commissioner: {dpa.number ?? 'number to confirm'}
+          </p>
+          {isTodo(dpa) && <TodoBadge note="ODPC registration (likely required: health data)." />}
+        </li>
+      )}
+      {isVisible(safeguarding) && (
+        <li class="card p-5">
+          <p class="font-bold text-ink">Safeguarding and reporting a concern</p>
+          <p class="mt-1 text-ink-muted">
+            {safeguarding.policyUrl ? (
+              <a href={safeguarding.policyUrl}>Read our safeguarding policy</a>
+            ) : (
+              'Policy to publish'
+            )}
+            {safeguarding.reportEmail && (
+              <>
+                {' '}
+                · Report a concern: <a href={`mailto:${safeguarding.reportEmail}`}>{safeguarding.reportEmail}</a>
+              </>
+            )}
+          </p>
+          {isTodo(safeguarding) && (
+            <TodoBadge note="Safeguarding/PSEA policy and a reporting channel that is not only the ED." />
+          )}
+        </li>
+      )}
+      <li class="card p-5">
+        <p class="font-bold text-ink">How we measure</p>
+        <p class="mt-1 text-ink-muted">
+          Targets are labelled as targets. Every number shows its date and source.{' '}
+          <a href="/impact#measure">Our measurement rules</a>.
+        </p>
+      </li>
+      <li class="card p-5">
+        <p class="font-bold text-ink">Privacy</p>
+        <p class="mt-1 text-ink-muted">
+          We follow Kenya’s Data Protection Act 2019. <a href="/privacy">Read our privacy policy</a>.
+        </p>
+      </li>
+    </ul>
+  </Section>
+
+  <CtaBand />
+</BaseLayout>

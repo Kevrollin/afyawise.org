@@ -1,0 +1,14 @@
+---
+/** Marks unconfirmed content in preview builds. Never reaches production (the content is hidden there). */
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  note?: string | undefined;
+}
+const { note } = Astro.props;
+const t = useStrings().common;
+---
+
+<span class="badge badge--todo" title={note ? `${t.todoTitle} ${note}` : t.todoTitle}>
+  {t.todoBadge}
+</span>

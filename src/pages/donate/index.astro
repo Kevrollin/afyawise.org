@@ -1,0 +1,213 @@
+---
+import { PUBLIC_DONATE_CARD, PUBLIC_DONATE_MPESA, PUBLIC_MPESA_ACCOUNT, PUBLIC_MPESA_PAYBILL } from 'astro:env/client';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import BankDetails from '../../components/BankDetails.astro';
+import Icon from '../../components/Icon.astro';
+import FormShell from '../../components/forms/FormShell.astro';
+import Field from '../../components/forms/Field.astro';
+import Select from '../../components/forms/Select.astro';
+import { getContent } from '../../content/index.ts';
+import { breadcrumbLd } from '../../lib/seo.ts';
+import { visible } from '../../lib/visibility.ts';
+
+const c = getContent();
+const page = c.donatePage;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Donate', href: '/donate' },
+];
+// Only methods that are live are shown (strategy §6, research §5).
+const mpesaMode =
+  PUBLIC_DONATE_MPESA === 'paybill' && !(PUBLIC_MPESA_PAYBILL && PUBLIC_MPESA_ACCOUNT) ? 'off' : PUBLIC_DONATE_MPESA;
+const cardOn = PUBLIC_DONATE_CARD === 'paystack';
+const mpesaRequest = `mailto:${c.org.email.finance}?subject=${encodeURIComponent('M-Pesa donation details')}&body=${encodeURIComponent(
+  'Hello AfyaWise finance team,\n\nPlease send me your M-Pesa details so I can make a donation.\n\nThank you.',
+)}`;
+const designations = [
+  { value: 'Where most needed', label: 'Where most needed' },
+  ...visible(c.programs).map((p) => ({ value: p.title, label: p.title })),
+];
+const currencies = [
+  { value: 'KES', label: 'KES (Kenyan shillings)' },
+  { value: 'USD', label: 'USD (US dollars)' },
+];
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} og="donate" jsonLd={[breadcrumbLd(crumbs)]}>
+  <PageHero headline={page.headline} intro={page.intro} breadcrumbs={crumbs} />
+
+  <Section labelledby="methods-title">
+    <SectionHeader id="methods-title" headline={page.methodsHeadline} />
+    <div class="grid gap-6 lg:grid-cols-2">
+      <article class="card p-6 sm:p-8" id="bank" aria-labelledby="bank-title">
+        <div class="flex items-center gap-3">
+          <span class="icon-tile">
+            <Icon name="landmark" size={24} />
+          </span>
+          <h3 id="bank-title" class="text-2xl">
+            {page.bank.title}
+          </h3>
+        </div>
+        <div class="mt-6">
+          <BankDetails />
+        </div>
+        <p class="mt-4 text-sm text-ink-muted">{page.bank.text}</p>
+      </article>
+
+      <article class="card p-6 sm:p-8" id="mpesa" aria-labelledby="mpesa-title">
+        <div class="flex items-center gap-3">
+          <span class="icon-tile">
+            <Icon name="smartphone" size={24} />
+          </span>
+          <h3 id="mpesa-title" class="text-2xl">
+            {page.mpesa.title}
+          </h3>
+        </div>
+        {mpesaMode === 'stk' && (
+          <div class="mt-6">
+            <p class="mb-5 text-ink-muted">{page.mpesa.stkText}</p>
+            <FormShell
+              name="mpesa"
+              action="/api/donate/mpesa"
+              submitLabel="Send M-Pesa prompt"
+              event="Donate"
+              consent={false}
+              traps={false}
+              successTitle="Check your phone"
+              successBody="Enter your M-Pesa PIN to complete the gift."
+            >
+              <Field
+                form="mpesa"
+                name="phone"
+                label="Safaricom number"
+                type="tel"
+                required
+                autocomplete="tel"
+                inputmode="tel"
+                placeholder="07XX XXX XXX"
+                maxlength={20}
+              />
+              <Field
+                form="mpesa"
+                name="amount"
+                label="Amount (KES)"
+                type="number"
+                required
+                min={10}
+                max={150000}
+                inputmode="numeric"
+              />
+            </FormShell>
+          </div>
+        )}
+        {mpesaMode === 'paybill' && (
+          <div class="mt-6">
+            <p class="mb-4 text-ink-muted">{page.mpesa.paybillText}</p>
+            <dl class="grid gap-3">
+              <div class="flex justify-between gap-4 rounded-md bg-surface px-4 py-3">
+                <dt class="font-semibold text-ink-muted">Pay Bill number</dt>
+                <dd class="font-bold">{PUBLIC_MPESA_PAYBILL}</dd>
+              </div>
+              <div class="flex justify-between gap-4 rounded-md bg-surface px-4 py-3">
+                <dt class="font-semibold text-ink-muted">Account</dt>
+                <dd class="font-bold">{PUBLIC_MPESA_ACCOUNT}</dd>
+              </div>
+            </dl>
+          </div>
+        )}
+        {mpesaMode === 'off' && (
+          <div class="mt-6">
+            <p class="text-ink-muted">{page.mpesa.requestText}</p>
+            <a
+              href={mpesaRequest}
+              class="btn btn--secondary mt-5"
+              data-event="Donate"
+              data-event-location="mpesa-request"
+            >
+              <Icon name="mail" size={20} />
+              {page.mpesa.requestLabel}
+            </a>
+          </div>
+        )}
+      </article>
+
+      {cardOn && (
+        <article class="card p-6 sm:p-8 lg:col-span-2" id="card" aria-labelledby="card-title">
+          <div class="flex items-center gap-3">
+            <span class="icon-tile">
+              <Icon name="hand-coins" size={24} />
+            </span>
+            <h3 id="card-title" class="text-2xl">
+              {page.card.title}
+            </h3>
+          </div>
+          <p class="mt-3 text-ink-muted">{page.card.text}</p>
+          <div class="mt-6">
+            <FormShell
+              name="card"
+              action="/api/donate/card"
+              submitLabel="Continue to secure checkout"
+              event="Donate"
+              consent={false}
+              traps={false}
+            >
+              <div class="grid gap-5 sm:grid-cols-3">
+                <Field form="card" name="amount" label="Amount" type="number" required min={1} inputmode="decimal" />
+                <Select form="card" name="currency" label="Currency" options={currencies} required />
+                <Field
+                  form="card"
+                  name="email"
+                  label="Email for your receipt"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  maxlength={200}
+                />
+              </div>
+              <Select
+                form="card"
+                name="designation"
+                label="Use my gift for"
+                options={designations}
+                placeholder="Where most needed"
+              />
+            </FormShell>
+          </div>
+        </article>
+      )}
+    </div>
+  </Section>
+
+  <Section tone="surface" labelledby="supports-title">
+    <SectionHeader id="supports-title" headline={page.supports.headline} intro={page.supports.intro} />
+    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+      {visible(c.programs).map((p) => (
+        <li>
+          <a href={`/programs/${p.slug}`} class="card card--interactive flex h-full flex-col gap-3 p-5 no-underline">
+            <span class="icon-tile">
+              <Icon name={p.icon} size={22} />
+            </span>
+            <span class="font-bold text-ink">{p.title}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section labelledby="org-title">
+    <div class="flex flex-col items-start justify-between gap-6 rounded-xl bg-surface-tint p-8 md:flex-row md:items-center">
+      <div>
+        <h2 id="org-title" class="text-3xl">
+          {page.bigger.headline}
+        </h2>
+        <p class="mt-2 text-ink-muted">{page.bigger.intro}</p>
+      </div>
+      <a href="/partner" class="btn btn--primary btn--lg" data-event="Fund" data-event-location="donate-org">
+        Fund a project
+      </a>
+    </div>
+  </Section>
+</BaseLayout>

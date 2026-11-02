@@ -1,0 +1,510 @@
+[
+  {
+    "route": "/",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Home",
+    "href": "/",
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Blog",
+    "href": "/blog",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/blog  (dest h1: [\"Afyawise\"], 83 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Shop",
+    "href": "/shop",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/shop  (dest h1: [\"Coming Soon\",\"Afyawise\"], 63 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Support Us",
+    "href": "/support",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/support  (dest h1: [\"Support Our Mission to Build Healthier Communities\",\"Afyawise\"], 232 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "About us",
+    "href": "/about",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/about  (dest h1: [\"Afyawise\"], 381 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Our Work",
+    "href": "/work",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/work  (dest h1: [\"Afyawise\"], 496 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Services",
+    "href": "/services",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/services  (dest h1: [\"Coming Soon\",\"Afyawise\"], 63 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Our Impact",
+    "href": "/our-impact",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/our-impact  (dest h1: [\"Impact in Action\",\"Afyawise\"], 58 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Our Team",
+    "href": "/team",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/team  (dest h1: [\"Afyawise\"], 281 words)"
+  },
+  {
+    "route": "/",
+    "region": "header",
+    "tag": "a",
+    "text": "Contact Us",
+    "href": "/contact",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/contact  (dest h1: [\"Afyawise\"], 107 words)"
+  },
+  {
+    "route": "/",
+    "region": "main",
+    "tag": "a",
+    "text": "Join the Wellness club",
+    "href": "/wellness",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/wellness  (dest h1: [\"Join a Wellness Club\",\"Afyawise\"], 87 words)"
+  },
+  {
+    "route": "/",
+    "region": "main",
+    "tag": "button",
+    "text": "Support Our Work",
+    "href": null,
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/support  (dest h1: [\"Support Our Mission to Build Healthier Communities\",\"Afyawise\"], 232 words)"
+  },
+  {
+    "route": "/",
+    "region": "main",
+    "tag": "button",
+    "text": "Explore All Projects",
+    "href": null,
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/work  (dest h1: [\"Afyawise\"], 496 words)"
+  },
+  {
+    "route": "/",
+    "region": "main",
+    "tag": "button",
+    "text": "Chat with us",
+    "href": null,
+    "inForm": false,
+    "outcome": "opens-overlay",
+    "detail": "dialogs 0->0, fixed layers 1->2"
+  },
+  {
+    "route": "/",
+    "region": "footer",
+    "tag": "a",
+    "text": "About",
+    "href": "/about",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/about  (dest h1: [\"Afyawise\"], 381 words)"
+  },
+  {
+    "route": "/",
+    "region": "footer",
+    "tag": "a",
+    "text": "info@afyawise.org",
+    "href": "mailto:info@afyawise.org",
+    "inForm": false,
+    "outcome": "external-protocol",
+    "detail": "mailto:info@afyawise.org"
+  },
+  {
+    "route": "/",
+    "region": "footer",
+    "tag": "a",
+    "text": "+254798724766",
+    "href": "tel:+254798724766",
+    "inForm": false,
+    "outcome": "external-protocol",
+    "detail": "tel:+254798724766"
+  },
+  {
+    "route": "/about",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/about",
+    "region": "main",
+    "tag": "button",
+    "text": "Chat with us",
+    "href": null,
+    "inForm": false,
+    "outcome": "opens-overlay",
+    "detail": "dialogs 0->0, fixed layers 1->2"
+  },
+  {
+    "route": "/work",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/work",
+    "region": "main",
+    "tag": "button",
+    "text": "Chat with us",
+    "href": null,
+    "inForm": false,
+    "outcome": "opens-overlay",
+    "detail": "dialogs 0->0, fixed layers 1->2"
+  },
+  {
+    "route": "/services",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/services",
+    "region": "main",
+    "tag": "button",
+    "text": "Chat with us",
+    "href": null,
+    "inForm": false,
+    "outcome": "opens-overlay",
+    "detail": "dialogs 0->0, fixed layers 1->2"
+  },
+  {
+    "route": "/our-impact",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/team",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/team",
+    "region": "main",
+    "tag": "button",
+    "text": "Chat with us",
+    "href": null,
+    "inForm": false,
+    "outcome": "opens-overlay",
+    "detail": "dialogs 0->0, fixed layers 1->2"
+  },
+  {
+    "route": "/contact",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/contact",
+    "region": "main",
+    "tag": "button",
+    "text": "Send Message",
+    "href": null,
+    "inForm": true,
+    "outcome": "form-submit-attempt",
+    "detail": "POST https://api.afyawise.org/api/contact/"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "context": "Support Our Mission to Build Healthier C",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "button",
+    "text": "Donate Now",
+    "context": "Support Our Mission to Build Healthier C",
+    "href": null,
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/donate  (dest h1: [\"Make a Difference Today\",\"Afyawise\"], 140 words)"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "button",
+    "text": "Volunteer",
+    "context": "Support Our Mission to Build Healthier C",
+    "href": null,
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "button",
+    "text": "Partner With Us",
+    "context": "Support Our Mission to Build Healthier C",
+    "href": null,
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "button",
+    "text": "Get Started",
+    "context": "Donate",
+    "href": null,
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/donate  (dest h1: [\"Make a Difference Today\",\"Afyawise\"], 140 words)"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "button",
+    "text": "Get Started",
+    "context": "Volunteer",
+    "href": null,
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "button",
+    "text": "Get Started",
+    "context": "Partner",
+    "href": null,
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/support",
+    "region": "main",
+    "tag": "button",
+    "text": "Join the Movement",
+    "context": "Ready to make a difference?",
+    "href": null,
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/donate",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "button",
+    "text": "All",
+    "href": null,
+    "inForm": false,
+    "outcome": "DEAD",
+    "detail": "no navigation, no new tab, no visible change, no request"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "button",
+    "text": "Nutrition",
+    "href": null,
+    "inForm": false,
+    "outcome": "ui-change",
+    "detail": "page text changed (563 -> 569 chars)"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "button",
+    "text": "Mental Health",
+    "href": null,
+    "inForm": false,
+    "outcome": "ui-change",
+    "detail": "page text changed (563 -> 573 chars)"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "button",
+    "text": "Wellness",
+    "href": null,
+    "inForm": false,
+    "outcome": "ui-change",
+    "detail": "page text changed (563 -> 568 chars)"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "button",
+    "text": "Wash",
+    "href": null,
+    "inForm": false,
+    "outcome": "ui-change",
+    "detail": "page text changed (563 -> 564 chars)"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "button",
+    "text": "Stories",
+    "href": null,
+    "inForm": false,
+    "outcome": "ui-change",
+    "detail": "page text changed (563 -> 567 chars)"
+  },
+  {
+    "route": "/blog",
+    "region": "main",
+    "tag": "button",
+    "text": "Donate Now",
+    "href": null,
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/Donate  (dest h1: [\"Make a Difference Today\",\"Afyawise\"], 140 words)"
+  },
+  {
+    "route": "/shop",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/shop",
+    "region": "main",
+    "tag": "button",
+    "text": "Chat with us",
+    "href": null,
+    "inForm": false,
+    "outcome": "opens-overlay",
+    "detail": "dialogs 0->0, fixed layers 1->2"
+  },
+  {
+    "route": "/wellness",
+    "region": "main",
+    "tag": "a",
+    "text": "Afyawise",
+    "href": "/",
+    "inForm": false,
+    "outcome": "navigates",
+    "detail": "/  (dest h1: [\"Empowering Communities for Health and Wellness\",\"Afyawise\"], 434 words)"
+  },
+  {
+    "route": "/wellness",
+    "region": "main",
+    "tag": "button",
+    "text": "Filter",
+    "href": null,
+    "inForm": false,
+    "outcome": "ui-change",
+    "detail": "page text changed (575 -> 571 chars)"
+  }
+]

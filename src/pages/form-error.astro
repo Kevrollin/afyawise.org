@@ -1,0 +1,33 @@
+---
+/** Result page for form posts made without JavaScript that failed server-side checks. */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Icon from '../components/Icon.astro';
+import { getContent } from '../content/index.ts';
+
+const c = getContent();
+const page = c.formErrorPage;
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} noindex canonical={null}>
+  <Section>
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="mx-auto grid size-16 place-items-center rounded-full bg-error-bg text-error">
+        <Icon name="circle-alert" size={36} />
+      </span>
+      <h1 class="mt-6">{page.headline}</h1>
+      <p class="lead mx-auto mt-4">{page.intro}</p>
+      <p class="mt-4 text-ink-muted">
+        Or email us at <a href={`mailto:${c.org.email.general}`}>{c.org.email.general}</a>.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/contact" class="btn btn--primary">
+          Back to the contact form
+        </a>
+        <a href="/" class="btn btn--secondary">
+          Home
+        </a>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

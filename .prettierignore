@@ -1,0 +1,14 @@
+dist/
+.astro/
+.vercel/
+node_modules/
+package-lock.json
+audit/
+qa/
+test-results/
+playwright-report/
+.lighthouseci/
+public/
+src/assets/brand/logo.json
+src/assets/geo/locator.json
+*.md

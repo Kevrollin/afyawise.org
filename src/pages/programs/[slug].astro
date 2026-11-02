@@ -1,0 +1,144 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import StatList from '../../components/StatList.astro';
+import TargetList from '../../components/TargetList.astro';
+import ProgramCards from '../../components/ProgramCards.astro';
+import Icon from '../../components/Icon.astro';
+import TodoBadge from '../../components/TodoBadge.astro';
+import { getContent } from '../../content/index.ts';
+import { breadcrumbLd } from '../../lib/seo.ts';
+import { visible, showUnconfirmed } from '../../lib/visibility.ts';
+import { publishedStories } from '../../lib/nav.ts';
+
+export const getStaticPaths = (() =>
+  visible(getContent().programs).map((program) => ({ params: { slug: program.slug } }))) satisfies GetStaticPaths;
+
+const c = getContent();
+const { slug } = Astro.params;
+const program = c.programs.find((p) => p.slug === slug)!;
+const t = c.programPage;
+const needStats = program.need.map((id) => c.stats[id]!).filter(Boolean);
+const targets = c.targets.filter((tg) => program.targets.includes(tg.id));
+const stories = (await publishedStories()).filter((s) => s.data.program === program.slug);
+const others = c.programs.filter((p) => p.slug !== program.slug);
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: c.programsPage.headline, href: '/programs' },
+  { name: program.title, href: `/programs/${program.slug}` },
+];
+const description = `${program.summary} AfyaWise, Karama Ward, Meru County, Kenya.`;
+---
+
+<BaseLayout
+  title={`${program.title} | AfyaWise CBO, Meru County`}
+  description={description.length > 160 ? program.summary : description}
+  og={`program-${program.slug}`}
+  jsonLd={[breadcrumbLd(crumbs)]}
+>
+  <PageHero headline={program.headline} intro={program.intro} eyebrow={program.title} breadcrumbs={crumbs}>
+    <Fragment slot="actions">
+      <a
+        href={`/partner?program=${program.slug}#request`}
+        class="btn btn--primary btn--lg"
+        data-event="Fund"
+        data-event-location={`program-${program.slug}`}
+      >
+        {t.ctaHeadline}
+        <Icon name="arrow-right" size={20} />
+      </a>
+      <a
+        href="/donate"
+        class="btn btn--accent btn--lg"
+        data-event="Donate"
+        data-event-location={`program-${program.slug}`}
+      >
+        Donate
+      </a>
+    </Fragment>
+  </PageHero>
+
+  <Section labelledby="need-title">
+    <SectionHeader id="need-title" headline={t.needHeadline} />
+    <StatList stats={needStats} sourceEach />
+  </Section>
+
+  <Section tone="surface" labelledby="goal-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <h2 id="goal-title">{t.goalHeadline}</h2>
+        <p class="mt-4 text-xl font-semibold leading-snug text-ink">{program.goal}</p>
+      </div>
+      <div class="lg:col-span-7">
+        <h2 class="text-3xl">{t.activitiesHeadline}</h2>
+        <ul class="mt-5 grid gap-3">
+          {program.activities.map((a) => (
+            <li class="flex items-start gap-3 rounded-md bg-bg p-4">
+              <Icon name="check" size={22} class="mt-0.5 shrink-0 text-green-700" />
+              <span class="font-medium text-ink">{a}</span>
+            </li>
+          ))}
+        </ul>
+        {showUnconfirmed && program.activitiesNote && <TodoBadge note={program.activitiesNote} />}
+      </div>
+    </div>
+  </Section>
+
+  {targets.length > 0 && (
+    <Section labelledby="targets-title">
+      <SectionHeader id="targets-title" headline={t.targetsHeadline} intro={t.targetsIntro} />
+      <TargetList targets={targets} />
+    </Section>
+  )}
+
+  {stories.length > 0 && (
+    <Section tone="surface" labelledby="stories-title">
+      <SectionHeader id="stories-title" headline={t.storiesHeadline} />
+      <ul class="grid gap-5 md:grid-cols-2">
+        {stories.map((s) => (
+          <li class="card p-6">
+            <h3 class="text-xl">
+              <a href={`/stories/${s.id}`}>{s.data.title}</a>
+            </h3>
+            <p class="mt-2 text-ink-muted">{s.data.summary}</p>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  )}
+
+  <Section tone="tint" labelledby="fund-title">
+    <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+      <div>
+        <h2 id="fund-title">{t.ctaHeadline}</h2>
+        <p class="lead mt-3">{t.ctaIntro}</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a
+          href={`/partner?program=${program.slug}#request`}
+          class="btn btn--primary btn--lg"
+          data-event="Fund"
+          data-event-location={`program-${program.slug}-band`}
+        >
+          Request a proposal
+        </a>
+        <a
+          href="/donate"
+          class="btn btn--accent btn--lg"
+          data-event="Donate"
+          data-event-location={`program-${program.slug}-band`}
+        >
+          Donate
+        </a>
+      </div>
+    </div>
+  </Section>
+
+  <Section labelledby="others-title">
+    <SectionHeader id="others-title" headline={t.otherHeadline} />
+    <ProgramCards programs={others} />
+  </Section>
+</BaseLayout>

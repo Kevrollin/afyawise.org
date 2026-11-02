@@ -1,0 +1,1098 @@
+{
+  "route": "/blog",
+  "url": "https://www.afyawise.org/blog",
+  "finalUrl": "https://www.afyawise.org/blog",
+  "status": 200,
+  "viewport": "desktop",
+  "capturedAt": "2026-11-02T20:15:48.254Z",
+  "markdown": "![EMPTY ALT](/logo.jpg)\n\n[link] [Afyawise](/)\n\n[link] [Home](/)\n\n[link] [Blog](/blog)\n\n[link] [Shop](/shop)\n\n[link] [Support Us](/support)\n\n[link] [About us](/about)\n\n[link] [Our Work](/work)\n\n[link] [Services](/services)\n\n[link] [Our Impact](/our-impact)\n\n[link] [Our Team](/team)\n\n[link] [Contact Us](/contact)\n\n![EMPTY ALT](/blogImg/img3.jpg)\n\n## Empowering Communities With Knowledge For Better Health\n\nInsights, Stories, and Tips for Wellness and Change\n\n- All\n\n- Nutrition\n\n- Mental Health\n\n- Wellness\n\n- Wash\n\n- Stories\n\nAll blogs are not currently available\n\nSupport our mission to build healthier communities\n\n[button] Donate Now\n\n![Afyawise logo](/logo.jpg)\n\n# Afyawise\n\nPromoting community health and well-being\n\n## Quick Links\n\n- Home  _(links: Home -> /)_\n\n- About  _(links: About -> /about)_\n\n- Our Team  _(links: Our Team -> /team)_\n\n- Our Work  _(links: Our Work -> /work)_\n\n### CONTACT\n\n![Email](Icons/email-white.svg)\n\n[link] [info@afyawise.org](mailto:info@afyawise.org)\n\n![Phone](Icons/phone-color.svg)\n\n[link] [+254798724766](tel:+254798724766)\n\n![Location](Icons/location-color.svg)\n\nKarama Ward, Meru County, Kenya\n\n© 2025 AfyaWise CBO. All rights reserved.",
+  "innerText": "Afyawise\nHome\nBlog\nShop\nSupport Us\nAbout us\nOur Work\nServices\nOur Impact\nOur Team\nContact Us\nEmpowering Communities With Knowledge For Better Health\n\nInsights, Stories, and Tips for Wellness and Change\n\nAll\nNutrition\nMental Health\nWellness\nWash\nStories\nAll blogs are not currently available\n\nSupport our mission to build healthier communities\n\nDonate Now\nAfyawise\n\nPromoting community health and well-being\n\nQuick Links\nHome\nAbout\nOur Team\nOur Work\nCONTACT\ninfo@afyawise.org\n+254798724766\nKarama Ward, Meru County, Kenya\n\n© 2025 AfyaWise CBO.\nAll rights reserved.",
+  "links": [
+    {
+      "text": "Afyawise",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Blog",
+      "href": "/blog",
+      "resolved": "https://www.afyawise.org/blog",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "resolved": "https://www.afyawise.org/shop",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Support Us",
+      "href": "/support",
+      "resolved": "https://www.afyawise.org/support",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "About us",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Services",
+      "href": "/services",
+      "resolved": "https://www.afyawise.org/services",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Our Impact",
+      "href": "/our-impact",
+      "resolved": "https://www.afyawise.org/our-impact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Contact Us",
+      "href": "/contact",
+      "resolved": "https://www.afyawise.org/contact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "About",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "info@afyawise.org",
+      "href": "mailto:info@afyawise.org",
+      "resolved": "mailto:info@afyawise.org",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "+254798724766",
+      "href": "tel:+254798724766",
+      "resolved": "tel:+254798724766",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "All",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Nutrition",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Mental Health",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Wellness",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Wash",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Stories",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Donate Now",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    }
+  ],
+  "images": [
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/menu-svg.svg",
+      "currentSrc": "https://www.afyawise.org/menu-svg.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 0,
+      "renderedHeight": 0,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/blogImg/img3.jpg",
+      "currentSrc": "https://www.afyawise.org/blogImg/img3.jpg",
+      "alt": "",
+      "naturalWidth": 1120,
+      "naturalHeight": 1120,
+      "renderedWidth": 1382,
+      "renderedHeight": 250,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "Afyawise logo",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 48,
+      "renderedHeight": 48,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/email-white.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/email-white.svg",
+      "alt": "Email",
+      "naturalWidth": 150,
+      "naturalHeight": 150,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/phone-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/phone-color.svg",
+      "alt": "Phone",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/location-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/location-color.svg",
+      "alt": "Location",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    }
+  ],
+  "bgImages": [],
+  "forms": [],
+  "orphanFields": [],
+  "headings": [
+    {
+      "level": 2,
+      "text": "Empowering Communities With Knowledge For Better Health",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "Afyawise",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Quick Links",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "CONTACT",
+      "visible": true
+    }
+  ],
+  "meta": {
+    "title": "Afyawise",
+    "lang": "en",
+    "metas": [
+      {
+        "name": null,
+        "property": null,
+        "content": null,
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "property": null,
+        "content": "width=device-width, initial-scale=1.0",
+        "charset": null
+      }
+    ],
+    "linkTags": [
+      {
+        "rel": "icon",
+        "href": "/logo.jpg",
+        "type": "image/svg+xml"
+      },
+      {
+        "rel": "stylesheet",
+        "href": "/assets/index-BJ8jT5Er.css",
+        "type": null
+      }
+    ],
+    "canonical": null,
+    "jsonLd": [],
+    "scripts": [
+      "https://www.afyawise.org/assets/index-niwIgGm5.js"
+    ],
+    "iframes": [],
+    "landmarks": {
+      "header": 0,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "skipLink": false
+    }
+  },
+  "colorSamples": [
+    {
+      "tag": "a",
+      "text": "Afyawise",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Blog",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Shop",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Support Us",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "About us",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Work",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Services",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Impact",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Team",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Contact Us",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "h2",
+      "text": "Empowering Communities With Knowledge For Better Health",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 24,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Insights, Stories, and Tips for Wellness and Change",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "button",
+      "text": "All",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(69, 189, 50, 0.733)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "button",
+      "text": "Nutrition",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(240, 240, 240)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "button",
+      "text": "Mental Health",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(240, 240, 240)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "button",
+      "text": "Wellness",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(240, 240, 240)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "button",
+      "text": "Wash",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(240, 240, 240)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "button",
+      "text": "Stories",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(240, 240, 240)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "div",
+      "text": "All blogs are not currently available",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Support our mission to build healthier communities",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(230, 249, 243)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "button",
+      "text": "Donate Now",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 167, 38)",
+      "fontSize": 16,
+      "fontWeight": 600,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "h1",
+      "text": "Afyawise",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 25.6,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Promoting community health and well-being",
+      "color": "rgb(204, 204, 204)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "Quick Links",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "About",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Team",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Work",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "h3",
+      "text": "CONTACT",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "info@afyawise.org",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "+254798724766",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "div",
+      "text": "Karama Ward, Meru County, Kenya",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "© 2025 AfyaWise CBO.All rights reserved.",
+      "color": "rgb(170, 170, 170)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    }
+  ],
+  "layout": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "horizontalOverflow": false,
+    "pageHeight": 1026,
+    "smallTouchTargets": [
+      {
+        "text": "Afyawise",
+        "w": 86,
+        "h": 24
+      },
+      {
+        "text": "Home",
+        "w": 45,
+        "h": 20
+      },
+      {
+        "text": "Blog",
+        "w": 34,
+        "h": 20
+      },
+      {
+        "text": "Shop",
+        "w": 39,
+        "h": 20
+      },
+      {
+        "text": "Support Us",
+        "w": 85,
+        "h": 20
+      },
+      {
+        "text": "About us",
+        "w": 68,
+        "h": 20
+      },
+      {
+        "text": "Our Work",
+        "w": 72,
+        "h": 20
+      },
+      {
+        "text": "Services",
+        "w": 66,
+        "h": 20
+      },
+      {
+        "text": "Our Impact",
+        "w": 84,
+        "h": 20
+      },
+      {
+        "text": "Our Team",
+        "w": 74,
+        "h": 20
+      },
+      {
+        "text": "Contact Us",
+        "w": 84,
+        "h": 20
+      },
+      {
+        "text": "All",
+        "w": 28,
+        "h": 28
+      },
+      {
+        "text": "Nutrition",
+        "w": 70,
+        "h": 28
+      },
+      {
+        "text": "Mental Health",
+        "w": 109,
+        "h": 28
+      },
+      {
+        "text": "Wellness",
+        "w": 75,
+        "h": 28
+      },
+      {
+        "text": "Wash",
+        "w": 50,
+        "h": 28
+      },
+      {
+        "text": "Stories",
+        "w": 60,
+        "h": 28
+      },
+      {
+        "text": "Donate Now",
+        "w": 148,
+        "h": 38
+      },
+      {
+        "text": "Home",
+        "w": 43,
+        "h": 21
+      },
+      {
+        "text": "About",
+        "w": 44,
+        "h": 21
+      },
+      {
+        "text": "Our Team",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "Our Work",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "info@afyawise.org",
+        "w": 124,
+        "h": 20
+      },
+      {
+        "text": "+254798724766",
+        "w": 109,
+        "h": 20
+      }
+    ]
+  },
+  "fontFaces": [
+    {
+      "family": "Inter",
+      "weight": "100 900",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "contrastPairs": [
+    {
+      "pair": "#FFFFFF on #45BD32",
+      "ratio": 2.45,
+      "count": 1,
+      "failures": 1,
+      "examples": [
+        "button: \"All\" (16px/400)"
+      ]
+    },
+    {
+      "pair": "#FFFFFF on #FFA726",
+      "ratio": 1.94,
+      "count": 1,
+      "failures": 1,
+      "examples": [
+        "button: \"Donate Now\" (16px/600)"
+      ]
+    },
+    {
+      "pair": "#222222 on #FFFFFF",
+      "ratio": 15.91,
+      "count": 10,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#F2F2F2 on #0E1A24",
+      "ratio": 15.74,
+      "count": 8,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#000000 on #F0F0F0",
+      "ratio": 18.43,
+      "count": 5,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#000000 on #FFFFFF",
+      "ratio": 21,
+      "count": 4,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#FFFFFF on #0E1A24",
+      "ratio": 17.62,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#000000 on #E6F9F3",
+      "ratio": 19.21,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#CCCCCC on #0E1A24",
+      "ratio": 10.97,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#AAAAAA on #0E1A24",
+      "ratio": 7.58,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    }
+  ],
+  "renderedFonts": {
+    "Inter": 238,
+    "Arial": 98,
+    "Segoe UI": 187
+  },
+  "axe": {
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 2,
+        "examples": [
+          {
+            "target": "#all-btn",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.92 (foreground color: #ffffff, background color: #77cf69, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": "#support-btn",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.94 (foreground color: #ffffff, background color: #ffa726, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 1,
+        "examples": [
+          {
+            "target": "#brand",
+            "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ],
+    "passes": 27,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "type": "error",
+      "text": "Error in fetch: TypeError: Failed to fetch\n    at https://www.afyawise.org/assets/index-niwIgGm5.js:98:23620\n    at https://www.afyawise.org/assets/index-niwIgGm5.js:98:23797\n    at zl (https://www.afyawise.org/assets/index-niwIgGm5.js:48:83684)\n    at ny (https://www.afyawise.org/assets/index-niwIgGm5.js:48:98397)\n    at ei (https://www.afyawise.org/assets/index-niwIgGm5.js:48:98281)\n    at ny (https://www.afyawise.org/assets/index-niwIgGm5.js:48:99133)\n    at ei (https://www.afyawise.org/asset"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://www.afyawise.org/blog",
+      "method": "GET",
+      "type": "document",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyBytes": 755,
+      "transferBytes": 755
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-BJ8jT5Er.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyBytes": 5710,
+      "transferBytes": 5710
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-niwIgGm5.js",
+      "method": "GET",
+      "type": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bodyBytes": 192457,
+      "transferBytes": 192457
+    },
+    {
+      "url": "https://api.afyawise.org/api/blogs/filter/?category=All",
+      "method": "GET",
+      "type": "fetch",
+      "failed": "net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/phone-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 984,
+      "transferBytes": 984
+    },
+    {
+      "url": "https://www.afyawise.org/menu-svg.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 503,
+      "transferBytes": 503
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/email-white.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 599,
+      "transferBytes": 599
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/location-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1055,
+      "transferBytes": 1055
+    },
+    {
+      "url": "https://www.afyawise.org/blogImg/img3.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 323401,
+      "transferBytes": 323401
+    },
+    {
+      "url": "https://www.afyawise.org/logo.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 35107,
+      "transferBytes": 35107
+    },
+    {
+      "url": "https://www.afyawise.org/Fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+      "method": "GET",
+      "type": "font",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyBytes": 455411,
+      "transferBytes": 455411
+    }
+  ],
+  "mobileMenu": null
+}

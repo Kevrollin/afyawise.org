@@ -1,0 +1,854 @@
+[
+  {
+    "path": "/assets/impact-B-jiAYnh.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 2236004,
+    "kb": 2183.6,
+    "natural": "1024x1536",
+    "maxRenderedWidth": 200,
+    "oversizeFactor": 5.1,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/about"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/mission-DGOqaG8U.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 2171512,
+    "kb": 2120.6,
+    "natural": "1024x1536",
+    "maxRenderedWidth": 200,
+    "oversizeFactor": 5.1,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/about"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/core-values-B6tNLccU.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 2075273,
+    "kb": 2026.6,
+    "natural": "1024x1536",
+    "maxRenderedWidth": 200,
+    "oversizeFactor": 5.1,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/about"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/capacity%20building-BSM2fmEy.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 1863795,
+    "kb": 1820.1,
+    "natural": "1024x1536",
+    "maxRenderedWidth": 109,
+    "oversizeFactor": 9.4,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/partnership%20program-ERZq6bLQ.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 1731073,
+    "kb": 1690.5,
+    "natural": "1024x1536",
+    "maxRenderedWidth": 109,
+    "oversizeFactor": 9.4,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/community%20program-xAujVsxQ.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 1589566,
+    "kb": 1552.3,
+    "natural": "1024x1536",
+    "maxRenderedWidth": 109,
+    "oversizeFactor": 9.4,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/hero.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 676465,
+    "kb": 660.6,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 760,
+    "oversizeFactor": 1.5,
+    "alts": [
+      "Community Health"
+    ],
+    "usedOn": [
+      "/"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/hero2.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 656968,
+    "kb": 641.6,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 1440,
+    "oversizeFactor": 0.8,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/contact",
+      "/support"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/donate-hero.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 633945,
+    "kb": 619.1,
+    "natural": null,
+    "maxRenderedWidth": 1440,
+    "oversizeFactor": null,
+    "alts": [],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/mental-program-IGm9KoTB.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 400980,
+    "kb": 391.6,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 109,
+    "oversizeFactor": 10.3,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/agent.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 398306,
+    "kb": 389,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 56,
+    "oversizeFactor": 20,
+    "alts": [
+      "Chat Icon"
+    ],
+    "usedOn": [
+      "/",
+      "/about",
+      "/services",
+      "/shop",
+      "/team",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/team-88tWG8Fe.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 370122,
+    "kb": 361.4,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 250,
+    "oversizeFactor": 4.5,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/team"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/vision-DvZuxefr.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 345949,
+    "kb": 337.8,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 200,
+    "oversizeFactor": 5.6,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/about"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/blogImg/img3.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 323059,
+    "kb": 315.5,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 1382,
+    "oversizeFactor": 0.8,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/blog"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/maternal-program-R5qiwf5m.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 310730,
+    "kb": 303.4,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 109,
+    "oversizeFactor": 10.3,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/programs_activities-BhLioFBt.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 304266,
+    "kb": 297.1,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 200,
+    "oversizeFactor": 5.6,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/about"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/who-we-are-D-xmnnKN.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 218463,
+    "kb": 213.3,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 200,
+    "oversizeFactor": 5.6,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/about"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/assets/water%20program-Bmtjeyg5.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 207276,
+    "kb": 202.4,
+    "natural": "1120x1120",
+    "maxRenderedWidth": 109,
+    "oversizeFactor": 10.3,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/logo.jpg",
+    "status": 200,
+    "contentType": "image/jpeg",
+    "bytes": 34950,
+    "kb": 34.1,
+    "natural": "500x500",
+    "maxRenderedWidth": 48,
+    "oversizeFactor": 10.4,
+    "alts": [
+      "(empty alt)",
+      "Afyawise logo"
+    ],
+    "usedOn": [
+      "/",
+      "/about",
+      "/blog",
+      "/contact",
+      "/donate",
+      "/our-impact",
+      "/services",
+      "/shop",
+      "/support",
+      "/team",
+      "/wellness",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/community-empowerment.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 26126,
+    "kb": 25.5,
+    "natural": "512x512",
+    "maxRenderedWidth": 150,
+    "oversizeFactor": 3.4,
+    "alts": [
+      "Community Empowerment"
+    ],
+    "usedOn": [
+      "/"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/maternal.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 26038,
+    "kb": 25.4,
+    "natural": "512x512",
+    "maxRenderedWidth": 150,
+    "oversizeFactor": 3.4,
+    "alts": [
+      "Maternal & Child Health"
+    ],
+    "usedOn": [
+      "/"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/mental-health.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 19490,
+    "kb": 19,
+    "natural": "512x512",
+    "maxRenderedWidth": 150,
+    "oversizeFactor": 3.4,
+    "alts": [
+      "Mental Health Support"
+    ],
+    "usedOn": [
+      "/"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/expand.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 18791,
+    "kb": 18.4,
+    "natural": "256x256",
+    "maxRenderedWidth": 100,
+    "oversizeFactor": 2.6,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/faucet.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 14702,
+    "kb": 14.4,
+    "natural": "512x512",
+    "maxRenderedWidth": 150,
+    "oversizeFactor": 3.4,
+    "alts": [
+      "WASH Initiatives"
+    ],
+    "usedOn": [
+      "/"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/digital-health.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 11995,
+    "kb": 11.7,
+    "natural": "256x256",
+    "maxRenderedWidth": 100,
+    "oversizeFactor": 2.6,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/health-center.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 6848,
+    "kb": 6.7,
+    "natural": "256x256",
+    "maxRenderedWidth": 100,
+    "oversizeFactor": 2.6,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/scholar.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 6306,
+    "kb": 6.2,
+    "natural": "800x800",
+    "maxRenderedWidth": 40,
+    "oversizeFactor": 20,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/money.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 5432,
+    "kb": 5.3,
+    "natural": "800x800",
+    "maxRenderedWidth": 100,
+    "oversizeFactor": 8,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/volunteer.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 5142,
+    "kb": 5,
+    "natural": "800x800",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 26.7,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/support"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/target.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 5083,
+    "kb": 5,
+    "natural": "800x800",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 26.7,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/ambulance.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 4478,
+    "kb": 4.4,
+    "natural": "800x800",
+    "maxRenderedWidth": 100,
+    "oversizeFactor": 8,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/world.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 3220,
+    "kb": 3.1,
+    "natural": "800x800",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 26.7,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/partnership.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 2962,
+    "kb": 2.9,
+    "natural": "800x800",
+    "maxRenderedWidth": 100,
+    "oversizeFactor": 8,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/mobile.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 2582,
+    "kb": 2.5,
+    "natural": "800x800",
+    "maxRenderedWidth": 40,
+    "oversizeFactor": 20,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/phone-color.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1874,
+    "kb": 1.8,
+    "natural": "800x800",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 26.7,
+    "alts": [
+      "Phone",
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/about",
+      "/blog",
+      "/contact",
+      "/donate",
+      "/our-impact",
+      "/services",
+      "/shop",
+      "/support",
+      "/team",
+      "/wellness",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/calendar-check.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1864,
+    "kb": 1.8,
+    "natural": "800x800",
+    "maxRenderedWidth": 200,
+    "oversizeFactor": 4,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/services",
+      "/shop"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/paypal.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1644,
+    "kb": 1.6,
+    "natural": "800x800",
+    "maxRenderedWidth": 40,
+    "oversizeFactor": 20,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/donate.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1603,
+    "kb": 1.6,
+    "natural": "800x800",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 26.7,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/support"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/bank.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1334,
+    "kb": 1.3,
+    "natural": "800x800",
+    "maxRenderedWidth": 40,
+    "oversizeFactor": 20,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/partner.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1220,
+    "kb": 1.2,
+    "natural": "800x800",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 26.7,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/support"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/brain.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1143,
+    "kb": 1.1,
+    "natural": "800x800",
+    "maxRenderedWidth": 40,
+    "oversizeFactor": 20,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/mobile-phone.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1080,
+    "kb": 1.1,
+    "natural": "800x800",
+    "maxRenderedWidth": 40,
+    "oversizeFactor": 20,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/location-color.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 919,
+    "kb": 0.9,
+    "natural": "800x800",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 26.7,
+    "alts": [
+      "Location",
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/about",
+      "/blog",
+      "/contact",
+      "/donate",
+      "/our-impact",
+      "/services",
+      "/shop",
+      "/support",
+      "/team",
+      "/wellness",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/water-drop.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 661,
+    "kb": 0.6,
+    "natural": "800x800",
+    "maxRenderedWidth": 40,
+    "oversizeFactor": 20,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/donate"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/Icons/email-white.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 464,
+    "kb": 0.5,
+    "natural": "150x150",
+    "maxRenderedWidth": 30,
+    "oversizeFactor": 5,
+    "alts": [
+      "Email",
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/about",
+      "/blog",
+      "/contact",
+      "/donate",
+      "/our-impact",
+      "/services",
+      "/shop",
+      "/support",
+      "/team",
+      "/wellness",
+      "/work"
+    ],
+    "saved": true
+  },
+  {
+    "path": "/menu-svg.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 347,
+    "kb": 0.3,
+    "natural": "800x800",
+    "maxRenderedWidth": null,
+    "oversizeFactor": null,
+    "alts": [
+      "(empty alt)"
+    ],
+    "usedOn": [
+      "/",
+      "/about",
+      "/blog",
+      "/contact",
+      "/donate",
+      "/our-impact",
+      "/services",
+      "/shop",
+      "/support",
+      "/team",
+      "/wellness",
+      "/work"
+    ],
+    "saved": true
+  }
+]

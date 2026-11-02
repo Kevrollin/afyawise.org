@@ -1,0 +1,95 @@
+---
+/**
+ * One icon set (Lucide), one stroke weight, rendered to inline SVG at build time (zero JS).
+ * Decorative by default (aria-hidden); pass `label` when the icon carries meaning on its own.
+ */
+import ArrowRight from '@lucide/astro/icons/arrow-right';
+import Baby from '@lucide/astro/icons/baby';
+import Building from '@lucide/astro/icons/building';
+import Check from '@lucide/astro/icons/check';
+import ChevronDown from '@lucide/astro/icons/chevron-down';
+import CircleAlert from '@lucide/astro/icons/circle-alert';
+import CircleCheck from '@lucide/astro/icons/circle-check';
+import ClipboardCheck from '@lucide/astro/icons/clipboard-check';
+import Copy from '@lucide/astro/icons/copy';
+import Droplets from '@lucide/astro/icons/droplets';
+import ExternalLink from '@lucide/astro/icons/external-link';
+import FileText from '@lucide/astro/icons/file-text';
+import GraduationCap from '@lucide/astro/icons/graduation-cap';
+import HandCoins from '@lucide/astro/icons/hand-coins';
+import Handshake from '@lucide/astro/icons/handshake';
+import HeartHandshake from '@lucide/astro/icons/heart-handshake';
+import Landmark from '@lucide/astro/icons/landmark';
+import LoaderCircle from '@lucide/astro/icons/loader-circle';
+import Mail from '@lucide/astro/icons/mail';
+import MapPin from '@lucide/astro/icons/map-pin';
+import Megaphone from '@lucide/astro/icons/megaphone';
+import Menu from '@lucide/astro/icons/menu';
+import MessageCircle from '@lucide/astro/icons/message-circle';
+import Phone from '@lucide/astro/icons/phone';
+import Scale from '@lucide/astro/icons/scale';
+import School from '@lucide/astro/icons/school';
+import ShieldCheck from '@lucide/astro/icons/shield-check';
+import Smartphone from '@lucide/astro/icons/smartphone';
+import Sprout from '@lucide/astro/icons/sprout';
+import Target from '@lucide/astro/icons/target';
+import Truck from '@lucide/astro/icons/truck';
+import Users from '@lucide/astro/icons/users';
+import X from '@lucide/astro/icons/x';
+
+const icons = {
+  'arrow-right': ArrowRight,
+  baby: Baby,
+  building: Building,
+  check: Check,
+  'chevron-down': ChevronDown,
+  'circle-alert': CircleAlert,
+  'circle-check': CircleCheck,
+  'clipboard-check': ClipboardCheck,
+  copy: Copy,
+  droplets: Droplets,
+  'external-link': ExternalLink,
+  'file-text': FileText,
+  'graduation-cap': GraduationCap,
+  'hand-coins': HandCoins,
+  handshake: Handshake,
+  'heart-handshake': HeartHandshake,
+  landmark: Landmark,
+  'loader-circle': LoaderCircle,
+  mail: Mail,
+  'map-pin': MapPin,
+  megaphone: Megaphone,
+  menu: Menu,
+  'message-circle': MessageCircle,
+  phone: Phone,
+  scale: Scale,
+  school: School,
+  'shield-check': ShieldCheck,
+  smartphone: Smartphone,
+  sprout: Sprout,
+  target: Target,
+  truck: Truck,
+  users: Users,
+  x: X,
+};
+
+export type IconKey = keyof typeof icons;
+
+interface Props {
+  name: IconKey;
+  size?: number;
+  class?: string;
+  label?: string;
+}
+
+const { name, size = 24, class: className, label } = Astro.props;
+const Cmp = icons[name];
+---
+
+<Cmp
+  size={size}
+  stroke-width={1.75}
+  focusable="false"
+  {...(className ? { class: className } : {})}
+  {...(label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': 'true' })}
+/>

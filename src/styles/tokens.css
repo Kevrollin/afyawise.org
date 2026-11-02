@@ -1,0 +1,143 @@
+/*
+ * AfyaWise design tokens. The single source of truth for colour, type, space, radius, shadow and
+ * motion. Tailwind utilities are generated from these (see global.css), so change values here only.
+ * All tokens use the --af- prefix so they never collide with Tailwind's own theme variables.
+ * Contrast ratios are documented in design/DESIGN.md.
+ */
+:root {
+  /* ---- Brand green (primary). 700+ are text/button safe on white (≥ 4.5:1). ---- */
+  --af-green-50: #f0f8ee;
+  --af-green-100: #ddf0d8;
+  --af-green-200: #bce2b3;
+  --af-green-300: #8fd083;
+  --af-green-400: #5fbe4f; /* decorative only */
+  --af-green-500: #44bd32; /* heritage green: decorative only (2.45:1 on white) */
+  --af-green-600: #2e9a28; /* large text / graphics only (3.64:1) */
+  --af-green-700: #1f7a2e; /* primary: 5.41:1 on white */
+  --af-green-800: #196428; /* 7.25:1 */
+  --af-green-900: #144d21; /* 9.94:1 */
+  --af-green-950: #0c2e15; /* dark sections: white text 14.8:1 */
+
+  /* ---- Brand orange (warm accent; donate). Dark text on 400 = 7.31:1. ---- */
+  --af-orange-100: #ffedd5;
+  --af-orange-300: #fdba6b;
+  --af-orange-400: #f7931e; /* logo orange: background for donate buttons with dark text */
+  --af-orange-500: #e57f0a;
+  --af-orange-700: #a85508; /* text on white: 5.29:1 */
+  --af-orange-800: #8a4507;
+
+  /* ---- Logo blue (logo, info states). ---- */
+  --af-blue-50: #e8f2fa;
+  --af-blue-500: #1e88c8;
+  --af-blue-700: #17629a; /* 6.46:1 */
+
+  /* ---- Neutrals, slightly green-tinted. ---- */
+  --af-neutral-0: #ffffff;
+  --af-neutral-50: #f4f8f2;
+  --af-neutral-100: #e9efe8;
+  --af-neutral-200: #d5ded8;
+  --af-neutral-400: #7c8a83; /* form-control borders (3.61:1) and decoration */
+  --af-neutral-600: #5a6862; /* 5.85:1 */
+  --af-neutral-700: #3f4d45; /* 8.90:1 */
+  --af-neutral-900: #14201a; /* 16.8:1 */
+
+  /* ---- Semantic roles ---- */
+  --af-bg: var(--af-neutral-0);
+  --af-surface: var(--af-neutral-50);
+  --af-surface-tint: #e7f2e3;
+  --af-surface-dark: var(--af-green-950);
+  --af-ink: var(--af-neutral-900);
+  --af-ink-muted: var(--af-neutral-700);
+  --af-ink-subtle: var(--af-neutral-600);
+  --af-ink-inverse: var(--af-neutral-0);
+  --af-line: var(--af-neutral-200);
+  --af-line-strong: var(--af-neutral-400);
+
+  --af-primary: var(--af-green-700);
+  --af-primary-hover: var(--af-green-800);
+  --af-on-primary: var(--af-neutral-0);
+  --af-accent: var(--af-orange-400);
+  --af-accent-hover: var(--af-orange-500);
+  --af-on-accent: var(--af-neutral-900);
+  --af-link: var(--af-green-700);
+  --af-link-hover: var(--af-green-900);
+  --af-focus: #0b57d0;
+
+  --af-success: var(--af-green-700);
+  --af-success-bg: var(--af-green-50);
+  --af-warning: #8a5300;
+  --af-warning-bg: var(--af-orange-100);
+  --af-error: #b42318;
+  --af-error-bg: #fdecea;
+  --af-info: var(--af-blue-700);
+  --af-info-bg: var(--af-blue-50);
+
+  /* ---- Typography: Inter (self-hosted subset variable WOFF2), fluid scale 360px → 1280px ---- */
+  --af-font-body:
+    var(--font-inter, ui-sans-serif), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --af-step--1: clamp(0.875rem, 0.8505rem + 0.1087vw, 0.9375rem); /* 14 → 15px */
+  --af-step-0: clamp(1rem, 0.9755rem + 0.1087vw, 1.0625rem); /* 16 → 17px body */
+  --af-step-1: clamp(1.125rem, 1.0761rem + 0.2174vw, 1.25rem); /* 18 → 20px lead */
+  --af-step-2: clamp(1.25rem, 1.1522rem + 0.4348vw, 1.5rem); /* 20 → 24px h4 */
+  --af-step-3: clamp(1.5rem, 1.3533rem + 0.6522vw, 1.875rem); /* 24 → 30px h3 */
+  --af-step-4: clamp(1.875rem, 1.6304rem + 1.087vw, 2.5rem); /* 30 → 40px h2 */
+  --af-step-5: clamp(2.25rem, 1.7609rem + 2.174vw, 3.5rem); /* 36 → 56px h1 */
+  --af-step-6: clamp(2.5rem, 1.913rem + 2.609vw, 4rem); /* 40 → 64px display numbers */
+  --af-leading-tight: 1.12;
+  --af-leading-snug: 1.3;
+  --af-leading-body: 1.6;
+  --af-tracking-tight: -0.022em;
+  --af-tracking-caps: 0.08em;
+  --af-measure: 65ch;
+
+  /* ---- Space: 8px grid (0.5 = 4px half-step for tight spots only) ---- */
+  --af-space-0-5: 0.25rem;
+  --af-space-1: 0.5rem;
+  --af-space-2: 1rem;
+  --af-space-3: 1.5rem;
+  --af-space-4: 2rem;
+  --af-space-5: 2.5rem;
+  --af-space-6: 3rem;
+  --af-space-8: 4rem;
+  --af-space-10: 5rem;
+  --af-space-12: 6rem;
+  --af-section-y: clamp(3.5rem, 2.25rem + 5vw, 6rem);
+
+  /* ---- Layout ---- */
+  --af-container-max: 75rem; /* 1200px */
+  --af-container-pad: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+  --af-grid-gap: clamp(1rem, 0.5rem + 1.5vw, 1.5rem);
+  --af-header-h: 4.5rem;
+  --af-header-h-compact: 3.75rem;
+  --af-tap: 2.75rem; /* 44px minimum touch target */
+
+  /* ---- Shape & depth ---- */
+  --af-radius-sm: 0.375rem;
+  --af-radius-md: 0.75rem;
+  --af-radius-lg: 1rem;
+  --af-radius-xl: 1.5rem;
+  --af-radius-pill: 999px;
+  --af-shadow-sm: 0 1px 2px rgb(20 32 26 / 0.06), 0 1px 3px rgb(20 32 26 / 0.08);
+  --af-shadow-md: 0 4px 14px rgb(20 32 26 / 0.08);
+  --af-shadow-lg: 0 14px 36px rgb(20 32 26 / 0.12);
+
+  /* ---- Motion: 150–300ms, off for reduced-motion users ---- */
+  --af-duration-fast: 150ms;
+  --af-duration-base: 220ms;
+  --af-duration-slow: 300ms;
+  --af-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* ---- Layers ---- */
+  --af-z-header: 50;
+  --af-z-drawer: 60;
+  --af-z-chat: 70;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --af-duration-fast: 0ms;
+    --af-duration-base: 0ms;
+    --af-duration-slow: 0ms;
+  }
+}

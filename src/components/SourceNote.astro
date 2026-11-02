@@ -1,0 +1,22 @@
+---
+/** A short, linked citation shown next to a statistic. */
+import type { Source } from '../content/types.ts';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  source: Source;
+  year?: string | undefined;
+  class?: string;
+}
+const { source, year, class: className } = Astro.props;
+const t = useStrings().common;
+---
+
+<p class:list={['text-xs text-ink-subtle', className]}>
+  {t.source}:{' '}
+  <a href={source.url} rel="noopener" class="text-ink-subtle hover:text-ink">
+    {source.label}
+    {source.locator ? `, ${source.locator}` : ''}
+    {year && !source.label.includes(year) ? ` (${year})` : ''}
+  </a>
+</p>

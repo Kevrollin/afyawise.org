@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import ProgramCards from '../../components/ProgramCards.astro';
+import TargetList from '../../components/TargetList.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { getContent } from '../../content/index.ts';
+import { breadcrumbLd } from '../../lib/seo.ts';
+
+const c = getContent();
+const page = c.programsPage;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: page.headline, href: '/programs' },
+];
+const titles = Object.fromEntries(c.programs.map((p) => [p.slug, p.title]));
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} og="programs" jsonLd={[breadcrumbLd(crumbs)]}>
+  <PageHero headline={page.headline} intro={page.intro} breadcrumbs={crumbs} />
+  <Section labelledby="list-title">
+    <h2 id="list-title" class="sr-only">
+      {page.headline}
+    </h2>
+    <ProgramCards programs={c.programs} />
+  </Section>
+  <Section tone="surface" labelledby="targets-title">
+    <SectionHeader id="targets-title" headline={c.impactPage.targets.headline} intro={c.programPage.targetsIntro} />
+    <TargetList targets={c.targets} programTitles={titles} />
+  </Section>
+  <CtaBand />
+</BaseLayout>

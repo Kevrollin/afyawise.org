@@ -1,0 +1,1591 @@
+{
+  "route": "/",
+  "url": "https://www.afyawise.org/",
+  "finalUrl": "https://www.afyawise.org/",
+  "status": 200,
+  "viewport": "mobile",
+  "capturedAt": "2026-11-02T20:11:00.724Z",
+  "links": [
+    {
+      "text": "Afyawise",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Blog",
+      "href": "/blog",
+      "resolved": "https://www.afyawise.org/blog",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "resolved": "https://www.afyawise.org/shop",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Support Us",
+      "href": "/support",
+      "resolved": "https://www.afyawise.org/support",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "About us",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Services",
+      "href": "/services",
+      "resolved": "https://www.afyawise.org/services",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Our Impact",
+      "href": "/our-impact",
+      "resolved": "https://www.afyawise.org/our-impact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Contact Us",
+      "href": "/contact",
+      "resolved": "https://www.afyawise.org/contact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Join the Wellness club",
+      "href": "/wellness",
+      "resolved": "https://www.afyawise.org/wellness",
+      "target": null,
+      "rel": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "About",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "info@afyawise.org",
+      "href": "mailto:info@afyawise.org",
+      "resolved": "mailto:info@afyawise.org",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "+254798724766",
+      "href": "tel:+254798724766",
+      "resolved": "tel:+254798724766",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Support Our Work",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Explore All Projects",
+      "type": null,
+      "ariaLabel": null,
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Chat with us",
+      "type": null,
+      "ariaLabel": "Chat with us",
+      "inForm": false,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    }
+  ],
+  "images": [
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/menu-svg.svg",
+      "currentSrc": "https://www.afyawise.org/menu-svg.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 30,
+      "renderedHeight": 30,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/hero.jpg",
+      "currentSrc": "https://www.afyawise.org/hero.jpg",
+      "alt": "Community Health",
+      "naturalWidth": 1120,
+      "naturalHeight": 1120,
+      "renderedWidth": 374,
+      "renderedHeight": 374,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/world.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/world.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 30,
+      "renderedHeight": 30,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/target.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/target.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 30,
+      "renderedHeight": 30,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/maternal.png",
+      "currentSrc": "https://www.afyawise.org/Icons/maternal.png",
+      "alt": "Maternal & Child Health",
+      "naturalWidth": 512,
+      "naturalHeight": 512,
+      "renderedWidth": 150,
+      "renderedHeight": 150,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/faucet.png",
+      "currentSrc": "https://www.afyawise.org/Icons/faucet.png",
+      "alt": "WASH Initiatives",
+      "naturalWidth": 512,
+      "naturalHeight": 512,
+      "renderedWidth": 150,
+      "renderedHeight": 150,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/mental-health.png",
+      "currentSrc": "https://www.afyawise.org/Icons/mental-health.png",
+      "alt": "Mental Health Support",
+      "naturalWidth": 512,
+      "naturalHeight": 512,
+      "renderedWidth": 150,
+      "renderedHeight": 150,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/community-empowerment.png",
+      "currentSrc": "https://www.afyawise.org/Icons/community-empowerment.png",
+      "alt": "Community Empowerment",
+      "naturalWidth": 512,
+      "naturalHeight": 512,
+      "renderedWidth": 150,
+      "renderedHeight": 150,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/health-center.png",
+      "currentSrc": "https://www.afyawise.org/Icons/health-center.png",
+      "alt": "",
+      "naturalWidth": 256,
+      "naturalHeight": 256,
+      "renderedWidth": 100,
+      "renderedHeight": 100,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/money.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/money.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 100,
+      "renderedHeight": 100,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/digital-health.png",
+      "currentSrc": "https://www.afyawise.org/Icons/digital-health.png",
+      "alt": "",
+      "naturalWidth": 256,
+      "naturalHeight": 256,
+      "renderedWidth": 100,
+      "renderedHeight": 100,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/partnership.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/partnership.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 100,
+      "renderedHeight": 100,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/ambulance.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/ambulance.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 100,
+      "renderedHeight": 100,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/expand.png",
+      "currentSrc": "https://www.afyawise.org/Icons/expand.png",
+      "alt": "",
+      "naturalWidth": 256,
+      "naturalHeight": 256,
+      "renderedWidth": 100,
+      "renderedHeight": 100,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/agent.jpg",
+      "currentSrc": "https://www.afyawise.org/agent.jpg",
+      "alt": "Chat Icon",
+      "naturalWidth": 1120,
+      "naturalHeight": 1120,
+      "renderedWidth": 56,
+      "renderedHeight": 56,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "Afyawise logo",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 48,
+      "renderedHeight": 48,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/email-white.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/email-white.svg",
+      "alt": "Email",
+      "naturalWidth": 150,
+      "naturalHeight": 150,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/phone-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/phone-color.svg",
+      "alt": "Phone",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/location-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/location-color.svg",
+      "alt": "Location",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    }
+  ],
+  "bgImages": [],
+  "forms": [],
+  "orphanFields": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Empowering Communities for Health and Wellness",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Our Purpose",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Vision",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Mision",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "OUR IMPACT AREAS",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Maternal & Child Health",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Water, Sanitation, and Hygiene (WASH) Initiatives",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Mental Health and Disability Support",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Community Empowerment",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "COMMUNITY IMPACT",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "OUR FUTURE PLANS",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "OUR PARTNERS",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "GET INVOLVED",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "Afyawise",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Quick Links",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "CONTACT",
+      "visible": true
+    }
+  ],
+  "meta": {
+    "title": "Afyawise",
+    "lang": "en",
+    "metas": [
+      {
+        "name": null,
+        "property": null,
+        "content": null,
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "property": null,
+        "content": "width=device-width, initial-scale=1.0",
+        "charset": null
+      }
+    ],
+    "linkTags": [
+      {
+        "rel": "icon",
+        "href": "/logo.jpg",
+        "type": "image/svg+xml"
+      },
+      {
+        "rel": "stylesheet",
+        "href": "/assets/index-BJ8jT5Er.css",
+        "type": null
+      }
+    ],
+    "canonical": null,
+    "jsonLd": [],
+    "scripts": [
+      "https://www.afyawise.org/assets/index-niwIgGm5.js"
+    ],
+    "iframes": [],
+    "landmarks": {
+      "header": 0,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "skipLink": false
+    }
+  },
+  "colorSamples": [
+    {
+      "tag": "a",
+      "text": "Afyawise",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "h1",
+      "text": "Empowering Communities for Health and Wellness",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0.21)",
+      "fontSize": 25.6,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Sustainable care, education and wellness for all",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0.21)",
+      "fontSize": 17.6,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "Join the Wellness club",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(76, 209, 55)",
+      "fontSize": 11.2,
+      "fontWeight": 600,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "h2",
+      "text": "Our Purpose",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(128, 128, 128, 0.094)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Vision",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(128, 128, 128, 0.094)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "A healthy and informed society empowered to support County's",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(128, 128, 128, 0.094)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Mision",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(128, 128, 128, 0.094)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "To enhance health literacy, advocate for equitable healthcar",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(128, 128, 128, 0.094)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "button",
+      "text": "Support Our Work",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 167, 38)",
+      "fontSize": 16,
+      "fontWeight": 600,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "h2",
+      "text": "OUR IMPACT AREAS",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 17.6,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Empowering Communities through integrated, sustainable healt",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Maternal & Child Health",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "We work to improve prenatal, antenatal, and child health out",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Water, Sanitation, and Hygiene (WASH) Initiatives",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Our WASH programs educate households on safe water handling,",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Mental Health and Disability Support",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "We promote mental health awareness, reduce stigma, and estab",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Community Empowerment",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "We strengthen the capacity of Community Health Volunteers (C",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "button",
+      "text": "Explore All Projects",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(76, 209, 55)",
+      "fontSize": 16,
+      "fontWeight": 600,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "h2",
+      "text": "COMMUNITY IMPACT",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 17.6,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "AfyaWise has made significant strides in improving health li",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "OUR FUTURE PLANS",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 17.6,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "span",
+      "text": "Building Healthy Communities, One Step at a Time!",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16.8,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "At AfyaWise, we envision a stronger, more resilient healthca",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "b",
+      "text": "Community Health Resource & Learning Center",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Establish a center for training CHVs, caregivers, and youth,",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "b",
+      "text": "Income Generating Activities for CHVs",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Launch small-scale projects like poultry farming, beekeeping",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "b",
+      "text": "Digital Health & Data Innovations",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Develop a mobile health reporting app for real-time disease ",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "b",
+      "text": "Stronger Partnerships with International Organizations",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Collaborating with global health organizations",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "b",
+      "text": "Mobile health clinics",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Launch mobile health clinics to serve remote areas.",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "b",
+      "text": "Expansion of health education programs",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Broaden outreach to schools and the youth with vital health ",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.333)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "OUR PARTNERS",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 17.6,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "We collaborate with local government, NGOs, community leader",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "GET INVOLVED",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 17.6,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "li",
+      "text": "Volunteer with Afyawise",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "li",
+      "text": "Partner with our programs",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "li",
+      "text": "Donate to support sustainable health initiatives",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(225, 222, 222, 0.463)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h1",
+      "text": "Afyawise",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 25.6,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Promoting community health and well-being",
+      "color": "rgb(204, 204, 204)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "Quick Links",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "About",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Team",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Work",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "h3",
+      "text": "CONTACT",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "info@afyawise.org",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "+254798724766",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "div",
+      "text": "Karama Ward, Meru County, Kenya",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "© 2025 AfyaWise CBO.All rights reserved.",
+      "color": "rgb(170, 170, 170)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    }
+  ],
+  "layout": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "horizontalOverflow": false,
+    "pageHeight": 5463,
+    "smallTouchTargets": [
+      {
+        "text": "Afyawise",
+        "w": 86,
+        "h": 24
+      },
+      {
+        "text": "Join the Wellness club",
+        "w": 177,
+        "h": 38
+      },
+      {
+        "text": "Support Our Work",
+        "w": 194,
+        "h": 38
+      },
+      {
+        "text": "Explore All Projects",
+        "w": 207,
+        "h": 42
+      },
+      {
+        "text": "Home",
+        "w": 43,
+        "h": 21
+      },
+      {
+        "text": "About",
+        "w": 44,
+        "h": 21
+      },
+      {
+        "text": "Our Team",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "Our Work",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "info@afyawise.org",
+        "w": 117,
+        "h": 20
+      },
+      {
+        "text": "+254798724766",
+        "w": 103,
+        "h": 20
+      }
+    ]
+  },
+  "fontFaces": [
+    {
+      "family": "Inter",
+      "weight": "100 900",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "contrastPairs": [
+    {
+      "pair": "#44BD32 on #E1DEDE",
+      "ratio": 1.83,
+      "count": 5,
+      "failures": 5,
+      "examples": [
+        "h2: \"COMMUNITY IMPACT\" (17.6px/700)",
+        "h2: \"OUR FUTURE PLANS\" (17.6px/700)",
+        "span: \"Building Healthy Communities, One Step at a Time!\" (16.8px/400)",
+        "h2: \"OUR PARTNERS\" (17.6px/700)"
+      ]
+    },
+    {
+      "pair": "#44BD32 on #808080",
+      "ratio": 1.61,
+      "count": 3,
+      "failures": 3,
+      "examples": [
+        "h2: \"Our Purpose\" (19.2px/700)",
+        "h3: \"Vision\" (18.72px/700)",
+        "h3: \"Mision\" (18.72px/700)"
+      ]
+    },
+    {
+      "pair": "#FFFFFF on #4CD137",
+      "ratio": 2,
+      "count": 2,
+      "failures": 2,
+      "examples": [
+        "a: \"Join the Wellness club\" (11.2px/600)",
+        "button: \"Explore All Projects\" (16px/600)"
+      ]
+    },
+    {
+      "pair": "#FFFFFF on #FFA726",
+      "ratio": 1.94,
+      "count": 1,
+      "failures": 1,
+      "examples": [
+        "button: \"Support Our Work\" (16px/600)"
+      ]
+    },
+    {
+      "pair": "#44BD32 on #FFFFFF",
+      "ratio": 2.45,
+      "count": 1,
+      "failures": 1,
+      "examples": [
+        "h2: \"OUR IMPACT AREAS\" (17.6px/700)"
+      ]
+    },
+    {
+      "pair": "#000000 on #E1DEDE",
+      "ratio": 15.7,
+      "count": 18,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#000000 on #FFFFFF",
+      "ratio": 21,
+      "count": 10,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#F2F2F2 on #0E1A24",
+      "ratio": 15.74,
+      "count": 8,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#FFFFFF on #000000",
+      "ratio": 21,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#000000 on #808080",
+      "ratio": 5.32,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#FFFFFF on #0E1A24",
+      "ratio": 17.62,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#CCCCCC on #0E1A24",
+      "ratio": 10.97,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#AAAAAA on #0E1A24",
+      "ratio": 7.58,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    }
+  ],
+  "renderedFonts": {
+    "Inter": 2599,
+    "Arial": 36,
+    "Segoe UI": 187
+  },
+  "axe": {
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 12,
+        "examples": [
+          {
+            "target": "#btn-green",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2 (foreground color: #ffffff, background color: #4cd137, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": "#purpose > h2",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.2 (foreground color: #44bd32, background color: #f3f3f3, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "target": ".purpose-card:nth-child(2) > .purpose-header > h3",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.2 (foreground color: #44bd32, background color: #f3f3f3, font size: 14.0pt (18.72px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "target": ".purpose-card:nth-child(3) > .purpose-header > h3",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.2 (foreground color: #44bd32, background color: #f3f3f3, font size: 14.0pt (18.72px), font weight: bold). Expected contrast ratio of 3:1"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 1,
+        "examples": [
+          {
+            "target": "#brand",
+            "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ],
+    "passes": 32,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  "console": [],
+  "requests": [
+    {
+      "url": "https://www.afyawise.org/",
+      "method": "GET",
+      "type": "document",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyBytes": 754,
+      "transferBytes": 754
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-BJ8jT5Er.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyBytes": 5710,
+      "transferBytes": 5710
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-niwIgGm5.js",
+      "method": "GET",
+      "type": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bodyBytes": 192448,
+      "transferBytes": 192448
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/world.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1752,
+      "transferBytes": 1752
+    },
+    {
+      "url": "https://www.afyawise.org/menu-svg.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 474,
+      "transferBytes": 474
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/target.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 2180,
+      "transferBytes": 2180
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/ambulance.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1931,
+      "transferBytes": 1931
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/faucet.png",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 14844,
+      "transferBytes": 14844
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/mental-health.png",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 19639,
+      "transferBytes": 19639
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/community-empowerment.png",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 26286,
+      "transferBytes": 26286
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/digital-health.png",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 12169,
+      "transferBytes": 12169
+    },
+    {
+      "url": "https://www.afyawise.org/hero.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 676993,
+      "transferBytes": 676993
+    },
+    {
+      "url": "https://www.afyawise.org/logo.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 35135,
+      "transferBytes": 35135
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/partnership.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1698,
+      "transferBytes": 1698
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/money.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 2519,
+      "transferBytes": 2519
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/health-center.png",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 6987,
+      "transferBytes": 6987
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/maternal.png",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 26230,
+      "transferBytes": 26230
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/email-white.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 606,
+      "transferBytes": 606
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/location-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1050,
+      "transferBytes": 1050
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/phone-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 971,
+      "transferBytes": 971
+    },
+    {
+      "url": "https://www.afyawise.org/agent.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 398673,
+      "transferBytes": 398673
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/expand.png",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyBytes": 18934,
+      "transferBytes": 18934
+    },
+    {
+      "url": "https://www.afyawise.org/Fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+      "method": "GET",
+      "type": "font",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyBytes": 455410,
+      "transferBytes": 455410
+    }
+  ],
+  "mobileMenu": null
+}

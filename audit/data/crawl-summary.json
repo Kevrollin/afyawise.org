@@ -1,0 +1,201 @@
+[
+  {
+    "route": "/",
+    "title": "Afyawise",
+    "h1": [
+      "Empowering Communities for Health and Wellness",
+      "Afyawise"
+    ],
+    "words": 434,
+    "images": 20,
+    "imagesNoAlt": 10,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 0,
+    "requests": 23,
+    "transferKB": 1859,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/about",
+    "title": "Afyawise",
+    "h1": [
+      "Afyawise"
+    ],
+    "words": 381,
+    "images": 13,
+    "imagesNoAlt": 8,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 0,
+    "requests": 16,
+    "transferKB": 8250,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/work",
+    "title": "Afyawise",
+    "h1": [
+      "Afyawise"
+    ],
+    "words": 496,
+    "images": 19,
+    "imagesNoAlt": 14,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 0,
+    "requests": 22,
+    "transferKB": 7074,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/services",
+    "title": "Afyawise",
+    "h1": [
+      "Coming Soon",
+      "Afyawise"
+    ],
+    "words": 63,
+    "images": 8,
+    "imagesNoAlt": 3,
+    "axeViolationsDesktop": 1,
+    "axeViolationsMobile": 1,
+    "consoleErrors": 0,
+    "requests": 11,
+    "transferKB": 1067,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/our-impact",
+    "title": "Afyawise",
+    "h1": [
+      "Impact in Action",
+      "Afyawise"
+    ],
+    "words": 58,
+    "images": 6,
+    "imagesNoAlt": 2,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 2,
+    "requests": 10,
+    "transferKB": 676,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/team",
+    "title": "Afyawise",
+    "h1": [
+      "Afyawise"
+    ],
+    "words": 281,
+    "images": 8,
+    "imagesNoAlt": 3,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 0,
+    "requests": 11,
+    "transferKB": 1428,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/contact",
+    "title": "Afyawise",
+    "h1": [
+      "Afyawise"
+    ],
+    "words": 107,
+    "images": 13,
+    "imagesNoAlt": 9,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 0,
+    "requests": 10,
+    "transferKB": 1318,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/support",
+    "title": "Afyawise",
+    "h1": [
+      "Support Our Mission to Build Healthier Communities",
+      "Afyawise"
+    ],
+    "words": 232,
+    "images": 9,
+    "imagesNoAlt": 5,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 0,
+    "requests": 13,
+    "transferKB": 1323,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/donate",
+    "title": "Afyawise",
+    "h1": [
+      "Make a Difference Today",
+      "Afyawise"
+    ],
+    "words": 140,
+    "images": 13,
+    "imagesNoAlt": 9,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 0,
+    "requests": 17,
+    "transferKB": 1304,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/blog",
+    "title": "Afyawise",
+    "h1": [
+      "Afyawise"
+    ],
+    "words": 83,
+    "images": 7,
+    "imagesNoAlt": 3,
+    "axeViolationsDesktop": 2,
+    "axeViolationsMobile": 2,
+    "consoleErrors": 2,
+    "requests": 11,
+    "transferKB": 992,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/shop",
+    "title": "Afyawise",
+    "h1": [
+      "Coming Soon",
+      "Afyawise"
+    ],
+    "words": 63,
+    "images": 8,
+    "imagesNoAlt": 3,
+    "axeViolationsDesktop": 1,
+    "axeViolationsMobile": 1,
+    "consoleErrors": 0,
+    "requests": 11,
+    "transferKB": 1067,
+    "mobileOverflow": false
+  },
+  {
+    "route": "/wellness",
+    "title": "Afyawise",
+    "h1": [
+      "Join a Wellness Club",
+      "Afyawise"
+    ],
+    "words": 87,
+    "images": 6,
+    "imagesNoAlt": 2,
+    "axeViolationsDesktop": 3,
+    "axeViolationsMobile": 3,
+    "consoleErrors": 2,
+    "requests": 10,
+    "transferKB": 676,
+    "mobileOverflow": false
+  }
+]

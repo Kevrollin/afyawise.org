@@ -1,0 +1,25 @@
+---
+/** Eyebrow + H2 + one-line intro. The H2 id lets the section use aria-labelledby. */
+interface Props {
+  id: string;
+  eyebrow?: string | undefined;
+  headline: string;
+  intro?: string | undefined;
+  align?: 'left' | 'center';
+  level?: 2 | 3;
+  /** No bottom margin (when the header shares a row with an action link). */
+  flush?: boolean;
+  class?: string;
+}
+const { id, eyebrow, headline, intro, align = 'left', level = 2, flush = false, class: className } = Astro.props;
+const Heading = `h${level}` as 'h2' | 'h3';
+---
+
+<div class:list={['max-w-3xl', !flush && 'mb-10', align === 'center' && 'mx-auto text-center', className]}>
+  {eyebrow && <p class="eyebrow mb-3">{eyebrow}</p>}
+  <Heading id={id} class:list={[level === 3 && 'text-2xl']}>
+    {headline}
+  </Heading>
+  {intro && <p class:list={['lead mt-4', align === 'center' && 'mx-auto']}>{intro}</p>}
+  <slot />
+</div>

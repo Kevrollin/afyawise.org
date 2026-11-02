@@ -1,0 +1,1167 @@
+{
+  "route": "/contact",
+  "url": "https://www.afyawise.org/contact",
+  "finalUrl": "https://www.afyawise.org/contact",
+  "status": 200,
+  "viewport": "mobile",
+  "capturedAt": "2026-11-02T20:14:41.847Z",
+  "links": [
+    {
+      "text": "Afyawise",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Blog",
+      "href": "/blog",
+      "resolved": "https://www.afyawise.org/blog",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "resolved": "https://www.afyawise.org/shop",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Support Us",
+      "href": "/support",
+      "resolved": "https://www.afyawise.org/support",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "About us",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Services",
+      "href": "/services",
+      "resolved": "https://www.afyawise.org/services",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Our Impact",
+      "href": "/our-impact",
+      "resolved": "https://www.afyawise.org/our-impact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Contact Us",
+      "href": "/contact",
+      "resolved": "https://www.afyawise.org/contact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": false
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "About",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "info@afyawise.org",
+      "href": "mailto:info@afyawise.org",
+      "resolved": "mailto:info@afyawise.org",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "+254798724766",
+      "href": "tel:+254798724766",
+      "resolved": "tel:+254798724766",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Send Message",
+      "type": "submit",
+      "ariaLabel": null,
+      "inForm": true,
+      "insideLink": null,
+      "region": "main",
+      "visible": true
+    }
+  ],
+  "images": [
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/menu-svg.svg",
+      "currentSrc": "https://www.afyawise.org/menu-svg.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 30,
+      "renderedHeight": 30,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "hero2.jpg",
+      "currentSrc": "https://www.afyawise.org/hero2.jpg",
+      "alt": "",
+      "naturalWidth": 1120,
+      "naturalHeight": 1120,
+      "renderedWidth": 390,
+      "renderedHeight": 200,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/email-white.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/email-white.svg",
+      "alt": "",
+      "naturalWidth": 150,
+      "naturalHeight": 150,
+      "renderedWidth": 30,
+      "renderedHeight": 30,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/phone-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/phone-color.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 30,
+      "renderedHeight": 30,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "Icons/location-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/location-color.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 30,
+      "renderedHeight": 30,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": null,
+      "currentSrc": "",
+      "alt": "",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "renderedWidth": 30,
+      "renderedHeight": 0,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": null,
+      "currentSrc": "",
+      "alt": "",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "renderedWidth": 30,
+      "renderedHeight": 0,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": null,
+      "currentSrc": "",
+      "alt": "",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "renderedWidth": 30,
+      "renderedHeight": 0,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "Afyawise logo",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 48,
+      "renderedHeight": 48,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/email-white.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/email-white.svg",
+      "alt": "Email",
+      "naturalWidth": 150,
+      "naturalHeight": 150,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/phone-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/phone-color.svg",
+      "alt": "Phone",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/location-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/location-color.svg",
+      "alt": "Location",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    }
+  ],
+  "bgImages": [],
+  "forms": [
+    {
+      "action": null,
+      "method": null,
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "fullname",
+          "id": "name",
+          "placeholder": "Enter your full name",
+          "required": false,
+          "autocomplete": null,
+          "label": "Full Name:",
+          "ariaLabel": null
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "email",
+          "id": "email",
+          "placeholder": "Enter your email",
+          "required": false,
+          "autocomplete": null,
+          "label": "Email Address:",
+          "ariaLabel": null
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "name": "phone",
+          "id": "phone",
+          "placeholder": "Enter your phone number",
+          "required": false,
+          "autocomplete": null,
+          "label": "Phone Number:",
+          "ariaLabel": null
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "subject",
+          "id": "subject",
+          "placeholder": "Enter subject",
+          "required": false,
+          "autocomplete": null,
+          "label": "Subject:",
+          "ariaLabel": null
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "organization",
+          "id": "organization",
+          "placeholder": "Enter your organization",
+          "required": false,
+          "autocomplete": null,
+          "label": "Organization(optional):",
+          "ariaLabel": null
+        },
+        {
+          "tag": "select",
+          "type": null,
+          "name": "reason",
+          "id": "reason",
+          "placeholder": null,
+          "required": false,
+          "autocomplete": null,
+          "label": "Reason: Select a reason... Partner Volunteer Donate Other",
+          "ariaLabel": null
+        },
+        {
+          "tag": "textarea",
+          "type": null,
+          "name": "message",
+          "id": "message",
+          "placeholder": "Type your message...",
+          "required": false,
+          "autocomplete": null,
+          "label": "Message:",
+          "ariaLabel": null
+        }
+      ],
+      "submit": [
+        "Send Message"
+      ]
+    }
+  ],
+  "orphanFields": [],
+  "headings": [
+    {
+      "level": 2,
+      "text": "Get In Touch With Us",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Send us a message",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Our Contact Info",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Other Emails",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "Afyawise",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Quick Links",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "CONTACT",
+      "visible": true
+    }
+  ],
+  "meta": {
+    "title": "Afyawise",
+    "lang": "en",
+    "metas": [
+      {
+        "name": null,
+        "property": null,
+        "content": null,
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "property": null,
+        "content": "width=device-width, initial-scale=1.0",
+        "charset": null
+      }
+    ],
+    "linkTags": [
+      {
+        "rel": "icon",
+        "href": "/logo.jpg",
+        "type": "image/svg+xml"
+      },
+      {
+        "rel": "stylesheet",
+        "href": "/assets/index-BJ8jT5Er.css",
+        "type": null
+      }
+    ],
+    "canonical": null,
+    "jsonLd": [],
+    "scripts": [
+      "https://www.afyawise.org/assets/index-niwIgGm5.js"
+    ],
+    "iframes": [],
+    "landmarks": {
+      "header": 0,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "skipLink": false
+    }
+  },
+  "colorSamples": [
+    {
+      "tag": "a",
+      "text": "Afyawise",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "h2",
+      "text": "Get In Touch With Us",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 24,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Contact our team for inquiries, volunteer opportunities, or ",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Send us a message",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "label",
+      "text": "Full Name:",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "label",
+      "text": "Email Address:",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "label",
+      "text": "Phone Number:",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "label",
+      "text": "Subject:",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "label",
+      "text": "Organization(optional):",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "label",
+      "text": "Reason:",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "label",
+      "text": "Message:",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "button",
+      "text": "Send Message",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(69, 189, 50, 0.753)",
+      "fontSize": 17.6,
+      "fontWeight": 400,
+      "fontFamily": "Arial",
+      "interactive": true
+    },
+    {
+      "tag": "h3",
+      "text": "Our Contact Info",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 18.72,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "div",
+      "text": "info@afyawise.org",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "span",
+      "text": "Email",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "span",
+      "text": "Phone",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "div",
+      "text": "+254798724766",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "div",
+      "text": "Karama Ward, Meru County, Kenya",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "span",
+      "text": "Location",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h3",
+      "text": "Other Emails",
+      "color": "rgb(68, 189, 50)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "li",
+      "text": "programs@afyawise.org",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "li",
+      "text": "finance@afyawise.org",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "li",
+      "text": "executive@afyawise.org",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "Inter",
+      "interactive": false
+    },
+    {
+      "tag": "h1",
+      "text": "Afyawise",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 25.6,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Promoting community health and well-being",
+      "color": "rgb(204, 204, 204)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "Quick Links",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "About",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Team",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Work",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "h3",
+      "text": "CONTACT",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "info@afyawise.org",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "+254798724766",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "div",
+      "text": "Karama Ward, Meru County, Kenya",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "© 2025 AfyaWise CBO.All rights reserved.",
+      "color": "rgb(170, 170, 170)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    }
+  ],
+  "layout": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "horizontalOverflow": false,
+    "pageHeight": 2056,
+    "smallTouchTargets": [
+      {
+        "text": "Afyawise",
+        "w": 86,
+        "h": 24
+      },
+      {
+        "text": "",
+        "w": 374,
+        "h": 30
+      },
+      {
+        "text": "",
+        "w": 374,
+        "h": 30
+      },
+      {
+        "text": "",
+        "w": 374,
+        "h": 30
+      },
+      {
+        "text": "",
+        "w": 374,
+        "h": 30
+      },
+      {
+        "text": "",
+        "w": 374,
+        "h": 30
+      },
+      {
+        "text": "Select a reason... Partner Volunteer Don",
+        "w": 300,
+        "h": 39
+      },
+      {
+        "text": "Send Message",
+        "w": 374,
+        "h": 25
+      },
+      {
+        "text": "Home",
+        "w": 43,
+        "h": 21
+      },
+      {
+        "text": "About",
+        "w": 44,
+        "h": 21
+      },
+      {
+        "text": "Our Team",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "Our Work",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "info@afyawise.org",
+        "w": 117,
+        "h": 20
+      },
+      {
+        "text": "+254798724766",
+        "w": 103,
+        "h": 20
+      }
+    ]
+  },
+  "fontFaces": [
+    {
+      "family": "Inter",
+      "weight": "100 900",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "contrastPairs": [
+    {
+      "pair": "#44BD32 on #FFFFFF",
+      "ratio": 2.45,
+      "count": 3,
+      "failures": 3,
+      "examples": [
+        "h3: \"Send us a message\" (18.72px/700)",
+        "h3: \"Our Contact Info\" (18.72px/700)",
+        "h3: \"Other Emails\" (16px/700)"
+      ]
+    },
+    {
+      "pair": "#FFFFFF on #FFFFFF",
+      "ratio": 1,
+      "count": 2,
+      "failures": 2,
+      "examples": [
+        "h2: \"Get In Touch With Us\" (24px/700)",
+        "p: \"Contact our team for inquiries, volunteer opportunities, or \" (16px/400)"
+      ]
+    },
+    {
+      "pair": "#FFFFFF on #45BD32",
+      "ratio": 2.45,
+      "count": 1,
+      "failures": 1,
+      "examples": [
+        "button: \"Send Message\" (17.6px/400)"
+      ]
+    },
+    {
+      "pair": "#000000 on #FFFFFF",
+      "ratio": 21,
+      "count": 17,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#F2F2F2 on #0E1A24",
+      "ratio": 15.74,
+      "count": 8,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#FFFFFF on #0E1A24",
+      "ratio": 17.62,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#CCCCCC on #0E1A24",
+      "ratio": 10.97,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#AAAAAA on #0E1A24",
+      "ratio": 7.58,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    }
+  ],
+  "renderedFonts": {
+    "Inter": 351,
+    "Arial": 125,
+    "Consolas": 20,
+    "Segoe UI": 187
+  },
+  "axe": {
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 4,
+        "examples": [
+          {
+            "target": "#form-container > h3",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #44bd32, background color: #ffffff, font size: 14.0pt (18.72px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "target": "button",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.97 (foreground color: #ffffff, background color: #73cd65, font size: 13.2pt (17.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": "#contact-info > h3",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #44bd32, background color: #ffffff, font size: 14.0pt (18.72px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "target": ".other-emails > h3",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #44bd32, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 1,
+        "examples": [
+          {
+            "target": "#brand",
+            "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ],
+    "passes": 32,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  "console": [],
+  "requests": [
+    {
+      "url": "https://www.afyawise.org/contact",
+      "method": "GET",
+      "type": "document",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyBytes": 755,
+      "transferBytes": 755
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-niwIgGm5.js",
+      "method": "GET",
+      "type": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bodyBytes": 192460,
+      "transferBytes": 192460
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-BJ8jT5Er.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyBytes": 5707,
+      "transferBytes": 5707
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/email-white.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 634,
+      "transferBytes": 634
+    },
+    {
+      "url": "https://www.afyawise.org/menu-svg.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 480,
+      "transferBytes": 480
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/phone-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 949,
+      "transferBytes": 949
+    },
+    {
+      "url": "https://www.afyawise.org/logo.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 35115,
+      "transferBytes": 35115
+    },
+    {
+      "url": "https://www.afyawise.org/hero2.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 657492,
+      "transferBytes": 657492
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/location-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1055,
+      "transferBytes": 1055
+    },
+    {
+      "url": "https://www.afyawise.org/Fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+      "method": "GET",
+      "type": "font",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyBytes": 455411,
+      "transferBytes": 455411
+    }
+  ],
+  "mobileMenu": null
+}

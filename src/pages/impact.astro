@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import MetricBand from '../components/MetricBand.astro';
+import TargetList from '../components/TargetList.astro';
+import AlignmentList from '../components/AlignmentList.astro';
+import StatList from '../components/StatList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import TodoBadge from '../components/TodoBadge.astro';
+import { getContent } from '../content/index.ts';
+import { breadcrumbLd } from '../lib/seo.ts';
+import { isVisible, isTodo } from '../lib/visibility.ts';
+
+const c = getContent();
+const page = c.impactPage;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Impact', href: '/impact' },
+];
+const titles = Object.fromEntries(c.programs.map((p) => [p.slug, p.title]));
+const evidence = [
+  'stunting',
+  'anc4',
+  'postnatal',
+  'sanitation',
+  'ors',
+  'mentalHealth',
+  'disability',
+  'workforce',
+  'meruChpPlan',
+].map((id) => c.stats[id]!);
+const reports = [c.accountability.annualReport, c.accountability.financialStatements].filter(isVisible);
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} og="impact" jsonLd={[breadcrumbLd(crumbs)]}>
+  <PageHero headline={page.headline} intro={page.intro} breadcrumbs={crumbs} />
+
+  <MetricBand metrics={c.metrics} headline={page.results.headline} eyebrow={page.results.headline} />
+
+  <Section labelledby="targets-title" id="targets">
+    <SectionHeader id="targets-title" headline={page.targets.headline} intro={page.targets.intro} />
+    <TargetList targets={c.targets} programTitles={titles} />
+  </Section>
+
+  <Section tone="surface" labelledby="measure-title" id="measure">
+    <SectionHeader id="measure-title" headline={page.measure.headline} intro={page.measure.intro} />
+    <ol class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {c.accountability.measurementRules.map((rule, i) => (
+        <li class="card reveal p-6">
+          <span class="badge badge--green">{String(i + 1).padStart(2, '0')}</span>
+          <h3 class="mt-3 text-lg">{rule.title}</h3>
+          <p class="mt-2 text-ink-muted">{rule.text}</p>
+        </li>
+      ))}
+    </ol>
+  </Section>
+
+  <Section labelledby="alignment-title" id="alignment">
+    <SectionHeader id="alignment-title" headline={page.alignment.headline} intro={page.alignment.intro} />
+    <AlignmentList />
+  </Section>
+
+  {reports.length > 0 && (
+    <Section tone="surface" labelledby="reports-title" id="reports">
+      <SectionHeader id="reports-title" headline={page.reports.headline} />
+      <ul class="grid gap-3 md:grid-cols-2">
+        {reports.map((r) => (
+          <li>
+            <a href={r.url ?? '#'} class="card flex items-center gap-3 p-5 no-underline">
+              <Icon name="file-text" size={24} class="text-green-700" />
+              <span class="font-semibold text-ink">{r.year ?? 'Year to confirm'}</span>
+              {isTodo(r) && <TodoBadge />}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  )}
+
+  <Section tone="tint" labelledby="evidence-title" id="evidence">
+    <SectionHeader id="evidence-title" headline={page.evidence.headline} intro={page.evidence.intro} />
+    <StatList stats={evidence} sourceEach />
+  </Section>
+
+  <CtaBand />
+</BaseLayout>

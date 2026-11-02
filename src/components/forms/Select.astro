@@ -1,0 +1,47 @@
+---
+import { useStrings } from '../../i18n/index.ts';
+
+interface Props {
+  name: string;
+  label: string;
+  options: readonly { value: string; label: string }[];
+  required?: boolean;
+  hint?: string;
+  form: string;
+  /** Fill from the page's query string (e.g. ?project=mobile-clinics) when JS runs. */
+  prefill?: boolean;
+  placeholder?: string;
+}
+const { name, label, options, required = false, hint, form, prefill = false, placeholder } = Astro.props;
+const id = `${form}-${name}`;
+const t = useStrings().forms;
+const describedBy = [hint && `${id}-hint`, `${id}-error`].filter(Boolean).join(' ');
+---
+
+<div class="field" data-field={name}>
+  <label for={id} class="field-label">
+    {label}
+    {!required && <span class="field-optional">({t.optional})</span>}
+  </label>
+  {hint && (
+    <p id={`${id}-hint`} class="field-hint">
+      {hint}
+    </p>
+  )}
+  <div class="select-wrap">
+    <select
+      id={id}
+      name={name}
+      required={required}
+      aria-describedby={describedBy}
+      class="field-input"
+      data-prefill={prefill ? name : undefined}
+    >
+      <option value="">{placeholder ?? t.selectPlaceholder}</option>
+      {options.map((o) => (
+        <option value={o.value}>{o.label}</option>
+      ))}
+    </select>
+  </div>
+  <p id={`${id}-error`} class="field-error" data-error-for={name} hidden></p>
+</div>

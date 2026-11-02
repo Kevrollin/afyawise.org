@@ -1,0 +1,51 @@
+---
+/**
+ * Proof band: AfyaWise's own verified results. Renders nothing unless at least three metrics are
+ * confirmed, each with an "as of" date. The final number is always in the HTML; the count-up is
+ * enhancement only (and skipped for reduced-motion users).
+ */
+import type { Metric } from '../content/types.ts';
+import TodoBadge from './TodoBadge.astro';
+import CountUp from './CountUp.astro';
+import { visible, isTodo, showUnconfirmed } from '../lib/visibility.ts';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  metrics: Metric[];
+  headline: string;
+  eyebrow?: string;
+}
+const { metrics, headline, eyebrow } = Astro.props;
+const shown = visible(metrics).filter((m) => m.value !== null && (m.asOf || showUnconfirmed));
+const t = useStrings().common;
+const fmt = new Intl.NumberFormat('en-KE');
+const render = shown.length >= 3;
+---
+
+{render && (
+  <section class="section bg-surface-tint" aria-labelledby="proof-title">
+    <div class="container-site">
+      {eyebrow && <p class="eyebrow mb-3">{eyebrow}</p>}
+      <h2 id="proof-title" class="sr-only">
+        {headline}
+      </h2>
+      <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {shown.map((m) => (
+          <li class="reveal">
+            <p class="text-5xl font-extrabold text-green-800">
+              <span data-count={m.value}>{fmt.format(m.value ?? 0)}</span>
+              {m.suffix}
+            </p>
+            <p class="mt-2 font-semibold text-ink">{m.label}</p>
+            <p class="mt-1 text-xs text-ink-subtle">
+              {m.asOf ? `${t.asOf} ${m.asOf}` : ''}
+              {m.method ? ` · ${m.method}` : ''}
+            </p>
+            {isTodo(m) && <TodoBadge note={m.note} />}
+          </li>
+        ))}
+      </ul>
+    </div>
+    <CountUp />
+  </section>
+)}

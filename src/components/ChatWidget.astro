@@ -1,0 +1,125 @@
+---
+/** The chatbot launcher + dialog. Rendered only when the chatbot is switched on (see ChatFacade). */
+import Icon from './Icon.astro';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  src: string;
+}
+const { src } = Astro.props;
+const t = useStrings().chat;
+---
+
+<div class="no-print">
+  <a href={src} class="chat-launcher" data-chat-open data-src={src} rel="noopener" target="_blank">
+    <Icon name="message-circle" size={22} />
+    <span>{t.open}</span>
+  </a>
+  <dialog class="chat-dialog" data-chat-dialog aria-labelledby="chat-title">
+    <div class="flex items-center justify-between gap-4 border-b border-line px-4 py-3">
+      <h2 id="chat-title" class="text-lg font-bold">
+        {t.title}
+      </h2>
+      <button type="button" class="chat-close" data-chat-close aria-label={t.close}>
+        <Icon name="x" size={20} />
+      </button>
+    </div>
+    <p class="bg-warning-bg px-4 py-3 text-sm text-ink">{t.privacy}</p>
+    <div class="chat-body" data-chat-body>
+      <p class="text-sm text-ink-muted">{t.loadsThirdParty}</p>
+      <button type="button" class="btn btn--primary" data-chat-start>
+        {t.start}
+      </button>
+    </div>
+  </dialog>
+</div>
+
+<style>
+  .chat-launcher {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: var(--af-z-chat);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--af-radius-pill);
+    background: var(--af-green-800);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--af-shadow-lg);
+  }
+  .chat-launcher:hover {
+    background: var(--af-green-900);
+    color: #fff;
+  }
+  .chat-dialog {
+    width: min(26rem, calc(100vw - 2rem));
+    height: min(40rem, calc(100dvh - 2rem));
+    margin: auto 1rem 1rem auto;
+    padding: 0;
+    border: 1px solid var(--af-line);
+    border-radius: var(--af-radius-lg);
+    box-shadow: var(--af-shadow-lg);
+    overflow: hidden;
+  }
+  .chat-dialog[open] {
+    display: flex;
+    flex-direction: column;
+  }
+  .chat-dialog::backdrop {
+    background: rgb(12 46 21 / 0.35);
+  }
+  .chat-body {
+    flex: 1;
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .chat-body:has(iframe) {
+    display: block;
+    padding: 0;
+  }
+  .chat-body iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .chat-close {
+    display: grid;
+    place-items: center;
+    width: var(--af-tap);
+    height: var(--af-tap);
+    border-radius: var(--af-radius-pill);
+    cursor: pointer;
+  }
+  .chat-close:hover {
+    background: var(--af-green-50);
+  }
+</style>
+
+<script>
+  const launcher = document.querySelector<HTMLAnchorElement>('[data-chat-open]');
+  const dialog = document.querySelector<HTMLDialogElement>('[data-chat-dialog]');
+  if (launcher && dialog && typeof dialog.showModal === 'function') {
+    launcher.addEventListener('click', (e) => {
+      e.preventDefault();
+      dialog.showModal();
+    });
+    dialog.querySelector('[data-chat-close]')?.addEventListener('click', () => dialog.close());
+    dialog.querySelector('[data-chat-start]')?.addEventListener('click', () => {
+      const body = dialog.querySelector('[data-chat-body]');
+      if (!body || body.querySelector('iframe')) return;
+      const frame = document.createElement('iframe');
+      frame.src = launcher.dataset.src ?? launcher.href;
+      frame.title = dialog.querySelector('#chat-title')?.textContent ?? 'Chat';
+      frame.allow = 'clipboard-write';
+      body.replaceChildren(frame);
+    });
+  }
+</script>

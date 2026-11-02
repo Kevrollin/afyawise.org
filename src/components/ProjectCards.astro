@@ -1,0 +1,73 @@
+---
+/** Fundable projects: need (cited), plan, outcome, budget (only if confirmed) and a proposal request. */
+import type { Project } from '../content/types.ts';
+import Icon from './Icon.astro';
+import TodoBadge from './TodoBadge.astro';
+import { visible, isTodo, isVisible } from '../lib/visibility.ts';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  projects: Project[];
+  /** Where the request button points (the proposal form on /partner, or the form on this page). */
+  formHref?: string;
+}
+const { projects, formHref = '/partner' } = Astro.props;
+const shown = visible(projects);
+const t = useStrings().common;
+const kes = new Intl.NumberFormat('en-KE', { style: 'currency', currency: 'KES', maximumFractionDigits: 0 });
+---
+
+<ul class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+  {shown.map((p) => (
+    <li class="card reveal flex flex-col p-6" id={`project-${p.slug}`}>
+      <div class="flex items-center gap-3">
+        <span class="icon-tile shrink-0">
+          <Icon name={p.icon} size={24} />
+        </span>
+        <h3 class="text-xl">{p.title}</h3>
+      </div>
+      <dl class="mt-5 grid gap-4 text-sm">
+        <div>
+          <dt class="font-bold uppercase tracking-wide text-orange-700">{t.need}</dt>
+          <dd class="mt-1 text-base text-ink">
+            {p.need}
+            {p.needSource && (
+              <a href={p.needSource.url} rel="noopener" class="ml-1 text-xs text-ink-subtle">
+                {t.source}: {p.needSource.label}
+                {p.needSource.locator ? `, ${p.needSource.locator}` : ''}
+              </a>
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt class="font-bold uppercase tracking-wide text-orange-700">{t.plan}</dt>
+          <dd class="mt-1 text-base text-ink-muted">{p.plan}</dd>
+        </div>
+        <div>
+          <dt class="font-bold uppercase tracking-wide text-orange-700">{t.outcome}</dt>
+          <dd class="mt-1 text-base text-ink-muted">{p.outcome}</dd>
+        </div>
+        <div>
+          <dt class="font-bold uppercase tracking-wide text-orange-700">{t.budget}</dt>
+          <dd class="mt-1 text-base text-ink-muted">
+            {isVisible(p.budget) && p.budget.amountKES ? kes.format(p.budget.amountKES) : t.budgetOnRequest}
+            {isTodo(p.budget) && isVisible(p.budget) && <TodoBadge note="Budget." />}
+          </dd>
+        </div>
+      </dl>
+      <div class="mt-auto pt-6">
+        <a
+          href={`${formHref}?project=${p.slug}#request`}
+          class="btn btn--secondary w-full"
+          data-event="Fund"
+          data-event-location={`project-${p.slug}`}
+          data-project={p.slug}
+        >
+          {t.requestProposal}
+          <span class="sr-only">: {p.title}</span>
+        </a>
+      </div>
+      {isTodo(p) && <TodoBadge />}
+    </li>
+  ))}
+</ul>

@@ -1,0 +1,59 @@
+{
+  "menuToggle": {
+    "tag": "img",
+    "alt": "",
+    "role": null,
+    "tabIndex": -1,
+    "focusable": false
+  },
+  "firstTabStop": "<a href=\"/\" id=\"brand-name\">Afyawise</a>",
+  "mobileMenuLinks": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Blog",
+      "href": "/blog"
+    },
+    {
+      "text": "Shop",
+      "href": "/shop"
+    },
+    {
+      "text": "Support Us",
+      "href": "/support"
+    },
+    {
+      "text": "About us",
+      "href": "/about"
+    },
+    {
+      "text": "Our Work",
+      "href": "/work"
+    },
+    {
+      "text": "Services",
+      "href": "/services"
+    },
+    {
+      "text": "Our Impact",
+      "href": "/our-impact"
+    },
+    {
+      "text": "Our Team",
+      "href": "/team"
+    },
+    {
+      "text": "Contact Us",
+      "href": "/contact"
+    }
+  ],
+  "thirdPartyBeforeClick": [],
+  "thirdPartyAfterClick": [
+    "www.chatbase.co",
+    "backend.chatbase.co"
+  ],
+  "chatIframeSrc": "https://www.chatbase.co/chatbot-iframe/5ZAehRlPhzYA_DLa0CLb7",
+  "chatText": "Afyawise Assistant\nOpen menu\nThe assistant said:\n\nHi! I’m Afyawise Assistant 🤖. I can help you learn more about our services or answer questions.\n\nPowered by Chatbase\n(opens in new tab)\n\n⚠️ Please don’t share sensitive or personal information. This chatbot is for general support only and may not always give accurate responses."
+}

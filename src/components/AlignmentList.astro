@@ -1,0 +1,27 @@
+---
+/** Policies and goals the work aligns with (PHC Act 2023, Meru CIDP 2023–2027, SDG 3, SDG 6). */
+import Icon from './Icon.astro';
+import { getContent } from '../content/index.ts';
+
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+const { accountability } = getContent();
+---
+
+<ul class:list={['grid gap-4', compact ? 'sm:grid-cols-2' : 'md:grid-cols-2']}>
+  {accountability.alignment.map((a) => (
+    <li class="flex gap-3 rounded-md border border-line bg-bg p-4">
+      <Icon name="circle-check" size={22} class="mt-0.5 shrink-0 text-green-700" />
+      <div>
+        <p class="font-bold text-ink">
+          <a href={a.source.url} rel="noopener" class="text-ink hover:text-green-800">
+            {a.label}
+          </a>
+        </p>
+        {!compact && <p class="mt-1 text-sm text-ink-muted">{a.text}</p>}
+      </div>
+    </li>
+  ))}
+</ul>

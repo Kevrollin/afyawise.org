@@ -1,0 +1,93 @@
+# Live response headers captured 2026-11-02T20:36Z
+
+## GET https://www.afyawise.org/
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Age: 38286
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline
+Content-Length: 455
+Content-Type: text/html; charset=utf-8
+Date: Mon, 02 Nov 2026 20:36:36 GMT
+Etag: "741c1b0997f4c814cb0e979b5292d753"
+Last-Modified: Mon, 02 Nov 2026 09:58:30 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Vercel-Cache: HIT
+X-Vercel-Id: cpt1::lhrnn-1793651796932-de1fe20b97db
+
+
+## GET https://afyawise.org/
+HTTP/1.1 308 Permanent Redirect
+Cache-Control: public, max-age=0, must-revalidate
+Content-Type: text/plain
+Date: Mon, 02 Nov 2026 20:36:37 GMT
+Location: https://www.afyawise.org/
+Refresh: 0;url=https://www.afyawise.org/
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Vercel-Id: cpt1::fghsx-1793651797673-21a5f947fd02
+
+
+## GET http://www.afyawise.org/
+HTTP/1.0 308 Permanent Redirect
+Content-Type: text/plain
+Location: https://www.afyawise.org/
+Refresh: 0;url=https://www.afyawise.org/
+server: Vercel
+
+
+## GET https://www.afyawise.org/robots.txt
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Age: 38295
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline
+Content-Length: 455
+Content-Type: text/html; charset=utf-8
+Date: Mon, 02 Nov 2026 20:36:46 GMT
+Etag: "741c1b0997f4c814cb0e979b5292d753"
+Last-Modified: Mon, 02 Nov 2026 09:58:30 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Vercel-Cache: HIT
+X-Vercel-Id: cpt1::thdqf-1793651806044-333b09826b01
+
+
+## GET https://www.afyawise.org/sitemap.xml
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Age: 38296
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline
+Content-Length: 455
+Content-Type: text/html; charset=utf-8
+Date: Mon, 02 Nov 2026 20:36:46 GMT
+Etag: "741c1b0997f4c814cb0e979b5292d753"
+Last-Modified: Mon, 02 Nov 2026 09:58:30 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Vercel-Cache: HIT
+X-Vercel-Id: cpt1::thdqf-1793651806711-e1d744a11d57
+
+
+## GET https://www.afyawise.org/this-page-does-not-exist
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Age: 38298
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline
+Content-Length: 455
+Content-Type: text/html; charset=utf-8
+Date: Mon, 02 Nov 2026 20:36:49 GMT
+Etag: "741c1b0997f4c814cb0e979b5292d753"
+Last-Modified: Mon, 02 Nov 2026 09:58:30 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Vercel-Cache: HIT
+X-Vercel-Id: cpt1::vtsn4-1793651809068-8c0cb70f2a54
+

@@ -1,0 +1,253 @@
+---
+/**
+ * Form wrapper. Works without JS (native validation + POST + redirect to a result page). With JS:
+ * inline validation messages, fetch submission, server field errors, success/error states, and a
+ * conversion event for analytics.
+ */
+import { useStrings } from '../../i18n/index.ts';
+import { getContent } from '../../content/index.ts';
+
+interface Props {
+  name: string;
+  action: string;
+  submitLabel: string;
+  /** Analytics event fired on success: Fund | Partner | Volunteer | Donate. */
+  event?: string;
+  /** Show the privacy consent checkbox. */
+  consent?: boolean;
+  successTitle?: string;
+  successBody?: string;
+  /** Spam traps (off for payment forms, which have their own checks). */
+  traps?: boolean;
+}
+const { name, action, submitLabel, event, consent = true, successTitle, successBody, traps = true } = Astro.props;
+const t = useStrings().forms;
+const { org } = getContent();
+const id = `${name}-form`;
+---
+
+<div class="form-wrap" data-form-wrap>
+  <form
+    id={id}
+    method="post"
+    action={action}
+    class="grid gap-5"
+    data-form={name}
+    data-event={event}
+    data-msg-required={t.errors.required}
+    data-msg-email={t.errors.email}
+    data-msg-phone={t.errors.phone}
+    data-msg-too-long={t.errors.tooLong}
+    data-msg-too-short={t.errors.tooShort}
+    data-msg-choose={t.errors.choose}
+    data-msg-consent={t.errors.consent}
+    data-msg-summary={t.errorTitle}
+    data-msg-server={`${t.serverError} ${org.email.general}.`}
+    data-msg-rate={`${t.rateLimited} ${org.email.general}.`}
+  >
+    <slot />
+
+    {consent && (
+      <div class="field" data-field="consent">
+        <label class="check">
+          <input
+            id={`${name}-consent`}
+            type="checkbox"
+            name="consent"
+            value="yes"
+            required
+            aria-describedby={`${name}-consent-error`}
+          />
+          <span>
+            {t.consent} <a href="/privacy">{t.consentLink}</a>.
+          </span>
+        </label>
+        <p id={`${name}-consent-error`} class="field-error" data-error-for="consent" hidden />
+      </div>
+    )}
+
+    {traps && (
+      <>
+        <div class="hp" aria-hidden="true">
+          <label for={`${name}-website`}>{t.honeypot}</label>
+          <input id={`${name}-website`} type="text" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="hidden" name="ts" value="" data-ts />
+      </>
+    )}
+
+    <div class="form-status" role="alert" data-status hidden></div>
+
+    <div>
+      <button type="submit" class="btn btn--primary btn--lg w-full sm:w-auto" data-submit>
+        <span data-submit-label>{submitLabel}</span>
+        <span data-submit-busy hidden>
+          {t.sending}
+        </span>
+      </button>
+    </div>
+  </form>
+
+  <div class="form-success" data-success hidden tabindex="-1">
+    <h3 class="text-2xl">{successTitle ?? t.successTitle}</h3>
+    <p class="mt-2 text-ink-muted" data-success-body>
+      {successBody ?? t.successBody}
+    </p>
+  </div>
+</div>
+
+<script>
+  type Json = { ok?: boolean; url?: string; message?: string; code?: string; errors?: Record<string, string> };
+
+  const msg = (form: HTMLFormElement, key: string) => form.dataset[key] ?? '';
+
+  function fieldMessage(form: HTMLFormElement, el: HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement) {
+    const v = el.validity;
+    if (el.name === 'consent') return msg(form, 'msgConsent');
+    if (v.valueMissing) return el.tagName === 'SELECT' ? msg(form, 'msgChoose') : msg(form, 'msgRequired');
+    if (v.typeMismatch && el.type === 'email') return msg(form, 'msgEmail');
+    if (v.patternMismatch && el.type === 'tel') return msg(form, 'msgPhone');
+    if (v.tooLong) return msg(form, 'msgTooLong');
+    if (v.tooShort) return msg(form, 'msgTooShort');
+    return el.validationMessage;
+  }
+
+  function setError(form: HTMLFormElement, name: string, text: string) {
+    const out = form.querySelector<HTMLElement>(`[data-error-for="${CSS.escape(name)}"]`);
+    const controls = form.querySelectorAll<HTMLElement>(`[name="${CSS.escape(name)}"]`);
+    controls.forEach((c) => c.setAttribute('aria-invalid', text ? 'true' : 'false'));
+    if (out) {
+      out.textContent = text;
+      out.hidden = !text;
+    }
+  }
+
+  function clearErrors(form: HTMLFormElement) {
+    form.querySelectorAll<HTMLElement>('[data-error-for]').forEach((el) => {
+      el.hidden = true;
+      el.textContent = '';
+    });
+    form.querySelectorAll('[aria-invalid]').forEach((el) => el.setAttribute('aria-invalid', 'false'));
+    const status = form.querySelector<HTMLElement>('[data-status]');
+    if (status) status.hidden = true;
+  }
+
+  function validate(form: HTMLFormElement): string[] {
+    const bad: string[] = [];
+    for (const el of Array.from(form.elements) as (HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement)[]) {
+      if (!el.name || !el.willValidate || (el.type === 'checkbox' && el.name !== 'consent')) continue;
+      if (!el.checkValidity() && !bad.includes(el.name)) {
+        bad.push(el.name);
+        setError(form, el.name, fieldMessage(form, el));
+      }
+    }
+    form.querySelectorAll<HTMLFieldSetElement>('[data-group-required]').forEach((group) => {
+      const name = group.dataset.field ?? '';
+      if (!group.querySelector('input:checked')) {
+        bad.push(name);
+        setError(form, name, msg(form, 'msgChoose'));
+      }
+    });
+    return bad;
+  }
+
+  function focusField(form: HTMLFormElement, name: string) {
+    form.querySelector<HTMLElement>(`[name="${CSS.escape(name)}"]`)?.focus();
+  }
+
+  function showStatus(form: HTMLFormElement, text: string) {
+    const status = form.querySelector<HTMLElement>('[data-status]');
+    if (!status) return;
+    status.textContent = text;
+    status.hidden = false;
+  }
+
+  function busy(form: HTMLFormElement, on: boolean) {
+    const btn = form.querySelector<HTMLButtonElement>('[data-submit]');
+    if (!btn) return;
+    btn.disabled = on;
+    btn.setAttribute('aria-busy', String(on));
+    btn.querySelector<HTMLElement>('[data-submit-label]')!.hidden = on;
+    btn.querySelector<HTMLElement>('[data-submit-busy]')!.hidden = !on;
+  }
+
+  for (const form of Array.from(document.querySelectorAll<HTMLFormElement>('form[data-form]'))) {
+    form.noValidate = true;
+    const ts = form.querySelector<HTMLInputElement>('[data-ts]');
+    if (ts) ts.value = String(Date.now());
+
+    // Prefill selects from the query string, e.g. /partner?project=mobile-clinics#request
+    const params = new URLSearchParams(location.search);
+    form.querySelectorAll<HTMLSelectElement>('select[data-prefill]').forEach((sel) => {
+      const v = params.get(sel.dataset.prefill ?? '');
+      if (v && Array.from(sel.options).some((o) => o.value === v)) sel.value = v;
+    });
+
+    // Clear a field's error as soon as it is corrected.
+    form.addEventListener('input', (e) => {
+      const el = e.target as HTMLInputElement;
+      if (el.name && el.getAttribute('aria-invalid') === 'true' && el.checkValidity()) setError(form, el.name, '');
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      clearErrors(form);
+      const bad = validate(form);
+      if (bad.length) {
+        showStatus(form, msg(form, 'msgSummary'));
+        focusField(form, bad[0]!);
+        return;
+      }
+      busy(form, true);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+        const data = (await res.json().catch(() => ({}))) as Json;
+        if (res.ok && data.ok) {
+          if (data.url) {
+            location.assign(data.url);
+            return;
+          }
+          // Contact form: report the conversion by its reason (Fund, Partner, Volunteer, Donate).
+          const reason = form.querySelector<HTMLSelectElement>('select[name="reason"]')?.value ?? '';
+          const byReason: Record<string, string> = {
+            fund: 'Fund',
+            partner: 'Partner',
+            volunteer: 'Volunteer',
+            donate: 'Donate',
+          };
+          const eventName = byReason[reason] ?? form.dataset.event;
+          if (eventName) {
+            window.dispatchEvent(
+              new CustomEvent('af:track', { detail: { name: eventName, location: form.dataset.form } }),
+            );
+          }
+          const wrap = form.closest('[data-form-wrap]');
+          const success = wrap?.querySelector<HTMLElement>('[data-success]');
+          if (success) {
+            if (data.message) success.querySelector('[data-success-body]')!.textContent = data.message;
+            form.hidden = true;
+            success.hidden = false;
+            success.focus();
+          }
+          return;
+        }
+        if (data.errors) {
+          const names = Object.keys(data.errors);
+          names.forEach((n) => setError(form, n, data.errors![n] ?? ''));
+          showStatus(form, msg(form, 'msgSummary'));
+          if (names[0]) focusField(form, names[0]);
+          return;
+        }
+        showStatus(form, res.status === 429 ? msg(form, 'msgRate') : msg(form, 'msgServer'));
+      } catch {
+        showStatus(form, msg(form, 'msgServer'));
+      } finally {
+        busy(form, false);
+      }
+    });
+  }
+</script>

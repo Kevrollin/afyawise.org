@@ -1,0 +1,41 @@
+---
+/**
+ * AfyaWise logo: the redrawn mark plus the outlined "AfyaWise" wordmark (scripts/brand.mjs).
+ * Inline SVG so it is crisp at any size and never depends on a font loading.
+ */
+import logo from '../assets/brand/logo.json';
+
+interface Props {
+  /** 'color' on light backgrounds; 'white' on dark ones. */
+  variant?: 'color' | 'white';
+  /** Rendered height in px. */
+  height?: number;
+  /** Show the mark only. */
+  markOnly?: boolean;
+  class?: string;
+}
+
+const { variant = 'color', height = 40, markOnly = false, class: className } = Astro.props;
+const afyaFill = variant === 'white' ? '#ffffff' : logo.colors.afya;
+const wiseFill = variant === 'white' ? 'var(--af-orange-300)' : logo.colors.wise;
+const viewWidth = markOnly ? 64 : logo.width;
+const width = Math.round((height / logo.height) * viewWidth);
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox={`0 0 ${viewWidth} ${logo.height}`}
+  width={width}
+  height={height}
+  class={className}
+  aria-hidden="true"
+  focusable="false"
+>
+  <Fragment set:html={logo.mark} />
+  {!markOnly && (
+    <>
+      <path d={logo.afya} fill={afyaFill} />
+      <path d={logo.wise} fill={wiseFill} />
+    </>
+  )}
+</svg>

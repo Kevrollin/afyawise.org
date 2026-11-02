@@ -1,0 +1,38 @@
+---
+/** Hero for inner pages: breadcrumb, H1, one-line intro, optional actions and aside. */
+import Breadcrumbs from './Breadcrumbs.astro';
+import Logo from './Logo.astro';
+
+interface Props {
+  headline: string;
+  intro?: string;
+  eyebrow?: string;
+  breadcrumbs?: { name: string; href: string }[];
+}
+const { headline, intro, eyebrow, breadcrumbs } = Astro.props;
+const hasAside = Astro.slots.has('aside');
+---
+
+<section class="relative overflow-hidden bg-surface">
+  <div aria-hidden="true" class="pointer-events-none absolute -right-24 -top-16 hidden opacity-[0.07] md:block">
+    <Logo markOnly height={420} />
+  </div>
+  <div class:list={['container-site relative py-12 md:py-16', hasAside && 'grid items-center gap-10 lg:grid-cols-12']}>
+    <div class:list={[hasAside && 'lg:col-span-7']}>
+      {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
+      {eyebrow && <p class="eyebrow mb-3">{eyebrow}</p>}
+      <h1 class="max-w-3xl">{headline}</h1>
+      {intro && <p class="lead mt-5">{intro}</p>}
+      {Astro.slots.has('actions') && (
+        <div class="mt-8 flex flex-wrap gap-3">
+          <slot name="actions" />
+        </div>
+      )}
+    </div>
+    {hasAside && (
+      <div class="lg:col-span-5">
+        <slot name="aside" />
+      </div>
+    )}
+  </div>
+</section>

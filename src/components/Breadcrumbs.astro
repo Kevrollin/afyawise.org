@@ -1,0 +1,28 @@
+---
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  items: { name: string; href: string }[];
+}
+const { items } = Astro.props;
+const t = useStrings();
+---
+
+<nav aria-label={t.common.breadcrumb} class="mb-6 text-sm">
+  <ol class="flex flex-wrap items-center gap-x-2 gap-y-1 text-ink-muted">
+    {items.map((item, i) => (
+      <li class="flex items-center gap-2">
+        {i > 0 && <span aria-hidden="true">/</span>}
+        {i === items.length - 1 ? (
+          <span aria-current="page" class="font-semibold text-ink">
+            {item.name}
+          </span>
+        ) : (
+          <a href={item.href} class="inline-flex min-h-11 items-center text-ink-muted hover:text-ink">
+            {item.name}
+          </a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>

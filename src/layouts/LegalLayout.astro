@@ -1,0 +1,52 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  headline: string;
+  href: string;
+  updated: string;
+}
+const { title, description, headline, href, updated } = Astro.props;
+const date = new Date(updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<BaseLayout {title} {description} og="default">
+  <PageHero
+    {headline}
+    breadcrumbs={[
+      { name: 'Home', href: '/' },
+      { name: headline, href },
+    ]}
+  />
+  <Section>
+    <article class="prose legal">
+      <slot />
+      <p class="mt-10 text-sm text-ink-muted">
+        Last updated: <time datetime={updated}>{date}</time>
+      </p>
+    </article>
+  </Section>
+</BaseLayout>
+
+<style>
+  .legal :global(table) {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+    font-size: var(--af-step--1);
+  }
+  .legal :global(th),
+  .legal :global(td) {
+    padding: 0.625rem 0.75rem;
+    border-bottom: 1px solid var(--af-line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .legal :global(th) {
+    background: var(--af-surface);
+  }
+</style>

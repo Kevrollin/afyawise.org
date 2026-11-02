@@ -1,0 +1,14 @@
+---
+/**
+ * Click-to-load facade for the Chatbase assistant. Nothing from Chatbase loads until the visitor
+ * asks for it, so the chatbot never affects page speed. Off unless PUBLIC_CHATBASE_ID is set (and
+ * then its script ships only because ChatWidget renders). Without JS the launcher is a plain link.
+ */
+import { PUBLIC_CHATBASE_ID } from 'astro:env/client';
+import ChatWidget from './ChatWidget.astro';
+
+const id = PUBLIC_CHATBASE_ID;
+const src = id ? `https://www.chatbase.co/chatbot-iframe/${encodeURIComponent(id)}` : null;
+---
+
+{src && <ChatWidget src={src} />}

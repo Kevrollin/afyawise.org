@@ -1,0 +1,17 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import { Content, frontmatter } from '../content/en/legal/privacy.md';
+import { getContent } from '../content/index.ts';
+
+const { privacy } = getContent().legal;
+---
+
+<LegalLayout
+  title={privacy.meta.title}
+  description={privacy.meta.description}
+  headline={privacy.headline}
+  href="/privacy"
+  updated={frontmatter.updated}
+>
+  <Content />
+</LegalLayout>

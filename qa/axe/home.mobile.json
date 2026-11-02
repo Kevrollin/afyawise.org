@@ -1,0 +1,13 @@
+{
+  "url": "/",
+  "axe": "4.14.0",
+  "violations": [],
+  "passes": 43,
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "nodes": 9,
+      "help": "Elements must meet minimum color contrast ratio thresholds"
+    }
+  ]
+}

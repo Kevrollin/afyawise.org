@@ -1,0 +1,38 @@
+---
+/** Leadership cards. Only people with a confirmed name render; photos need recorded consent. */
+import type { Person } from '../content/types.ts';
+import TodoBadge from './TodoBadge.astro';
+import { isTodo, showUnconfirmed } from '../lib/visibility.ts';
+
+interface Props {
+  people: Person[];
+}
+const { people } = Astro.props;
+const shown = people.filter((p) => (p.status === 'confirmed' && p.name) || showUnconfirmed);
+const initials = (name: string | null, role: string) =>
+  (name ?? role)
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join('')
+    .toUpperCase();
+---
+
+{shown.length > 0 && (
+  <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    {shown.map((p) => (
+      <li class="card reveal p-6">
+        <div
+          class="grid size-16 place-items-center rounded-full bg-green-100 text-xl font-extrabold text-green-800"
+          aria-hidden="true"
+        >
+          {initials(p.name, p.role)}
+        </div>
+        <h3 class="mt-4 text-lg">{p.name ?? 'Name to confirm'}</h3>
+        <p class="text-sm font-semibold text-green-800">{p.role}</p>
+        {p.bio && <p class="mt-2 text-sm text-ink-muted">{p.bio}</p>}
+        {isTodo(p) && <TodoBadge note="Name, role, bio and a consented photo." />}
+      </li>
+    ))}
+  </ul>
+)}

@@ -1,0 +1,23 @@
+---
+/** Forwards `af:track` events to whichever cookieless analytics script is loaded. */
+---
+
+<script>
+  type Detail = { name: string; location?: string };
+  type Win = Window & {
+    plausible?: (name: string, opts?: { props?: Record<string, string> }) => void;
+    umami?: { track: (name: string, data?: Record<string, string>) => void };
+    va?: (event: 'event', payload: { name: string; data?: Record<string, string> }) => void;
+    vaq?: unknown[];
+  };
+  const w = window as Win;
+  // Vercel Analytics queue stub (events before the script loads are kept).
+  w.va = w.va ?? ((...args: unknown[]) => void (w.vaq = w.vaq ?? []).push(args));
+  window.addEventListener('af:track', (e) => {
+    const { name, location = '' } = (e as CustomEvent<Detail>).detail;
+    const data = location ? { location } : {};
+    if (w.plausible) w.plausible(name, { props: data });
+    else if (w.umami) w.umami.track(name, data);
+    else w.va?.('event', { name, data });
+  });
+</script>

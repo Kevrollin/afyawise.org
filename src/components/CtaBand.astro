@@ -1,0 +1,52 @@
+---
+/** Closing call to action on every page: Fund · Partner · Donate. */
+import { getContent } from '../content/index.ts';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  headline?: string;
+  intro?: string;
+}
+const { home } = getContent();
+const { headline = home.cta.headline, intro = home.cta.intro } = Astro.props;
+const t = useStrings().nav;
+---
+
+<section class="section on-dark relative overflow-hidden bg-surface-dark" aria-labelledby="cta-title">
+  <div aria-hidden="true" class="cta-glow"></div>
+  <div class="container-site relative text-center">
+    <h2 id="cta-title" class="mx-auto max-w-2xl">
+      {headline}
+    </h2>
+    <p class="lead mx-auto mt-4">{intro}</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="/partner" class="btn btn--light btn--lg" data-event="Fund" data-event-location="cta-band">
+        Fund our work
+      </a>
+      <a href="/partner#request" class="btn btn--secondary btn--lg" data-event="Partner" data-event-location="cta-band">
+        Partner with us
+      </a>
+      <a href="/donate" class="btn btn--accent btn--lg" data-event="Donate" data-event-location="cta-band">
+        {t.donate}
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-glow {
+    position: absolute;
+    inset: -40% -10% auto auto;
+    width: 36rem;
+    height: 36rem;
+    background: radial-gradient(closest-side, rgb(68 189 50 / 0.22), transparent);
+  }
+  .btn--light {
+    background: #fff;
+    color: var(--af-green-900);
+  }
+  .btn--light:hover {
+    background: var(--af-green-50);
+    color: var(--af-green-950);
+  }
+</style>

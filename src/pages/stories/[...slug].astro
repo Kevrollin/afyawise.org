@@ -1,0 +1,94 @@
+---
+/**
+ * Stories: /stories and /stories/<id>. Built ONLY when at least one confirmed story exists
+ * (no empty blog). See src/content/stories/_README.md.
+ */
+import type { GetStaticPaths } from 'astro';
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import TodoBadge from '../../components/TodoBadge.astro';
+import { publishedStories } from '../../lib/nav.ts';
+import { getContent } from '../../content/index.ts';
+
+export const getStaticPaths = (async () => {
+  const stories = await publishedStories();
+  if (!stories.length) return [];
+  return [
+    { params: { slug: undefined }, props: { story: null, stories } },
+    ...stories.map((story) => ({ params: { slug: story.id }, props: { story, stories } })),
+  ];
+}) satisfies GetStaticPaths;
+
+const { story, stories } = Astro.props;
+const programs = getContent().programs;
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const rendered = story ? await render(story) : null;
+---
+
+{story && rendered ? (
+  <BaseLayout title={`${story.data.title} | AfyaWise CBO`} description={story.data.summary} og="default">
+    <PageHero
+      headline={story.data.title}
+      intro={story.data.summary}
+      breadcrumbs={[
+        { name: 'Home', href: '/' },
+        { name: 'Stories', href: '/stories' },
+        { name: story.data.title, href: `/stories/${story.id}` },
+      ]}
+    />
+    <Section>
+      <article class="prose">
+        <p class="text-sm text-ink-muted">
+          <time datetime={story.data.date.toISOString()}>{fmt(story.data.date)}</time> · {story.data.place} ·{' '}
+          <a href={`/programs/${story.data.program}`}>{programs.find((p) => p.slug === story.data.program)?.title}</a>
+        </p>
+        {story.data.status === 'TODO_CONFIRM' && <TodoBadge />}
+        {story.data.image && story.data.imageAlt && (
+          <Image
+            src={story.data.image}
+            alt={story.data.imageAlt}
+            widths={[400, 800, 1200]}
+            sizes="(min-width: 768px) 65ch, 100vw"
+            class="my-6 rounded-lg"
+          />
+        )}
+        <rendered.Content />
+      </article>
+    </Section>
+    <CtaBand />
+  </BaseLayout>
+) : (
+  <BaseLayout
+    title="Stories | AfyaWise CBO, Meru County"
+    description="Real stories from AfyaWise's community health work in Karama Ward, Meru County, Kenya."
+    og="default"
+  >
+    <PageHero
+      headline="Stories from the field"
+      intro="Real people, places and dates from our work in Meru County."
+      breadcrumbs={[
+        { name: 'Home', href: '/' },
+        { name: 'Stories', href: '/stories' },
+      ]}
+    />
+    <Section>
+      <ul class="grid gap-5 md:grid-cols-2">
+        {stories.map((s) => (
+          <li class="card p-6">
+            <p class="text-sm text-ink-muted">
+              {fmt(s.data.date)} · {s.data.place}
+            </p>
+            <h2 class="mt-2 text-2xl">
+              <a href={`/stories/${s.id}`}>{s.data.title}</a>
+            </h2>
+            <p class="mt-2 text-ink-muted">{s.data.summary}</p>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  </BaseLayout>
+)}

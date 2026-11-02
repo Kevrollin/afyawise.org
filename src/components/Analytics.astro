@@ -1,0 +1,30 @@
+---
+/**
+ * Privacy-first, cookieless analytics, off unless PUBLIC_ANALYTICS_PROVIDER is set.
+ * Providers: plausible | umami | vercel. Conversion events (Fund, Partner, Donate, Volunteer) are
+ * forwarded by AnalyticsEvents.
+ */
+import {
+  PUBLIC_ANALYTICS_PROVIDER,
+  PUBLIC_ANALYTICS_DOMAIN,
+  PUBLIC_ANALYTICS_SRC,
+  PUBLIC_UMAMI_WEBSITE_ID,
+} from 'astro:env/client';
+import AnalyticsEvents from './AnalyticsEvents.astro';
+
+const provider = PUBLIC_ANALYTICS_PROVIDER;
+---
+
+{provider === 'plausible' && (
+  <script
+    is:inline
+    defer
+    data-domain={PUBLIC_ANALYTICS_DOMAIN ?? 'afyawise.org'}
+    src={PUBLIC_ANALYTICS_SRC ?? 'https://plausible.io/js/script.js'}
+  />
+)}
+{provider === 'umami' && PUBLIC_UMAMI_WEBSITE_ID && PUBLIC_ANALYTICS_SRC && (
+  <script is:inline defer data-website-id={PUBLIC_UMAMI_WEBSITE_ID} src={PUBLIC_ANALYTICS_SRC} />
+)}
+{provider === 'vercel' && <script is:inline defer src="/_vercel/insights/script.js" />}
+{provider !== 'none' && <AnalyticsEvents />}

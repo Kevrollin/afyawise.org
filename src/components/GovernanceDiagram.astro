@@ -1,0 +1,133 @@
+---
+/**
+ * Governance at a glance. HTML boxes joined by inline-SVG connectors, so text reflows on small
+ * screens and screen readers get an ordered list (who elects/supervises/works with whom).
+ */
+import { getContent } from '../content/index.ts';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  /** Show the role lists (full version on /about); hide them on the home page. */
+  detailed?: boolean;
+}
+const { detailed = false } = Astro.props;
+const { governance } = getContent();
+const t = useStrings().common;
+const links = [t.elects, t.supervises, t.workWith];
+---
+
+<figure class="governance" aria-label={t.governanceDiagram}>
+  <div class="grid gap-6 lg:grid-cols-[1fr_minmax(14rem,18rem)] lg:items-start">
+    <ol class="chain">
+      {governance.bodies.map((body, i) => (
+        <li class="chain-item">
+          <div class="node">
+            <h3 class="text-lg">{body.title}</h3>
+            <p class="mt-1 text-sm text-ink-muted">{body.text}</p>
+            {detailed && body.roles.length > 0 && (
+              <ul class="roles mt-3">
+                {body.roles.map((r) => (
+                  <li>{r}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+          {i < governance.bodies.length - 1 && (
+            <p class="connector">
+              <svg width="20" height="28" viewBox="0 0 20 28" aria-hidden="true">
+                <path
+                  d="M10 2v20m-6-6 6 6 6-6"
+                  fill="none"
+                  stroke="var(--af-green-700)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>{links[i]}</span>
+            </p>
+          )}
+        </li>
+      ))}
+    </ol>
+    <aside class="node node--advisory">
+      <p class="connector connector--side">
+        <svg width="28" height="20" viewBox="0 0 28 20" aria-hidden="true" class="hidden lg:block">
+          <path
+            d="M26 10H6m6-6-6 6 6 6"
+            fill="none"
+            stroke="var(--af-orange-700)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="3 3"
+          />
+        </svg>
+        <span>{t.advises}</span>
+      </p>
+      <h3 class="text-lg">{governance.advisory.title}</h3>
+      <p class="mt-1 text-sm text-ink-muted">{governance.advisory.text}</p>
+      <ul class="roles mt-3">
+        {governance.advisory.roles.map((r) => (
+          <li>{r}</li>
+        ))}
+      </ul>
+    </aside>
+  </div>
+</figure>
+
+<style>
+  .governance {
+    margin: 0;
+  }
+  .chain {
+    display: grid;
+    gap: 0;
+  }
+  .node {
+    background: var(--af-bg);
+    border: 1px solid var(--af-line);
+    border-left: 4px solid var(--af-green-700);
+    border-radius: var(--af-radius-md);
+    padding: 1rem 1.25rem;
+    box-shadow: var(--af-shadow-sm);
+  }
+  .node--advisory {
+    border-left-color: var(--af-orange-400);
+    border-style: dashed;
+    border-left-style: solid;
+    background: var(--af-neutral-50);
+  }
+  .connector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0 0.25rem 1rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--af-green-800);
+    text-transform: uppercase;
+    letter-spacing: var(--af-tracking-caps);
+  }
+  .connector--side {
+    padding: 0 0 0.5rem;
+    color: var(--af-orange-700);
+  }
+  .roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+  .roles li {
+    padding: 0.125rem 0.625rem;
+    border-radius: var(--af-radius-pill);
+    background: var(--af-green-50);
+    color: var(--af-green-900);
+    font-size: 0.8125rem;
+    font-weight: 600;
+  }
+  .node--advisory .roles li {
+    background: var(--af-orange-100);
+    color: var(--af-orange-800);
+  }
+</style>

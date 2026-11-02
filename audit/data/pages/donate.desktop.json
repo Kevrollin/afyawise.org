@@ -1,0 +1,1337 @@
+{
+  "route": "/donate",
+  "url": "https://www.afyawise.org/donate",
+  "finalUrl": "https://www.afyawise.org/donate",
+  "status": 200,
+  "viewport": "desktop",
+  "capturedAt": "2026-11-02T20:15:23.091Z",
+  "markdown": "![EMPTY ALT](/logo.jpg)\n\n[link] [Afyawise](/)\n\n[link] [Home](/)\n\n[link] [Blog](/blog)\n\n[link] [Shop](/shop)\n\n[link] [Support Us](/support)\n\n[link] [About us](/about)\n\n[link] [Our Work](/work)\n\n[link] [Services](/services)\n\n[link] [Our Impact](/our-impact)\n\n[link] [Our Team](/team)\n\n[link] [Contact Us](/contact)\n\n# Make a Difference Today\n\nYour donation helps us bring sustainable health to Kenyan communities\n\n## Available Payment Methods\n\n![EMPTY ALT](/Icons/mobile-phone.svg)\n\n#### M-Pesa Till\n\nCOMING SOON\n\n![EMPTY ALT](/Icons/bank.svg)\n\n#### Bank Transfer\n\nBank: KCB\n\nAccount: AfyaWise\n\nNumber: 1343270596\n\nBranch: Maua\n\n![EMPTY ALT](/Icons/paypal.svg)\n\n#### PayPal\n\nCOMING SOON\n\n## What Your Donation Supports\n\n![EMPTY ALT](/Icons/scholar.svg)\n\n#### Train 100+ CHVs\n\nCommunity Health Volunteers bringing care to remote areas\n\n![EMPTY ALT](/Icons/mobile.svg)\n\n#### Mobile Health Clinics\n\nReaching underserved communities with essential healthcare\n\n![EMPTY ALT](/Icons/brain.svg)\n\n#### Mental Health Awareness\n\nBreaking stigma and providing mental health support\n\n![EMPTY ALT](/Icons/water-drop.svg)\n\n#### Safe Water Access\n\nClean water initiatives for healthier communities\n\n## Your Donation Transforms Lives\n\nJoin us in building healthier communities across Kenya. Every contribution makes a difference.\n\n![Afyawise logo](/logo.jpg)\n\n# Afyawise\n\nPromoting community health and well-being\n\n## Quick Links\n\n- Home  _(links: Home -> /)_\n\n- About  _(links: About -> /about)_\n\n- Our Team  _(links: Our Team -> /team)_\n\n- Our Work  _(links: Our Work -> /work)_\n\n### CONTACT\n\n![Email](Icons/email-white.svg)\n\n[link] [info@afyawise.org](mailto:info@afyawise.org)\n\n![Phone](Icons/phone-color.svg)\n\n[link] [+254798724766](tel:+254798724766)\n\n![Location](Icons/location-color.svg)\n\nKarama Ward, Meru County, Kenya\n\n© 2025 AfyaWise CBO. All rights reserved.",
+  "innerText": "Afyawise\nHome\nBlog\nShop\nSupport Us\nAbout us\nOur Work\nServices\nOur Impact\nOur Team\nContact Us\nMake a Difference Today\n\nYour donation helps us bring sustainable health to Kenyan communities\n\nAvailable Payment Methods\nM-Pesa Till\n\nCOMING SOON\n\nBank Transfer\n\nBank: KCB\n\nAccount: AfyaWise\n\nNumber: 1343270596\n\nBranch: Maua\n\nPayPal\n\nCOMING SOON\n\nWhat Your Donation Supports\nTrain 100+ CHVs\n\nCommunity Health Volunteers bringing care to remote areas\n\nMobile Health Clinics\n\nReaching underserved communities with essential healthcare\n\nMental Health Awareness\n\nBreaking stigma and providing mental health support\n\nSafe Water Access\n\nClean water initiatives for healthier communities\n\nYour Donation Transforms Lives\n\nJoin us in building healthier communities across Kenya. Every contribution makes a difference.\n\nAfyawise\n\nPromoting community health and well-being\n\nQuick Links\nHome\nAbout\nOur Team\nOur Work\nCONTACT\ninfo@afyawise.org\n+254798724766\nKarama Ward, Meru County, Kenya\n\n© 2025 AfyaWise CBO.\nAll rights reserved.",
+  "links": [
+    {
+      "text": "Afyawise",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "main",
+      "visible": true
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Blog",
+      "href": "/blog",
+      "resolved": "https://www.afyawise.org/blog",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Shop",
+      "href": "/shop",
+      "resolved": "https://www.afyawise.org/shop",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Support Us",
+      "href": "/support",
+      "resolved": "https://www.afyawise.org/support",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "About us",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Services",
+      "href": "/services",
+      "resolved": "https://www.afyawise.org/services",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Our Impact",
+      "href": "/our-impact",
+      "resolved": "https://www.afyawise.org/our-impact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Contact Us",
+      "href": "/contact",
+      "resolved": "https://www.afyawise.org/contact",
+      "target": null,
+      "rel": null,
+      "region": "header",
+      "visible": true
+    },
+    {
+      "text": "Home",
+      "href": "/",
+      "resolved": "https://www.afyawise.org/",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "About",
+      "href": "/about",
+      "resolved": "https://www.afyawise.org/about",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Team",
+      "href": "/team",
+      "resolved": "https://www.afyawise.org/team",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "Our Work",
+      "href": "/work",
+      "resolved": "https://www.afyawise.org/work",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "info@afyawise.org",
+      "href": "mailto:info@afyawise.org",
+      "resolved": "mailto:info@afyawise.org",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    },
+    {
+      "text": "+254798724766",
+      "href": "tel:+254798724766",
+      "resolved": "tel:+254798724766",
+      "target": null,
+      "rel": null,
+      "region": "footer",
+      "visible": true
+    }
+  ],
+  "buttons": [],
+  "images": [
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/menu-svg.svg",
+      "currentSrc": "https://www.afyawise.org/menu-svg.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 0,
+      "renderedHeight": 0,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/mobile-phone.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/mobile-phone.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/bank.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/bank.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/paypal.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/paypal.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/scholar.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/scholar.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/mobile.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/mobile.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/brain.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/brain.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/Icons/water-drop.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/water-drop.svg",
+      "alt": "",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 40,
+      "renderedHeight": 40,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "main"
+    },
+    {
+      "src": "/logo.jpg",
+      "currentSrc": "https://www.afyawise.org/logo.jpg",
+      "alt": "Afyawise logo",
+      "naturalWidth": 500,
+      "naturalHeight": 500,
+      "renderedWidth": 48,
+      "renderedHeight": 48,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/email-white.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/email-white.svg",
+      "alt": "Email",
+      "naturalWidth": 150,
+      "naturalHeight": 150,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/phone-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/phone-color.svg",
+      "alt": "Phone",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    },
+    {
+      "src": "Icons/location-color.svg",
+      "currentSrc": "https://www.afyawise.org/Icons/location-color.svg",
+      "alt": "Location",
+      "naturalWidth": 800,
+      "naturalHeight": 800,
+      "renderedWidth": 20,
+      "renderedHeight": 20,
+      "loading": null,
+      "widthAttr": null,
+      "heightAttr": null,
+      "region": "footer"
+    }
+  ],
+  "bgImages": [
+    {
+      "value": "url(\"https://www.afyawise.org/donate-hero.jpg\")",
+      "renderedWidth": 1440,
+      "renderedHeight": 540
+    }
+  ],
+  "forms": [],
+  "orphanFields": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Make a Difference Today",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Available Payment Methods",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "M-Pesa Till",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Bank Transfer",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "PayPal",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "What Your Donation Supports",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Train 100+ CHVs",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Mobile Health Clinics",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Mental Health Awareness",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Safe Water Access",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Your Donation Transforms Lives",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "Afyawise",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Quick Links",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "CONTACT",
+      "visible": true
+    }
+  ],
+  "meta": {
+    "title": "Afyawise",
+    "lang": "en",
+    "metas": [
+      {
+        "name": null,
+        "property": null,
+        "content": null,
+        "charset": "UTF-8"
+      },
+      {
+        "name": "viewport",
+        "property": null,
+        "content": "width=device-width, initial-scale=1.0",
+        "charset": null
+      }
+    ],
+    "linkTags": [
+      {
+        "rel": "icon",
+        "href": "/logo.jpg",
+        "type": "image/svg+xml"
+      },
+      {
+        "rel": "stylesheet",
+        "href": "/assets/index-BJ8jT5Er.css",
+        "type": null
+      }
+    ],
+    "canonical": null,
+    "jsonLd": [],
+    "scripts": [
+      "https://www.afyawise.org/assets/index-niwIgGm5.js"
+    ],
+    "iframes": [],
+    "landmarks": {
+      "header": 0,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "skipLink": false
+    }
+  },
+  "colorSamples": [
+    {
+      "tag": "a",
+      "text": "Afyawise",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Blog",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Shop",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Support Us",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "About us",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Work",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Services",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Impact",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Team",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Contact Us",
+      "color": "rgb(34, 34, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 500,
+      "fontFamily": "Inter",
+      "interactive": true
+    },
+    {
+      "tag": "h1",
+      "text": "Make a Difference Today",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0.4)",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Your donation helps us bring sustainable health to Kenyan co",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0.4)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "Available Payment Methods",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 24,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h4",
+      "text": "M-Pesa Till",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "COMING SOON",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h4",
+      "text": "Bank Transfer",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "KCB",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "strong",
+      "text": "Bank:",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "AfyaWise",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "strong",
+      "text": "Account:",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "1343270596",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "strong",
+      "text": "Number:",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Maua",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "strong",
+      "text": "Branch:",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h4",
+      "text": "PayPal",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "COMING SOON",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "What Your Donation Supports",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 24,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h4",
+      "text": "Train 100+ CHVs",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Community Health Volunteers bringing care to remote areas",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h4",
+      "text": "Mobile Health Clinics",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Reaching underserved communities with essential healthcare",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h4",
+      "text": "Mental Health Awareness",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Breaking stigma and providing mental health support",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h4",
+      "text": "Safe Water Access",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Clean water initiatives for healthier communities",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(250, 250, 250)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "Your Donation Transforms Lives",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(224, 247, 245)",
+      "fontSize": 24,
+      "fontWeight": 700,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Join us in building healthier communities across Kenya. Ever",
+      "color": "rgb(51, 51, 51)",
+      "bg": "rgb(224, 247, 245)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "Arial, sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h1",
+      "text": "Afyawise",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 25.6,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "Promoting community health and well-being",
+      "color": "rgb(204, 204, 204)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "h2",
+      "text": "Quick Links",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "About",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Team",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "Our Work",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "h3",
+      "text": "CONTACT",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 19.2,
+      "fontWeight": 700,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "a",
+      "text": "info@afyawise.org",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "a",
+      "text": "+254798724766",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": true
+    },
+    {
+      "tag": "div",
+      "text": "Karama Ward, Meru County, Kenya",
+      "color": "rgb(242, 242, 242)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 15.2,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    },
+    {
+      "tag": "p",
+      "text": "© 2025 AfyaWise CBO.All rights reserved.",
+      "color": "rgb(170, 170, 170)",
+      "bg": "rgb(14, 26, 36)",
+      "fontSize": 14.4,
+      "fontWeight": 400,
+      "fontFamily": "\"Segoe UI\", sans-serif",
+      "interactive": false
+    }
+  ],
+  "layout": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "horizontalOverflow": false,
+    "pageHeight": 1836,
+    "smallTouchTargets": [
+      {
+        "text": "Afyawise",
+        "w": 86,
+        "h": 24
+      },
+      {
+        "text": "Home",
+        "w": 45,
+        "h": 20
+      },
+      {
+        "text": "Blog",
+        "w": 34,
+        "h": 20
+      },
+      {
+        "text": "Shop",
+        "w": 39,
+        "h": 20
+      },
+      {
+        "text": "Support Us",
+        "w": 85,
+        "h": 20
+      },
+      {
+        "text": "About us",
+        "w": 68,
+        "h": 20
+      },
+      {
+        "text": "Our Work",
+        "w": 72,
+        "h": 20
+      },
+      {
+        "text": "Services",
+        "w": 66,
+        "h": 20
+      },
+      {
+        "text": "Our Impact",
+        "w": 84,
+        "h": 20
+      },
+      {
+        "text": "Our Team",
+        "w": 74,
+        "h": 20
+      },
+      {
+        "text": "Contact Us",
+        "w": 84,
+        "h": 20
+      },
+      {
+        "text": "Home",
+        "w": 43,
+        "h": 21
+      },
+      {
+        "text": "About",
+        "w": 44,
+        "h": 21
+      },
+      {
+        "text": "Our Team",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "Our Work",
+        "w": 68,
+        "h": 21
+      },
+      {
+        "text": "info@afyawise.org",
+        "w": 124,
+        "h": 20
+      },
+      {
+        "text": "+254798724766",
+        "w": 109,
+        "h": 20
+      }
+    ]
+  },
+  "fontFaces": [
+    {
+      "family": "Inter",
+      "weight": "100 900",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "contrastPairs": [
+    {
+      "pair": "#333333 on #FFFFFF",
+      "ratio": 12.63,
+      "count": 14,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#222222 on #FFFFFF",
+      "ratio": 15.91,
+      "count": 10,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#333333 on #FAFAFA",
+      "ratio": 12.1,
+      "count": 9,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#F2F2F2 on #0E1A24",
+      "ratio": 15.74,
+      "count": 8,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#FFFFFF on #000000",
+      "ratio": 21,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#333333 on #E0F7F5",
+      "ratio": 11.31,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#FFFFFF on #0E1A24",
+      "ratio": 17.62,
+      "count": 2,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#000000 on #FFFFFF",
+      "ratio": 21,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#CCCCCC on #0E1A24",
+      "ratio": 10.97,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    },
+    {
+      "pair": "#AAAAAA on #0E1A24",
+      "ratio": 7.58,
+      "count": 1,
+      "failures": 0,
+      "examples": []
+    }
+  ],
+  "renderedFonts": {
+    "Inter": 82,
+    "Arial": 663,
+    "Segoe UI": 187
+  },
+  "axe": {
+    "violations": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "help": "Heading levels should only increase by one",
+        "nodes": 2,
+        "examples": [
+          {
+            "target": ".method-card:nth-child(1) > h4",
+            "summary": "Fix any of the following:\n  Heading order invalid"
+          },
+          {
+            "target": "#supports-grid > div:nth-child(1) > h4",
+            "summary": "Fix any of the following:\n  Heading order invalid"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "help": "All page content should be contained by landmarks",
+        "nodes": 1,
+        "examples": [
+          {
+            "target": "#brand",
+            "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ],
+    "passes": 26,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  "console": [],
+  "requests": [
+    {
+      "url": "https://www.afyawise.org/donate",
+      "method": "GET",
+      "type": "document",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyBytes": 754,
+      "transferBytes": 754
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-niwIgGm5.js",
+      "method": "GET",
+      "type": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bodyBytes": 192443,
+      "transferBytes": 192443
+    },
+    {
+      "url": "https://www.afyawise.org/assets/index-BJ8jT5Er.css",
+      "method": "GET",
+      "type": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyBytes": 5707,
+      "transferBytes": 5707
+    },
+    {
+      "url": "https://www.afyawise.org/logo.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 35138,
+      "transferBytes": 35138
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/mobile-phone.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 806,
+      "transferBytes": 806
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/bank.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 844,
+      "transferBytes": 844
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/scholar.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 2333,
+      "transferBytes": 2333
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/brain.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 801,
+      "transferBytes": 801
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/water-drop.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 789,
+      "transferBytes": 789
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/mobile.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1286,
+      "transferBytes": 1286
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/email-white.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 627,
+      "transferBytes": 627
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/phone-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 977,
+      "transferBytes": 977
+    },
+    {
+      "url": "https://www.afyawise.org/menu-svg.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 513,
+      "transferBytes": 513
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/paypal.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1062,
+      "transferBytes": 1062
+    },
+    {
+      "url": "https://www.afyawise.org/Icons/location-color.svg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyBytes": 1055,
+      "transferBytes": 1055
+    },
+    {
+      "url": "https://www.afyawise.org/donate-hero.jpg",
+      "method": "GET",
+      "type": "image",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bodyBytes": 634428,
+      "transferBytes": 634428
+    },
+    {
+      "url": "https://www.afyawise.org/Fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+      "method": "GET",
+      "type": "font",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyBytes": 455427,
+      "transferBytes": 455427
+    }
+  ],
+  "mobileMenu": null
+}

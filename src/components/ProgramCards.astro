@@ -1,0 +1,53 @@
+---
+/** Program cards: icon, 3–4 word title, one line, link to the program page (whole card clickable). */
+import type { Program } from '../content/types.ts';
+import Icon from './Icon.astro';
+import TodoBadge from './TodoBadge.astro';
+import { visible, isTodo } from '../lib/visibility.ts';
+import { useStrings } from '../i18n/index.ts';
+
+interface Props {
+  programs: Program[];
+  headingLevel?: 2 | 3;
+}
+const { programs, headingLevel = 3 } = Astro.props;
+const shown = visible(programs);
+const t = useStrings().common;
+const H = `h${headingLevel}` as 'h2' | 'h3';
+---
+
+<ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  {shown.map((p) => (
+    <li class="card card--interactive reveal relative flex flex-col p-6">
+      <span class="icon-tile mb-5">
+        <Icon name={p.icon} size={26} />
+      </span>
+      <H class="text-xl">
+        <a href={`/programs/${p.slug}`} class="stretched-link text-ink no-underline hover:text-green-800">
+          {p.title}
+        </a>
+      </H>
+      <p class="mt-2 text-ink-muted">{p.summary}</p>
+      <span class="mt-auto inline-flex items-center gap-1 pt-4 font-bold text-green-700" aria-hidden="true">
+        {t.learnMore} <Icon name="arrow-right" size={18} />
+      </span>
+      {isTodo(p) && <TodoBadge />}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .stretched-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--af-radius-lg);
+  }
+  .stretched-link:focus-visible {
+    outline: none;
+  }
+  .stretched-link:focus-visible::after {
+    outline: 3px solid var(--af-focus);
+    outline-offset: 2px;
+  }
+</style>

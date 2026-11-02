@@ -1,0 +1,48 @@
+---
+/** Numbered model steps (train → reach → refer and follow up). */
+interface Props {
+  steps: { title: string; text: string }[];
+}
+const { steps } = Astro.props;
+---
+
+<ol class="steps grid gap-6 md:grid-cols-3">
+  {steps.map((step, i) => (
+    <li class="reveal relative">
+      <span class="step-number" aria-hidden="true">
+        {i + 1}
+      </span>
+      <h3 class="mt-4 text-xl">
+        <span class="sr-only">Step {i + 1}: </span>
+        {step.title}
+      </h3>
+      <p class="mt-2 text-ink-muted">{step.text}</p>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .step-number {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--af-radius-pill);
+    background: var(--af-green-700);
+    color: #fff;
+    font-weight: 800;
+    font-size: var(--af-step-1);
+    position: relative;
+    z-index: 1;
+  }
+  @media (min-width: 48rem) {
+    .steps > li:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 1.5rem;
+      left: 3.5rem;
+      right: -1rem;
+      border-top: 2px dashed var(--af-green-300);
+    }
+  }
+</style>

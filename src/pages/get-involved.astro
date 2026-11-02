@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Icon from '../components/Icon.astro';
+import FormShell from '../components/forms/FormShell.astro';
+import Field from '../components/forms/Field.astro';
+import Select from '../components/forms/Select.astro';
+import TextArea from '../components/forms/TextArea.astro';
+import CheckboxGroup from '../components/forms/CheckboxGroup.astro';
+import { getContent } from '../content/index.ts';
+import { breadcrumbLd } from '../lib/seo.ts';
+import { availabilityOptions, volunteerSkills } from '../lib/forms/options.ts';
+import { LIMITS, PHONE_PATTERN } from '../lib/forms/schemas.ts';
+
+const c = getContent();
+const page = c.getInvolvedPage;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: page.headline, href: '/get-involved' },
+];
+const icons = ['handshake', 'hand-coins'] as const;
+---
+
+<BaseLayout
+  title={page.meta.title}
+  description={page.meta.description}
+  og="get-involved"
+  jsonLd={[breadcrumbLd(crumbs)]}
+>
+  <PageHero headline={page.headline} intro={page.intro} breadcrumbs={crumbs}>
+    <Fragment slot="actions">
+      <a
+        href="#volunteer"
+        class="btn btn--primary btn--lg"
+        data-event="Volunteer"
+        data-event-location="get-involved-hero"
+      >
+        Volunteer with us
+      </a>
+      <a
+        href="/partner"
+        class="btn btn--secondary btn--lg"
+        data-event="Partner"
+        data-event-location="get-involved-hero"
+      >
+        Fund or partner
+      </a>
+    </Fragment>
+  </PageHero>
+
+  <Section id="volunteer" labelledby="volunteer-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <h2 id="volunteer-title">{page.volunteer.headline}</h2>
+        <p class="lead mt-4">{page.volunteer.intro}</p>
+        <p class="mt-6 text-sm text-ink-muted">
+          Questions first? Email <a href={`mailto:${c.org.email.programs}`}>{c.org.email.programs}</a>.
+        </p>
+      </div>
+      <div class="card p-6 sm:p-8 lg:col-span-8">
+        <FormShell name="volunteer" action="/api/volunteer" submitLabel="Send volunteer details" event="Volunteer">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <Field
+              form="volunteer"
+              name="name"
+              label="Full name"
+              required
+              autocomplete="name"
+              maxlength={LIMITS.name}
+            />
+            <Field
+              form="volunteer"
+              name="email"
+              label="Email"
+              type="email"
+              required
+              autocomplete="email"
+              maxlength={LIMITS.email}
+              inputmode="email"
+            />
+            <Field
+              form="volunteer"
+              name="phone"
+              label="Phone"
+              type="tel"
+              required
+              autocomplete="tel"
+              maxlength={LIMITS.phone}
+              pattern={PHONE_PATTERN}
+              hint="With country code, e.g. +254 7XX XXX XXX"
+            />
+            <Field
+              form="volunteer"
+              name="location"
+              label="Where are you based?"
+              required
+              autocomplete="address-level2"
+              maxlength={LIMITS.location}
+              hint="Town or county, and country"
+            />
+          </div>
+          <CheckboxGroup
+            form="volunteer"
+            name="skills"
+            legend="Skills you can offer"
+            options={volunteerSkills}
+            required
+          />
+          <div class="grid gap-5 sm:grid-cols-2">
+            <Select form="volunteer" name="availability" label="Availability" options={availabilityOptions} required />
+            <Field
+              form="volunteer"
+              name="hours"
+              label="Hours per month"
+              type="number"
+              min={1}
+              max={200}
+              inputmode="numeric"
+            />
+          </div>
+          <TextArea
+            form="volunteer"
+            name="message"
+            label="Anything else we should know?"
+            maxlength={LIMITS.message}
+            rows={4}
+          />
+        </FormShell>
+      </div>
+    </div>
+  </Section>
+
+  <Section tone="surface" labelledby="other-title">
+    <h2 id="other-title" class="mb-8">
+      {page.other.headline}
+    </h2>
+    <ul class="grid gap-5 md:grid-cols-2">
+      {page.other.items.map((item, i) => (
+        <li class="card flex flex-col p-6">
+          <span class="icon-tile">
+            <Icon name={icons[i] ?? 'handshake'} size={24} />
+          </span>
+          <h3 class="mt-4 text-xl">{item.title}</h3>
+          <p class="mt-2 text-ink-muted">{item.text}</p>
+          <a
+            href={item.href}
+            class="link-arrow mt-auto pt-4"
+            data-event={item.href === '/donate' ? 'Donate' : 'Partner'}
+            data-event-location="get-involved-other"
+          >
+            {item.label} <Icon name="arrow-right" size={18} />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </Section>
+</BaseLayout>

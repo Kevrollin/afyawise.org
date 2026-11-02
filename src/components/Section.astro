@@ -1,0 +1,24 @@
+---
+/** Page section with the standard vertical rhythm and container. */
+interface Props {
+  id?: string;
+  tone?: 'default' | 'surface' | 'tint' | 'dark';
+  class?: string;
+  labelledby?: string;
+  /** Tighter top padding when a section follows one with the same tone. */
+  flushTop?: boolean;
+}
+const { id, tone = 'default', class: className, labelledby, flushTop = false } = Astro.props;
+const tones = {
+  default: 'bg-bg',
+  surface: 'bg-surface',
+  tint: 'bg-surface-tint',
+  dark: 'bg-surface-dark on-dark',
+} as const;
+---
+
+<section id={id} class:list={['section', tones[tone], flushTop && 'pt-0!', className]} aria-labelledby={labelledby}>
+  <div class="container-site">
+    <slot />
+  </div>
+</section>

@@ -1,0 +1,204 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import ProjectCards from '../components/ProjectCards.astro';
+import GovernanceDiagram from '../components/GovernanceDiagram.astro';
+import AlignmentList from '../components/AlignmentList.astro';
+import Faq from '../components/Faq.astro';
+import Icon from '../components/Icon.astro';
+import FormShell from '../components/forms/FormShell.astro';
+import Field from '../components/forms/Field.astro';
+import Select from '../components/forms/Select.astro';
+import TextArea from '../components/forms/TextArea.astro';
+import { getContent } from '../content/index.ts';
+import { breadcrumbLd, faqLd } from '../lib/seo.ts';
+import { visible } from '../lib/visibility.ts';
+import { budgetRanges, proposalInterests } from '../lib/forms/options.ts';
+import { LIMITS, PHONE_PATTERN } from '../lib/forms/schemas.ts';
+
+const c = getContent();
+const page = c.partnerPage;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Fund & partner', href: '/partner' },
+];
+const faqs = visible(c.faqs);
+const projectOptions = [
+  ...visible(c.projects).map((p) => ({ value: p.slug, label: p.title })),
+  { value: 'not-sure', label: 'Not sure yet' },
+];
+const programOptions = visible(c.programs).map((p) => ({ value: p.slug, label: p.title }));
+const whyIcons = ['map-pin', 'landmark', 'users'] as const;
+---
+
+<BaseLayout
+  title={page.meta.title}
+  description={page.meta.description}
+  og="partner"
+  jsonLd={[breadcrumbLd(crumbs), faqLd(faqs)]}
+>
+  <PageHero headline={page.headline} intro={page.intro} breadcrumbs={crumbs}>
+    <Fragment slot="actions">
+      <a href="#request" class="btn btn--primary btn--lg" data-event="Fund" data-event-location="partner-hero">
+        Request a proposal <Icon name="arrow-right" size={20} />
+      </a>
+      <a href="#projects" class="btn btn--secondary btn--lg">
+        See projects
+      </a>
+    </Fragment>
+  </PageHero>
+
+  <Section labelledby="why-title">
+    <SectionHeader id="why-title" headline={page.why.headline} />
+    <ul class="grid gap-5 md:grid-cols-3">
+      {page.why.points.map((point, i) => (
+        <li class="card reveal p-6">
+          <span class="icon-tile">
+            <Icon name={whyIcons[i] ?? 'check'} size={24} />
+          </span>
+          <h3 class="mt-4 text-xl">{point.title}</h3>
+          <p class="mt-2 text-ink-muted">{point.text}</p>
+        </li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section tone="tint" id="projects" labelledby="projects-title">
+    <SectionHeader id="projects-title" headline={page.projects.headline} intro={page.projects.intro} />
+    <ProjectCards projects={c.projects} formHref="/partner" />
+    <div class="mt-8 rounded-lg bg-bg p-6">
+      <h3 class="text-xl">{page.core.headline}</h3>
+      <p class="mt-2 text-ink-muted">{page.core.text}</p>
+    </div>
+  </Section>
+
+  <Section labelledby="expect-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-5">
+        <SectionHeader id="expect-title" headline={page.expect.headline} />
+        <ul class="grid gap-3">
+          {page.expect.items.map((item) => (
+            <li class="flex items-start gap-3">
+              <Icon name="circle-check" size={22} class="mt-0.5 shrink-0 text-green-700" />
+              <span class="text-ink">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="mt-8">
+          <AlignmentList compact />
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <h2 class="mb-6 text-3xl">Governance at a glance</h2>
+        <GovernanceDiagram />
+      </div>
+    </div>
+  </Section>
+
+  <Section tone="surface" labelledby="faq-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <h2 id="faq-title">{page.faqHeadline}</h2>
+      </div>
+      <div class="lg:col-span-8">
+        <Faq items={faqs} />
+      </div>
+    </div>
+  </Section>
+
+  <Section id="request" labelledby="request-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <h2 id="request-title">{page.form.headline}</h2>
+        <p class="lead mt-4">{page.form.intro}</p>
+        <p class="mt-6 text-sm text-ink-muted">
+          Prefer email? Write to <a href={`mailto:${c.org.email.executive}`}>{c.org.email.executive}</a>.
+        </p>
+      </div>
+      <div class="card p-6 sm:p-8 lg:col-span-8">
+        <FormShell name="proposal" action="/api/proposal" submitLabel="Request a proposal" event="Fund">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <Field form="proposal" name="name" label="Your name" required autocomplete="name" maxlength={LIMITS.name} />
+            <Field
+              form="proposal"
+              name="organisation"
+              label="Organisation"
+              required
+              autocomplete="organization"
+              maxlength={LIMITS.org}
+            />
+            <Field
+              form="proposal"
+              name="email"
+              label="Work email"
+              type="email"
+              required
+              autocomplete="email"
+              maxlength={LIMITS.email}
+              inputmode="email"
+            />
+            <Field
+              form="proposal"
+              name="phone"
+              label="Phone"
+              type="tel"
+              autocomplete="tel"
+              maxlength={LIMITS.phone}
+              pattern={PHONE_PATTERN}
+            />
+            <Field
+              form="proposal"
+              name="country"
+              label="Country"
+              required
+              autocomplete="country-name"
+              maxlength={LIMITS.country}
+            />
+            <Select form="proposal" name="interest" label="I would like to" options={proposalInterests} required />
+            <Select
+              form="proposal"
+              name="program"
+              label="Program"
+              options={programOptions}
+              prefill
+              placeholder="Any program"
+            />
+            <Select
+              form="proposal"
+              name="project"
+              label="Project"
+              options={projectOptions}
+              prefill
+              placeholder="Any project"
+            />
+            <Select
+              form="proposal"
+              name="budget"
+              label="Budget range"
+              options={budgetRanges}
+              placeholder="Choose a range"
+            />
+            <Field
+              form="proposal"
+              name="timeline"
+              label="Timeline"
+              maxlength={LIMITS.timeline}
+              placeholder="e.g. from Q1 2027"
+            />
+          </div>
+          <TextArea
+            form="proposal"
+            name="message"
+            label="What would you like to fund or achieve?"
+            required
+            minlength={LIMITS.messageMin}
+            maxlength={LIMITS.message}
+            hint="A few lines is enough. Mention any reporting requirements."
+          />
+        </FormShell>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Icon from '../components/Icon.astro';
+import Logo from '../components/Logo.astro';
+import { getContent } from '../content/index.ts';
+
+const c = getContent();
+const page = c.notFoundPage;
+const links = [
+  { label: 'Programs', href: '/programs', text: 'What we do in Meru County' },
+  { label: 'Fund & partner', href: '/partner', text: 'Projects to fund and how to partner' },
+  { label: 'Impact', href: '/impact', text: 'Targets, measurement and evidence' },
+  { label: 'Contact', href: '/contact', text: 'Write to the right team' },
+];
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} noindex canonical={null}>
+  <Section>
+    <div class="mx-auto max-w-3xl text-center">
+      <div class="mx-auto w-fit" aria-hidden="true">
+        <Logo markOnly height={88} />
+      </div>
+      <p class="eyebrow mt-6">Error 404</p>
+      <h1 class="mt-2">{page.headline}</h1>
+      <p class="lead mx-auto mt-4">{page.intro}</p>
+    </div>
+    <ul class="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">
+      {links.map((l) => (
+        <li>
+          <a href={l.href} class="card card--interactive flex items-center justify-between gap-4 p-5 no-underline">
+            <span>
+              <span class="block font-bold text-ink">{l.label}</span>
+              <span class="block text-sm text-ink-muted">{l.text}</span>
+            </span>
+            <Icon name="arrow-right" size={20} class="text-green-700" />
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-10 text-center">
+      <a href="/" class="btn btn--primary">
+        Go to the home page
+      </a>
+    </p>
+  </Section>
+</BaseLayout>

@@ -1,0 +1,41 @@
+---
+import { useStrings } from '../../i18n/index.ts';
+
+interface Props {
+  name: string;
+  label: string;
+  required?: boolean;
+  hint?: string;
+  maxlength?: number;
+  minlength?: number;
+  rows?: number;
+  form: string;
+}
+const { name, label, required = false, hint, maxlength, minlength, rows = 6, form } = Astro.props;
+const id = `${form}-${name}`;
+const t = useStrings().forms;
+const describedBy = [hint && `${id}-hint`, `${id}-error`].filter(Boolean).join(' ');
+---
+
+<div class="field" data-field={name}>
+  <label for={id} class="field-label">
+    {label}
+    {!required && <span class="field-optional">({t.optional})</span>}
+  </label>
+  {hint && (
+    <p id={`${id}-hint`} class="field-hint">
+      {hint}
+    </p>
+  )}
+  <textarea
+    id={id}
+    name={name}
+    required={required}
+    maxlength={maxlength}
+    minlength={minlength}
+    rows={rows}
+    aria-describedby={describedBy}
+    class="field-input"
+  ></textarea>
+  <p id={`${id}-error`} class="field-error" data-error-for={name} hidden></p>
+</div>

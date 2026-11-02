@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Icon from '../components/Icon.astro';
+import LocatorMap from '../components/LocatorMap.astro';
+import FormShell from '../components/forms/FormShell.astro';
+import Field from '../components/forms/Field.astro';
+import Select from '../components/forms/Select.astro';
+import TextArea from '../components/forms/TextArea.astro';
+import { getContent } from '../content/index.ts';
+import { breadcrumbLd } from '../lib/seo.ts';
+import { contactReasons } from '../lib/forms/options.ts';
+import { LIMITS, PHONE_PATTERN } from '../lib/forms/schemas.ts';
+
+const c = getContent();
+const page = c.contactPage;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: page.headline, href: '/contact' },
+];
+---
+
+<BaseLayout title={page.meta.title} description={page.meta.description} og="contact" jsonLd={[breadcrumbLd(crumbs)]}>
+  <PageHero headline={page.headline} intro={page.intro} breadcrumbs={crumbs} />
+
+  <Section labelledby="form-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="card p-6 sm:p-8 lg:col-span-7">
+        <h2 id="form-title" class="mb-6 text-2xl">
+          Send a message
+        </h2>
+        <FormShell name="contact" action="/api/contact" submitLabel="Send message" event="Contact">
+          <Select form="contact" name="reason" label="Reason" options={contactReasons} required prefill />
+          <div class="grid gap-5 sm:grid-cols-2">
+            <Field form="contact" name="name" label="Full name" required autocomplete="name" maxlength={LIMITS.name} />
+            <Field
+              form="contact"
+              name="email"
+              label="Email"
+              type="email"
+              required
+              autocomplete="email"
+              maxlength={LIMITS.email}
+              inputmode="email"
+            />
+            <Field
+              form="contact"
+              name="phone"
+              label="Phone"
+              type="tel"
+              autocomplete="tel"
+              maxlength={LIMITS.phone}
+              pattern={PHONE_PATTERN}
+            />
+            <Field
+              form="contact"
+              name="organisation"
+              label="Organisation"
+              autocomplete="organization"
+              maxlength={LIMITS.org}
+            />
+          </div>
+          <Field form="contact" name="subject" label="Subject" required maxlength={LIMITS.subject} />
+          <TextArea
+            form="contact"
+            name="message"
+            label="Message"
+            required
+            minlength={LIMITS.messageMin}
+            maxlength={LIMITS.message}
+          />
+        </FormShell>
+      </div>
+
+      <div class="grid content-start gap-8 lg:col-span-5">
+        <div>
+          <h2 class="text-2xl">{page.departmentsHeadline}</h2>
+          <ul class="mt-4 grid gap-2">
+            {page.departments.map((d) => (
+              <li class="rounded-md bg-surface p-4">
+                <p class="text-sm font-semibold text-ink-muted">{d.label}</p>
+                <a href={`mailto:${c.org.email[d.key]}`} class="inline-flex min-h-11 items-center gap-2 font-bold">
+                  <Icon name="mail" size={18} />
+                  {c.org.email[d.key]}
+                </a>
+              </li>
+            ))}
+            <li class="rounded-md bg-surface p-4">
+              <p class="text-sm font-semibold text-ink-muted">Phone</p>
+              <a href={c.org.phone.href} class="inline-flex min-h-11 items-center gap-2 font-bold">
+                <Icon name="phone" size={18} />
+                {c.org.phone.display}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-4 text-2xl">{page.visitHeadline}</h2>
+          <LocatorMap />
+        </div>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
